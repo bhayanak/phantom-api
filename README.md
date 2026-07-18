@@ -25,7 +25,7 @@ injection, and record/replay — no cloud account, no Java, no boilerplate.
 ## Install
 
 ```bash
-pip install phantom-api
+pip install phantomapi-server
 ```
 
 Requires Python 3.10+.

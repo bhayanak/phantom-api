@@ -49,10 +49,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/phantom-api/phantom-api"
-Repository = "https://github.com/phantom-api/phantom-api"
-Issues = "https://github.com/phantom-api/phantom-api/issues"
-Changelog = "https://github.com/phantom-api/phantom-api/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/bhayanak/phantom-api"
+Repository = "https://github.com/bhayanak/phantom-api"
+Issues = "https://github.com/bhayanak/phantom-api/issues"
+Changelog = "https://github.com/bhayanak/phantom-api/blob/main/CHANGELOG.md"
 
 [project.scripts]
 phantom-api = "phantom_api.cli:app"

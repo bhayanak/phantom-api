@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "phantom-api"
+name = "phantomapi-server"
 version = "1.0.0"
 description = "Instant mock API server from an OpenAPI/Swagger spec, JSON file, or Postman collection."
 readme = "README.md"

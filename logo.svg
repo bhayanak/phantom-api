@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480">
+  <defs>
+    <linearGradient id="phantomGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00c896;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0077ff;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <!-- Cloud shape -->
+  <path d="M240 120c-40 0-75 25-90 60-35 0-65 30-65 65s30 65 65 65h220c35 0 65-30 65-65s-30-65-65-65c-15-35-50-60-90-60z"
+        fill="url(#phantomGradient)" opacity="0.85"/>
+  <!-- Ghost/phantom outline -->
+  <path d="M180 180c0 60 30 120 60 120s60-60 60-120c0-40-30-60-60-60s-60 20-60 60z"
+        fill="white" opacity="0.25"/>
+  <!-- API nodes -->
+  <circle cx="160" cy="260" r="12" fill="#00c896"/>
+  <circle cx="240" cy="260" r="12" fill="#0077ff"/>
+  <circle cx="320" cy="260" r="12" fill="#00c896"/>
+  <!-- Connecting lines -->
+  <line x1="172" y1="260" x2="228" y2="260" stroke="#00c896" stroke-width="4"/>
+  <line x1="252" y1="260" x2="308" y2="260" stroke="#0077ff" stroke-width="4"/>
+  <!-- Text -->
+  <text x="240" y="400" font-family="Arial, sans-serif" font-size="48" text-anchor="middle"
+        fill="url(#phantomGradient)" font-weight="bold">Phantom API</text>
+</svg>

@@ -1,0 +1,64 @@
+{
+  "info": {
+    "name": "Sample Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "List widgets",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://api.example.com/widgets",
+          "path": ["widgets"]
+        }
+      },
+      "response": [
+        {
+          "code": 200,
+          "header": [{ "key": "Content-Type", "value": "application/json" }],
+          "body": "[{\"id\": 1, \"name\": \"Widget A\"}]"
+        }
+      ]
+    },
+    {
+      "name": "Widgets folder",
+      "item": [
+        {
+          "name": "Get widget by id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "https://api.example.com/widgets/:id",
+              "path": ["widgets", ":id"]
+            }
+          },
+          "response": [
+            {
+              "code": 200,
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": "{\"id\": 1, \"name\": \"Widget A\"}"
+            }
+          ]
+        },
+        {
+          "name": "Create widget",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "https://api.example.com/widgets",
+              "path": ["widgets"]
+            }
+          },
+          "response": [
+            {
+              "code": 201,
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": "{\"id\": 3, \"name\": \"New Widget\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

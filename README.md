@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.svg" alt="phantom-api" width="128" height="128">
+  <img src="https://raw.githubusercontent.com/bhayanak/phantom-api/refs/heads/main/logo.svg" alt="phantom-api" width="128" height="128">
 </p>
 
 <h1 align="center">phantom-api</h1>

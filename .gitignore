@@ -26,6 +26,7 @@ wheels/
 venv/
 env/
 morpheus/
+release-plan.md
 ENV/
 
 # Testing / coverage

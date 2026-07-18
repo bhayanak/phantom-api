@@ -4,4 +4,4 @@ from phantom_api.models import MockRoute, MockSpec
 
 __all__ = ["MockRoute", "MockSpec", "__version__"]
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"

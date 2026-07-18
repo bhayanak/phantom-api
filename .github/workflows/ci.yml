@@ -50,3 +50,29 @@ jobs:
           python-version: '3.12'
       - run: pip install pip-audit
       - run: pip-audit
+
+  docker:
+    runs-on: ubuntu-latest
+    needs: quality
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - name: Build image (no push)
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: false
+          load: true
+          tags: phantom-api:ci
+      - name: Smoke-test the image
+        run: |
+          printf '{"users":[{"id":1,"name":"Ada"}]}' > users.json
+          docker run -d --name phantom -p 3000:3000 \
+            -v "$PWD/users.json:/spec/users.json:ro" \
+            phantom-api:ci serve /spec/users.json --type json
+          for i in $(seq 1 15); do
+            curl -sf http://127.0.0.1:3000/__admin/stats && break || sleep 2
+          done
+          curl -sf http://127.0.0.1:3000/users
+          docker rm -f phantom
+

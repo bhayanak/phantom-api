@@ -1,0 +1,36 @@
+# Version control / CI
+.git
+.github
+.gitignore
+
+# Python caches and build artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Tests and docs are not needed in the image
+tests/
+docs/
+
+# Local experiment data (large; mount at runtime instead)
+morpheus/
+recordings/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Security scan artifacts
+trivy.sarif
+sbom.spdx.json

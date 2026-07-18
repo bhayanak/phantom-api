@@ -102,8 +102,12 @@ def serve(
     type: str | None = typer.Option(
         None, "--type", "-t", help="Force source type: openapi, json, or postman."
     ),
-    host: str = typer.Option(DEFAULT_HOST, "--host", help="Bind host (localhost by default)."),
-    port: int = typer.Option(DEFAULT_PORT, "--port", "-p", help="Bind port."),
+    host: str = typer.Option(
+        DEFAULT_HOST, "--host", envvar="PHANTOM_API_HOST", help="Bind host (localhost by default)."
+    ),
+    port: int = typer.Option(
+        DEFAULT_PORT, "--port", "-p", envvar="PHANTOM_API_PORT", help="Bind port."
+    ),
     delay: str = typer.Option("0ms", "--delay", "-d", help="Latency per request, e.g. 200ms."),
     watch: bool = typer.Option(False, "--watch", "-w", help="Reload when the spec changes."),
     seed: int | None = typer.Option(None, "--seed", help="Seed for deterministic fake data."),
@@ -139,8 +143,10 @@ def serve(
 def record(
     upstream: str = typer.Argument(..., help="Upstream base URL to proxy, e.g. https://api.x.com"),
     output: Path = typer.Option(Path("recordings"), "--output", "-o", help="Recordings dir."),
-    host: str = typer.Option(DEFAULT_HOST, "--host", help="Bind host."),
-    port: int = typer.Option(DEFAULT_PORT, "--port", "-p", help="Bind port."),
+    host: str = typer.Option(DEFAULT_HOST, "--host", envvar="PHANTOM_API_HOST", help="Bind host."),
+    port: int = typer.Option(
+        DEFAULT_PORT, "--port", "-p", envvar="PHANTOM_API_PORT", help="Bind port."
+    ),
 ) -> None:
     """Proxy UPSTREAM and record every response to OUTPUT."""
     from phantom_api.recorder.proxy import create_proxy_app
@@ -170,8 +176,10 @@ def replay(
     recordings: Path = typer.Argument(
         ..., exists=True, file_okay=False, help="Recordings directory."
     ),
-    host: str = typer.Option(DEFAULT_HOST, "--host", help="Bind host."),
-    port: int = typer.Option(DEFAULT_PORT, "--port", "-p", help="Bind port."),
+    host: str = typer.Option(DEFAULT_HOST, "--host", envvar="PHANTOM_API_HOST", help="Bind host."),
+    port: int = typer.Option(
+        DEFAULT_PORT, "--port", "-p", envvar="PHANTOM_API_PORT", help="Bind port."
+    ),
     delay: str = typer.Option("0ms", "--delay", "-d", help="Latency per request."),
 ) -> None:
     """Serve previously recorded responses from RECORDINGS."""

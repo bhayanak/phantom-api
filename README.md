@@ -102,6 +102,67 @@ curl "http://127.0.0.1:3000/pets?__delay=500"    # → 500ms latency
 | GET | `/__admin/stats` | Request statistics and uptime |
 | POST | `/__admin/reset` | Reset statistics |
 
+## Run in Docker
+
+Run a mock server anywhere — CI, a shared dev box, or production-like environments —
+without installing Python. The image binds to `0.0.0.0:3000` inside the container.
+
+```bash
+# Build the image
+docker build -t phantom-api .
+
+# Serve a spec by mounting it into /spec
+docker run --rm -p 3000:3000 \
+  -v "$PWD/openapi.json:/spec/openapi.json:ro" \
+  phantom-api serve /spec/openapi.json --type openapi --seed 42
+```
+
+Or use the published image from Docker Hub:
+
+```bash
+docker run --rm -p 3000:3000 \
+  -v "$PWD/openapi.json:/spec/openapi.json:ro" \
+  fazorboy/phantom-api serve /spec/openapi.json
+```
+
+### docker compose
+
+A ready-made [docker-compose.yml](docker-compose.yml) serves a mounted spec (defaulting to
+the Morpheus mock). Point it at any single-file spec with `SPEC_FILE`:
+
+```bash
+SPEC_FILE=./openapi.json docker compose up --build
+curl http://localhost:3000/__admin/routes
+```
+
+The container reads `PHANTOM_API_HOST` and `PHANTOM_API_PORT` (default `0.0.0.0` / `3000`),
+so the same environment variables configure the server locally too.
+
+> Multi-file specs (a root `openapi.yaml` that `$ref`s into `paths/` and `components/`)
+> must first be bundled into a single self-contained file. See
+> [Turn any OpenAPI repo into a mock](#turn-any-openapi-repo-into-a-mock).
+
+## Turn any OpenAPI repo into a mock
+
+Many API projects (for example
+[HewlettPackard/morpheus-openapi](https://github.com/HewlettPackard/morpheus-openapi))
+publish a **multi-file** OpenAPI spec plus example JSONs. To serve one:
+
+```bash
+# 1. Bundle the multi-file spec into a single dereferenced file (Redocly)
+npx @redocly/cli bundle openapi.yaml -o bundled.json --dereferenced
+
+# 2. Inline any example $refs that Redocly leaves inside example values
+python skills/openapi-mock-server/inline_example_refs.py bundled.json --base . -o mock.json
+
+# 3. Serve it (locally or in Docker)
+phantom-api serve mock.json --type openapi --seed 42
+```
+
+The bundled **`openapi-mock-server`** skill automates this end to end — fetching the repo,
+detecting its build tooling, bundling, inlining examples, and starting the server locally
+or in a container. See [skills/openapi-mock-server/SKILL.md](skills/openapi-mock-server/SKILL.md).
+
 ## Fake data generation
 
 phantom-api maps schema fragments to realistic values, in priority order:

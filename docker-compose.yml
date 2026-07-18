@@ -1,0 +1,26 @@
+# Example: run a phantom-api mock server in a container.
+#
+#   docker compose up --build
+#
+# By default this serves the Morpheus mock spec you generated at
+# morpheus/morpheus-mock.json. Override the spec by setting SPEC_FILE, e.g.:
+#
+#   SPEC_FILE=./openapi.json docker compose up --build
+#
+services:
+  phantom-api:
+    build: .
+    image: phantom-api:local
+    ports:
+      - "3000:3000"
+    volumes:
+      # Mount your spec read-only into the container's /spec directory.
+      - "${SPEC_FILE:-./morpheus/morpheus-mock.json}:/spec/openapi.json:ro"
+    # PHANTOM_API_HOST/PORT default to 0.0.0.0:3000 inside the image.
+    command: ["serve", "/spec/openapi.json", "--type", "openapi", "--seed", "42"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:3000/__admin/stats').status==200 else 1)"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s

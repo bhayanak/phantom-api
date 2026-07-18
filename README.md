@@ -5,6 +5,33 @@
 <h1 align="center">phantom-api</h1>
 
 <p align="center">
+  <a href="https://github.com/bhayanak/phantom-api/actions/workflows/ci.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/bhayanak/phantom-api/ci.yml?branch=main&label=CI" alt="CI status">
+  </a>
+  <a href="https://github.com/bhayanak/phantom-api/actions/workflows/release.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/bhayanak/phantom-api/release.yml?label=Release" alt="Release workflow status">
+  </a>
+  <a href="coverage.xml">
+    <img src="https://img.shields.io/badge/Coverage-98.85%25-brightgreen" alt="Test coverage">
+  </a>
+  <a href="https://pypi.org/project/phantomapi-server/">
+    <img src="https://img.shields.io/pypi/v/phantomapi-server" alt="PyPI version">
+  </a>
+  <a href="https://pypi.org/project/phantomapi-server/">
+    <img src="https://img.shields.io/pypi/pyversions/phantomapi-server" alt="Python versions">
+  </a>
+  <a href="https://hub.docker.com/r/fazorboy/phantom-api">
+    <img src="https://img.shields.io/docker/pulls/fazorboy/phantom-api" alt="Docker pulls">
+  </a>
+  <a href="https://hub.docker.com/r/fazorboy/phantom-api">
+    <img src="https://img.shields.io/docker/image-size/fazorboy/phantom-api/latest" alt="Docker image size">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/github/license/bhayanak/phantom-api" alt="License">
+  </a>
+</p>
+
+<p align="center">
   <strong>Spin up a fully functional mock API server in seconds — from an OpenAPI spec, a JSON file, or a Postman collection.</strong>
 </p>
 

@@ -1,0 +1,5 @@
+# Raw, unsanitised captures and the pseudonym reversal mapping.
+# Never commit: these contain real identities from the recorded endpoint.
+.capture/
+raw/
+mapping.json

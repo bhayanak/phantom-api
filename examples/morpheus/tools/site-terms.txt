@@ -1,0 +1,22 @@
+# Site and supplier tokens blanked out of the Morpheus corpus.
+#
+# This list is environment-specific, and the real one is not committed: the
+# whole point of these tokens is that they identify the appliance the capture
+# came from. Publishing them would defeat the sanitisation they drive.
+#
+# Replace these with your own before recording. Guidance that came out of doing
+# this for real:
+#
+#   - Prefer the longest distinctive token you have. A short, generic one
+#     matches things it was never meant to -- one three-letter appliance name
+#     was also a licence-feature code appearing seven times in the API's own
+#     vocabulary, and blanking it would have corrupted that vocabulary.
+#   - Host names do not need listing. They are FQDNs, so the pattern pass
+#     already replaces them.
+#   - Object names -- host names, hardware serials -- are handled by
+#     `rename_kinds` in rules.yaml, not here.
+#
+# The committed corpus was sanitised with the real list and verified clean:
+# `make scan-corpora` re-checks it on every run, and CI fails on any finding.
+example-vendor
+example-site

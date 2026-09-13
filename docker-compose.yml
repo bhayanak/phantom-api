@@ -1,13 +1,13 @@
-# Example: run a phantom-api mock server in a container.
+# Two ways to run phantom-api in a container.
 #
-#   docker compose up --build
+#   docker compose up phantom-api                  spec-driven REST mock
+#   docker compose --profile mock up vcenter-mock  SOAP + model-backed mock
 #
-# By default this serves the Morpheus mock spec you generated at
-# morpheus/morpheus-mock.json. Override the spec by setting SPEC_FILE, e.g.:
-#
-#   SPEC_FILE=./openapi.json docker compose up --build
-#
+# Override the spec for the first service with SPEC_FILE, e.g.
+#   SPEC_FILE=./openapi.json docker compose up --build phantom-api
+
 services:
+  # A REST mock generated from an OpenAPI spec.
   phantom-api:
     build: .
     image: phantom-api:local
@@ -15,12 +15,47 @@ services:
       - "3000:3000"
     volumes:
       # Mount your spec read-only into the container's /spec directory.
-      - "${SPEC_FILE:-./morpheus/morpheus-mock.json}:/spec/openapi.json:ro"
-    # PHANTOM_API_HOST/PORT default to 0.0.0.0:3000 inside the image.
+      - "${SPEC_FILE:-./examples/morpheus/morpheus-mock.json}:/spec/openapi.json:ro"
+    # The image sets PHANTOM_API_HOST=0.0.0.0. It deliberately does not set the
+    # port, so each command uses its own: 3000 here, the config's port below.
     command: ["serve", "/spec/openapi.json", "--type", "openapi", "--seed", "42"]
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    tmpfs:
+      - /tmp
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:3000/__admin/stats').status==200 else 1)"]
       interval: 10s
       timeout: 5s
       retries: 5
       start_period: 15s
+
+  # A stateful SOAP mock driven by a scenario and a recorded corpus.
+  vcenter-mock:
+    build: .
+    image: phantom-api:local
+    ports:
+      # Clients that build their URL without a port need 443 published here
+      # instead, e.g. "443:8443".
+      - "8443:8443"
+    volumes:
+      - "./examples/vcenter:/spec:ro"
+    command: ["mock", "serve", "/spec/phantom.yaml"]
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    tmpfs:
+      # The ephemeral self-signed certificate is written here at startup.
+      - /tmp
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,ssl,sys; ctx=ssl._create_unverified_context(); sys.exit(0 if urllib.request.urlopen('https://127.0.0.1:8443/__phantom/status', context=ctx).status==200 else 1)"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+    profiles: ["mock"]

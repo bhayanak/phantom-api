@@ -1,0 +1,33 @@
+# Supplier and site tokens blanked out by sanitize.py as a final safety net.
+#
+# Recorded traffic hides identifying strings in places no structural rule
+# reaches: firmware descriptions, deployment profile names, disk identifiers,
+# vApp product metadata. This list is the backstop.
+#
+# Matching is case-insensitive on non-alphanumeric boundaries, so `ACME_NS204i`
+# is caught while `hpet0.present` -- a legitimate configuration key -- is not.
+#
+# Add your own organisation, site and product names here before publishing any
+# corpus. One token per line; blank lines and # comments are ignored.
+
+# --- common server, storage and network suppliers -----------------------
+hewlett
+packard
+proliant
+alletra
+greenlake
+dell
+emc
+lenovo
+cisco
+supermicro
+netapp
+purestorage
+hitachi
+fujitsu
+inspur
+huawei
+quantastor
+infinidat
+
+# --- add your own below -------------------------------------------------

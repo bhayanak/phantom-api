@@ -27,29 +27,128 @@ jobs:
       - run: ruff format --check src/ tests/
       - run: pytest --cov=src/phantom_api --cov-report=xml --cov-fail-under=95
 
+  corpus:
+    # A published corpus must carry no identifying data and must still parse.
+    # Both are cheap to check and expensive to discover later.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install
+        run: pip install -e '.[mock]'
+      - name: The published corpora are safe and replayable
+        # The same command contributors are told to run, so the documented
+        # workflow is the one that is actually gated. It fails on anything
+        # unpaired, unparseable, or still carrying a forbidden term.
+        run: |
+          phantom-api mock sanitize examples/vcenter/corpus \
+            --out "$RUNNER_TEMP/vcenter-check" \
+            --terms-file examples/vcenter/tools/vendor-terms.txt
+          phantom-api mock sanitize examples/morpheus/corpus \
+            --out "$RUNNER_TEMP/morpheus-check" \
+            --rules examples/morpheus/tools/rules.yaml \
+            --terms-file examples/morpheus/tools/site-terms.txt
+      - name: No credential survived a capture
+        run: python scripts/check_no_credentials.py
+      - name: The corpora are marked sanitised
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          for corpus in ("examples/vcenter/corpus", "examples/morpheus/corpus"):
+              manifest = json.loads((pathlib.Path(corpus) / "manifest.json").read_text())
+              assert manifest["sanitised"] is True, f"{corpus} is not marked sanitised"
+              print(f"{corpus}: {len(manifest['exchanges'])} exchanges verified")
+          PY
+      - name: A config derived from a corpus is valid
+        run: |
+          phantom-api mock derive examples/vcenter/corpus \
+            --name ci --out "$RUNNER_TEMP/derived.yaml"
+          phantom-api mock validate "$RUNNER_TEMP/derived.yaml"
+          phantom-api mock validate examples/morpheus/phantom.yaml
+      - name: No raw capture or reversal mapping is committed
+        run: |
+          if git ls-files | grep -E 'examples/[^/]+/(\.capture|raw)/'; then
+            echo "::error::unsanitised capture data is tracked in git"
+            exit 1
+          fi
+
   security:
+    # Findings are uploaded as SARIF so they land in the Security tab, and the
+    # job also fails outright on anything critical or high -- an alert nobody
+    # reads is not a control.
     runs-on: ubuntu-latest
     needs: quality
     steps:
       - uses: actions/checkout@v4
-      - uses: aquasecurity/trivy-action@master
+
+      - name: Dependency vulnerabilities (report)
+        uses: aquasecurity/trivy-action@master
         with:
           scan-type: fs
+          scanners: vuln
           format: sarif
-          output: trivy.sarif
+          output: trivy-fs.sarif
           severity: CRITICAL,HIGH
-      - uses: github/codeql-action/upload-sarif@v3
+      - name: Upload dependency findings
+        uses: github/codeql-action/upload-sarif@v3
+        if: always()
         with:
-          sarif_file: trivy.sarif
-      - uses: anchore/sbom-action@v0
+          sarif_file: trivy-fs.sarif
+          category: trivy-dependencies
+      - name: Dependency vulnerabilities (gate)
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: fs
+          scanners: vuln
+          severity: CRITICAL,HIGH
+          exit-code: '1'
+
+      - name: Configuration misconfiguration (report)
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: config
+          format: sarif
+          output: trivy-config.sarif
+          severity: CRITICAL,HIGH
+      - name: Upload configuration findings
+        uses: github/codeql-action/upload-sarif@v3
+        if: always()
+        with:
+          sarif_file: trivy-config.sarif
+          category: trivy-config
+      - name: Configuration misconfiguration (gate)
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: config
+          severity: CRITICAL,HIGH
+          exit-code: '1'
+
+      - name: Secrets in the working tree
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: fs
+          scanners: secret
+          exit-code: '1'
+
+      - name: Software bill of materials
+        uses: anchore/sbom-action@v0
         with:
           format: spdx-json
           output-file: sbom.spdx.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sbom
+          path: sbom.spdx.json
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install pip-audit
-      - run: pip-audit
+      - name: Python advisory database
+        run: |
+          pip install pip-audit
+          pip-audit --strict
 
   docker:
     runs-on: ubuntu-latest
@@ -64,6 +163,40 @@ jobs:
           push: false
           load: true
           tags: phantom-api:ci
+
+      - name: Scan the image (report)
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: image
+          image-ref: phantom-api:ci
+          scanners: vuln
+          format: sarif
+          output: trivy-image.sarif
+          severity: CRITICAL,HIGH
+      - name: Upload image findings
+        uses: github/codeql-action/upload-sarif@v3
+        if: always()
+        with:
+          sarif_file: trivy-image.sarif
+          category: trivy-image
+      - name: Scan the image (gate)
+        # The base image was changed to Alpine precisely so this can be a gate
+        # rather than a report: Debian slim carried 53 high findings with no fix
+        # available, which would have forced this to be advisory for ever.
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: image
+          image-ref: phantom-api:ci
+          scanners: vuln
+          severity: CRITICAL,HIGH
+          exit-code: '1'
+
+      - name: The image runs as a non-root user
+        run: |
+          uid=$(docker run --rm --entrypoint id phantom-api:ci -u)
+          test "$uid" != "0" || { echo "::error::image runs as root"; exit 1; }
+          echo "runs as uid $uid"
+
       - name: Smoke-test the image
         run: |
           printf '{"users":[{"id":1,"name":"Ada"}]}' > users.json
@@ -75,4 +208,17 @@ jobs:
           done
           curl -sf http://127.0.0.1:3000/users
           docker rm -f phantom
+      - name: Smoke-test the protocol mock
+        run: |
+          docker run -d --name phantom-mock -p 8443:8443 \
+            -v "$PWD/examples/vcenter:/spec:ro" \
+            phantom-api:ci mock serve /spec/phantom.yaml
+          for i in $(seq 1 20); do
+            curl -skf https://127.0.0.1:8443/__phantom/status && break || sleep 2
+          done
+          curl -skf -X POST https://127.0.0.1:8443/sdk \
+            -H 'Content-Type: text/xml' \
+            --data-binary @examples/vcenter/corpus/soap/001-RetrieveServiceContent.req.xml \
+            | grep -q apiVersion
+          docker rm -f phantom-mock
 

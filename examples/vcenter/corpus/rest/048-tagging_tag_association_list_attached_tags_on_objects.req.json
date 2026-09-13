@@ -1,0 +1,6 @@
+{
+  "method": "POST",
+  "payload": {
+    "object_ids": []
+  }
+}

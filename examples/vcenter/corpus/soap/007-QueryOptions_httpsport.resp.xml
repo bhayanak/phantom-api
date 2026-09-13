@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<soapenv:Body>
+<QueryOptionsResponse xmlns="urn:vim25"><returnval><key>host-001.lab.example.com</key><value xsi:type="xsd:string">443</value></returnval></QueryOptionsResponse>
+</soapenv:Body>
+</soapenv:Envelope>

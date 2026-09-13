@@ -1,0 +1,4747 @@
+{
+  "object_count": 147,
+  "by_type": {
+    "Datacenter": 8,
+    "ClusterComputeResource": 8,
+    "HostSystem": 16,
+    "VirtualMachine": 25,
+    "Datastore": 28,
+    "ResourcePool": 8,
+    "Folder": 48,
+    "Network": 6
+  },
+  "objects": [
+    {
+      "type": "Datacenter",
+      "moref": "datacenter-5055",
+      "props": {
+        "name": "DC-01"
+      },
+      "edges": {
+        "datastoreFolder": [
+          {
+            "type": "Folder",
+            "value": "group-s5058"
+          }
+        ],
+        "hostFolder": [
+          {
+            "type": "Folder",
+            "value": "group-h5057"
+          }
+        ],
+        "networkFolder": [
+          {
+            "type": "Folder",
+            "value": "group-n5059"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-d1"
+          }
+        ],
+        "vmFolder": [
+          {
+            "type": "Folder",
+            "value": "group-v5056"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datacenter",
+      "moref": "datacenter-5025",
+      "props": {
+        "name": "DC-02"
+      },
+      "edges": {
+        "datastoreFolder": [
+          {
+            "type": "Folder",
+            "value": "group-s5028"
+          }
+        ],
+        "hostFolder": [
+          {
+            "type": "Folder",
+            "value": "group-h5027"
+          }
+        ],
+        "networkFolder": [
+          {
+            "type": "Folder",
+            "value": "group-n5029"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-d1"
+          }
+        ],
+        "vmFolder": [
+          {
+            "type": "Folder",
+            "value": "group-v5026"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datacenter",
+      "moref": "datacenter-5001",
+      "props": {
+        "name": "DC-03"
+      },
+      "edges": {
+        "datastoreFolder": [
+          {
+            "type": "Folder",
+            "value": "group-s5004"
+          }
+        ],
+        "hostFolder": [
+          {
+            "type": "Folder",
+            "value": "group-h5003"
+          }
+        ],
+        "networkFolder": [
+          {
+            "type": "Folder",
+            "value": "group-n5005"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-d1"
+          }
+        ],
+        "vmFolder": [
+          {
+            "type": "Folder",
+            "value": "group-v5002"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datacenter",
+      "moref": "datacenter-4022",
+      "props": {
+        "name": "DC-04"
+      },
+      "edges": {
+        "datastoreFolder": [
+          {
+            "type": "Folder",
+            "value": "group-s4025"
+          }
+        ],
+        "hostFolder": [
+          {
+            "type": "Folder",
+            "value": "group-h4024"
+          }
+        ],
+        "networkFolder": [
+          {
+            "type": "Folder",
+            "value": "group-n4026"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-d1"
+          }
+        ],
+        "vmFolder": [
+          {
+            "type": "Folder",
+            "value": "group-v4023"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datacenter",
+      "moref": "datacenter-3085",
+      "props": {
+        "name": "DC-05"
+      },
+      "edges": {
+        "datastoreFolder": [
+          {
+            "type": "Folder",
+            "value": "group-s3088"
+          }
+        ],
+        "hostFolder": [
+          {
+            "type": "Folder",
+            "value": "group-h3087"
+          }
+        ],
+        "networkFolder": [
+          {
+            "type": "Folder",
+            "value": "group-n3089"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-d1"
+          }
+        ],
+        "vmFolder": [
+          {
+            "type": "Folder",
+            "value": "group-v3086"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datacenter",
+      "moref": "datacenter-3012",
+      "props": {
+        "name": "DC-06"
+      },
+      "edges": {
+        "datastoreFolder": [
+          {
+            "type": "Folder",
+            "value": "group-s3015"
+          }
+        ],
+        "hostFolder": [
+          {
+            "type": "Folder",
+            "value": "group-h3014"
+          }
+        ],
+        "networkFolder": [
+          {
+            "type": "Folder",
+            "value": "group-n3016"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-d1"
+          }
+        ],
+        "vmFolder": [
+          {
+            "type": "Folder",
+            "value": "group-v3013"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datacenter",
+      "moref": "datacenter-5089",
+      "props": {
+        "name": "DC-07"
+      },
+      "edges": {
+        "datastoreFolder": [
+          {
+            "type": "Folder",
+            "value": "group-s5092"
+          }
+        ],
+        "hostFolder": [
+          {
+            "type": "Folder",
+            "value": "group-h5091"
+          }
+        ],
+        "networkFolder": [
+          {
+            "type": "Folder",
+            "value": "group-n5093"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-d1"
+          }
+        ],
+        "vmFolder": [
+          {
+            "type": "Folder",
+            "value": "group-v5090"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datacenter",
+      "moref": "datacenter-2417",
+      "props": {
+        "name": "DC-08"
+      },
+      "edges": {
+        "datastoreFolder": [
+          {
+            "type": "Folder",
+            "value": "group-s2420"
+          }
+        ],
+        "hostFolder": [
+          {
+            "type": "Folder",
+            "value": "group-h2419"
+          }
+        ],
+        "networkFolder": [
+          {
+            "type": "Folder",
+            "value": "group-n2421"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-d1"
+          }
+        ],
+        "vmFolder": [
+          {
+            "type": "Folder",
+            "value": "group-v2418"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ClusterComputeResource",
+      "moref": "domain-c5061",
+      "props": {
+        "name": "Cluster-01"
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5076"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5068"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5069"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5198"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5067"
+          }
+        ],
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5064"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5073"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5195"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-5070"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-h5057"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-5062"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ClusterComputeResource",
+      "moref": "domain-c5031",
+      "props": {
+        "name": "Cluster-02"
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5046"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5038"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5039"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5037"
+          }
+        ],
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5034"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5043"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-5040"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-h5027"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-5032"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ClusterComputeResource",
+      "moref": "domain-c5007",
+      "props": {
+        "name": "Cluster-03"
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5088"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5014"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5015"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5013"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5054"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5023"
+          }
+        ],
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5010"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5019"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5051"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5085"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-5016"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-h5003"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-5008"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ClusterComputeResource",
+      "moref": "domain-c3091",
+      "props": {
+        "name": "Cluster-04"
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-3097"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-3098"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-3099"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-3105"
+          }
+        ],
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-3102"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-3094"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-3100"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-h3087"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-3092"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ClusterComputeResource",
+      "moref": "domain-c3018",
+      "props": {
+        "name": "Cluster-05"
+      },
+      "edges": {
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-h3014"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-3019"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ClusterComputeResource",
+      "moref": "domain-c5095",
+      "props": {
+        "name": "Cluster-06"
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5102"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5103"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5162"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5173"
+          }
+        ],
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5170"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5159"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-5104"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-h5091"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-5096"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ClusterComputeResource",
+      "moref": "domain-c3040",
+      "props": {
+        "name": "Cluster-07"
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-3192"
+          }
+        ],
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-3189"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-2432"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-h2419"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-3041"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ClusterComputeResource",
+      "moref": "domain-c4095",
+      "props": {
+        "name": "Cluster-08"
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-4100"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-4106"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-4107"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-4156"
+          }
+        ],
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-4153"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-4097"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-2432"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-h2419"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-4096"
+          }
+        ]
+      }
+    },
+    {
+      "type": "HostSystem",
+      "moref": "host-5064",
+      "props": {
+        "capability.iscsiSupported": true,
+        "host-316.lab.example.com": "25205845",
+        "host-315.lab.example.com": "8.0.3",
+        "name": "host-324.lab.example.com",
+        "runtime.connectionState": "connected",
+        "runtime.inMaintenanceMode": false,
+        "runtime.powerState": "poweredOn",
+        "host-317.lab.example.com": "a37c542f-91e5-5294-8409-ba298dfd1997",
+        "summary.managementServerIp": "192.0.2.7",
+        "host-352.lab.example.com": true,
+        "host-351.lab.example.com": "VMware ESXi 8.0.3 build-25205845",
+        "configManager.iscsiManager": "iscsiManager-5064",
+        "configManager.networkSystem": "networkSystem-5064",
+        "hardware.memorySize": 137184501760
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5067"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5068"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5069"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-5070"
+          }
+        ],
+        "parent": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c5061"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5072"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5200"
+          }
+        ]
+      }
+    },
+    {
+      "type": "HostSystem",
+      "moref": "host-5073",
+      "props": {
+        "capability.iscsiSupported": true,
+        "host-316.lab.example.com": "25205845",
+        "host-315.lab.example.com": "8.0.3",
+        "name": "host-326.lab.example.com",
+        "runtime.connectionState": "connected",
+        "runtime.inMaintenanceMode": false,
+        "runtime.powerState": "poweredOn",
+        "host-317.lab.example.com": "dcae18cb-f1b3-53d6-8a1b-5df13173e031",
+        "summary.managementServerIp": "192.0.2.7",
+        "host-352.lab.example.com": true,
+        "host-351.lab.example.com": "VMware ESXi 8.0.3 build-25205845",
+        "configManager.iscsiManager": "iscsiManager-5073",
+        "configManager.networkSystem": "networkSystem-5073",
+        "hardware.memorySize": 137184501760
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5076"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5068"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5069"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-5070"
+          }
+        ],
+        "parent": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c5061"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5201"
+          }
+        ]
+      }
+    },
+    {
+      "type": "HostSystem",
+      "moref": "host-5195",
+      "props": {
+        "capability.iscsiSupported": true,
+        "host-316.lab.example.com": "25205845",
+        "host-315.lab.example.com": "8.0.3",
+        "name": "host-328.lab.example.com",
+        "runtime.connectionState": "connected",
+        "runtime.inMaintenanceMode": false,
+        "runtime.powerState": "poweredOn",
+        "host-317.lab.example.com": "563a822e-9918-58f6-afbe-7ee9dd097ae5",
+        "summary.managementServerIp": "192.0.2.7",
+        "host-352.lab.example.com": true,
+        "host-351.lab.example.com": "VMware ESXi 8.0.3 build-25205845",
+        "configManager.iscsiManager": "iscsiManager-5195",
+        "configManager.networkSystem": "networkSystem-5195",
+        "hardware.memorySize": 274644008960
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5068"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5069"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5198"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-5070"
+          }
+        ],
+        "parent": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c5061"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5071"
+          }
+        ]
+      }
+    },
+    {
+      "type": "HostSystem",
+      "moref": "host-5034",
+      "props": {
+        "capability.iscsiSupported": true,
+        "host-316.lab.example.com": "25205845",
+        "host-315.lab.example.com": "8.0.3",
+        "name": "host-331.lab.example.com",
+        "runtime.connectionState": "notResponding",
+        "runtime.inMaintenanceMode": false,
+        "runtime.powerState": "unknown",
+        "host-317.lab.example.com": "8f22b5e3-da7c-502c-8f58-85a290603c59",
+        "summary.managementServerIp": "192.0.2.7",
+        "host-352.lab.example.com": true,
+        "host-351.lab.example.com": "VMware ESXi 8.0.3 build-25205845",
+        "configManager.iscsiManager": "iscsiManager-5034",
+        "configManager.networkSystem": "networkSystem-5034",
+        "hardware.memorySize": 274644008960
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5037"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5038"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5039"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-5040"
+          }
+        ],
+        "parent": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c5031"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5047"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5042"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5041"
+          }
+        ]
+      }
+    },
+    {
+      "type": "HostSystem",
+      "moref": "host-5043",
+      "props": {
+        "capability.iscsiSupported": true,
+        "host-316.lab.example.com": "25205845",
+        "host-315.lab.example.com": "8.0.3",
+        "name": "host-333.lab.example.com",
+        "runtime.connectionState": "notResponding",
+        "runtime.inMaintenanceMode": false,
+        "runtime.powerState": "unknown",
+        "host-317.lab.example.com": "1bf0e5d3-4e7e-5e87-a9ee-3df418eb47a1",
+        "summary.managementServerIp": "192.0.2.7",
+        "host-352.lab.example.com": true,
+        "host-351.lab.example.com": "VMware ESXi 8.0.3 build-25205845",
+        "configManager.iscsiManager": "iscsiManager-5043",
+        "configManager.networkSystem": "networkSystem-5043",
+        "hardware.memorySize": 274644008960
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5046"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5038"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5039"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-5040"
+          }
+        ],
+        "parent": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c5031"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5048"
+          }
+        ]
+      }
+    },
+    {
+      "type": "HostSystem",
+      "moref": "host-5010",
+      "props": {
+        "capability.iscsiSupported": true,
+        "host-316.lab.example.com": "25205845",
+        "host-315.lab.example.com": "8.0.3",
+        "name": "host-335.lab.example.com",
+        "runtime.connectionState": "connected",
+        "runtime.inMaintenanceMode": false,
+        "runtime.powerState": "poweredOn",
+        "host-317.lab.example.com": "b449ffe9-adf1-5a4c-8f70-19538d7b923a",
+        "summary.managementServerIp": "192.0.2.7",
+        "host-352.lab.example.com": true,
+        "host-351.lab.example.com": "VMware ESXi 8.0.3 build-25205845",
+        "configManager.iscsiManager": "iscsiManager-5010",
+        "configManager.networkSystem": "networkSystem-5010",
+        "hardware.memorySize": 274644004864
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5013"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5014"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5015"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-5016"
+          }
+        ],
+        "parent": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c5007"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5018"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5017"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5050"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5083"
+          }
+        ]
+      }
+    },
+    {
+      "type": "HostSystem",
+      "moref": "host-5019",
+      "props": {
+        "capability.iscsiSupported": true,
+        "host-316.lab.example.com": "25205845",
+        "host-315.lab.example.com": "8.0.3",
+        "name": "host-337.lab.example.com",
+        "runtime.connectionState": "connected",
+        "runtime.inMaintenanceMode": false,
+        "runtime.powerState": "poweredOn",
+        "host-317.lab.example.com": "0996fbcc-f43a-5f80-ba3e-29329e806e53",
+        "summary.managementServerIp": "192.0.2.7",
+        "host-352.lab.example.com": true,
+        "host-351.lab.example.com": "VMware ESXi 8.0.3 build-25205845",
+        "configManager.iscsiManager": "iscsiManager-5019",
+        "configManager.networkSystem": "networkSystem-5019",
+        "hardware.memorySize": 274644004864
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5023"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5014"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5015"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-5016"
+          }
+        ],
+        "parent": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c5007"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5084"
+          }
+        ]
+      }
+    },
+    {
+      "type": "HostSystem",
+      "moref": "host-5051",
+      "props": {
+        "capability.iscsiSupported": true,
+        "host-316.lab.example.com": "25205845",
+        "host-315.lab.example.com": "8.0.3",
+        "name": "host-339.lab.example.com",
+        "runtime.connectionState": "connected",
+        "runtime.inMaintenanceMode": false,
+        "runtime.powerState": "poweredOn",
+        "host-317.lab.example.com": "b97629a1-3a3a-511f-adfc-3cd867720f72",
+        "summary.managementServerIp": "192.0.2.7",
+        "host-352.lab.example.com": true,
+        "host-351.lab.example.com": "VMware ESXi 8.0.3 build-25205845",
+        "configManager.iscsiManager": "iscsiManager-5051",
+        "configManager.networkSystem": "networkSystem-5051",
+        "hardware.memorySize": 274604724224
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5054"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5014"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5015"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-5016"
+          }
+        ],
+        "parent": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c5007"
+          }
+        ]
+      }
+    },
+    {
+      "type": "HostSystem",
+      "moref": "host-5085",
+      "props": {
+        "capability.iscsiSupported": true,
+        "host-316.lab.example.com": "24859861",
+        "host-315.lab.example.com": "8.0.3",
+        "name": "host-341.lab.example.com",
+        "runtime.connectionState": "connected",
+        "runtime.inMaintenanceMode": false,
+        "runtime.powerState": "poweredOn",
+        "host-317.lab.example.com": "7cf0e90e-aee2-5244-83bc-3426805db050",
+        "summary.managementServerIp": "192.0.2.7",
+        "host-352.lab.example.com": true,
+        "host-351.lab.example.com": "VMware ESXi 8.0.3 build-24859861",
+        "configManager.iscsiManager": "iscsiManager-5085",
+        "configManager.networkSystem": "networkSystem-5085",
+        "hardware.memorySize": 240244985856
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5088"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5014"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5015"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-5016"
+          }
+        ],
+        "parent": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c5007"
+          }
+        ]
+      }
+    },
+    {
+      "type": "HostSystem",
+      "moref": "host-3102",
+      "props": {
+        "capability.iscsiSupported": true,
+        "name": "host-342.lab.example.com",
+        "runtime.connectionState": "disconnected",
+        "runtime.inMaintenanceMode": false,
+        "runtime.powerState": "unknown",
+        "host-317.lab.example.com": "e75254f8-f646-569a-bd04-316d5a5137da",
+        "hardware.memorySize": 274573910016
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-3105"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-3098"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-3099"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-3100"
+          }
+        ],
+        "parent": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c3091"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-3101"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-4205"
+          }
+        ]
+      }
+    },
+    {
+      "type": "HostSystem",
+      "moref": "host-3094",
+      "props": {
+        "capability.iscsiSupported": true,
+        "name": "host-343.lab.example.com",
+        "runtime.connectionState": "disconnected",
+        "runtime.inMaintenanceMode": false,
+        "runtime.powerState": "unknown",
+        "host-317.lab.example.com": "f17ee8d0-8187-5b08-9c93-4862a85d9dbf",
+        "hardware.memorySize": 274569768960
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-3097"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-3098"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-3099"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-3100"
+          }
+        ],
+        "parent": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c3091"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-4196"
+          }
+        ]
+      }
+    },
+    {
+      "type": "HostSystem",
+      "moref": "host-5170",
+      "props": {
+        "capability.iscsiSupported": true,
+        "host-316.lab.example.com": "25205845",
+        "host-315.lab.example.com": "8.0.3",
+        "name": "host-345.lab.example.com",
+        "runtime.connectionState": "connected",
+        "runtime.inMaintenanceMode": false,
+        "runtime.powerState": "poweredOn",
+        "host-317.lab.example.com": "e9ef8e71-1102-54ee-a036-ffb0b3071821",
+        "summary.managementServerIp": "192.0.2.7",
+        "host-352.lab.example.com": true,
+        "host-351.lab.example.com": "VMware ESXi 8.0.3 build-25205845",
+        "configManager.iscsiManager": "iscsiManager-5170",
+        "configManager.networkSystem": "networkSystem-5170",
+        "hardware.memorySize": 137184501760
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5102"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5103"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5173"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-5104"
+          }
+        ],
+        "parent": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c5095"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5105"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5181"
+          }
+        ]
+      }
+    },
+    {
+      "type": "HostSystem",
+      "moref": "host-5159",
+      "props": {
+        "capability.iscsiSupported": true,
+        "host-316.lab.example.com": "25205845",
+        "host-315.lab.example.com": "8.0.3",
+        "name": "host-347.lab.example.com",
+        "runtime.connectionState": "connected",
+        "runtime.inMaintenanceMode": false,
+        "runtime.powerState": "poweredOn",
+        "host-317.lab.example.com": "f272948a-8d22-5263-877a-044acdab2ad2",
+        "summary.managementServerIp": "192.0.2.7",
+        "host-352.lab.example.com": true,
+        "host-351.lab.example.com": "VMware ESXi 8.0.3 build-25205845",
+        "configManager.iscsiManager": "iscsiManager-5159",
+        "configManager.networkSystem": "networkSystem-5159",
+        "hardware.memorySize": 137184501760
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5102"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5103"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5162"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-5104"
+          }
+        ],
+        "parent": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c5095"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5182"
+          }
+        ]
+      }
+    },
+    {
+      "type": "HostSystem",
+      "moref": "host-3189",
+      "props": {
+        "capability.iscsiSupported": true,
+        "name": "host-348.lab.example.com",
+        "runtime.connectionState": "disconnected",
+        "runtime.inMaintenanceMode": false,
+        "runtime.powerState": "unknown",
+        "host-317.lab.example.com": "59bba972-83d7-54b1-bf55-eea3b8b1b76f",
+        "hardware.memorySize": 274573905920
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-3192"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-2432"
+          }
+        ],
+        "parent": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c3040"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-4084"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-4208"
+          }
+        ]
+      }
+    },
+    {
+      "type": "HostSystem",
+      "moref": "host-4153",
+      "props": {
+        "capability.iscsiSupported": true,
+        "name": "host-349.lab.example.com",
+        "runtime.connectionState": "notResponding",
+        "runtime.inMaintenanceMode": false,
+        "runtime.powerState": "unknown",
+        "host-317.lab.example.com": "fa5232c0-3db6-5b09-b5fd-a4c7c05528a1",
+        "summary.managementServerIp": "192.0.2.7",
+        "configManager.iscsiManager": "iscsiManager-4153",
+        "configManager.networkSystem": "networkSystem-4153",
+        "hardware.memorySize": 274573914112
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-4106"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-4107"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-4156"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-2432"
+          }
+        ],
+        "parent": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c4095"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-4206"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-2433"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-2434"
+          }
+        ]
+      }
+    },
+    {
+      "type": "HostSystem",
+      "moref": "host-4097",
+      "props": {
+        "capability.iscsiSupported": true,
+        "name": "host-350.lab.example.com",
+        "runtime.connectionState": "notResponding",
+        "runtime.inMaintenanceMode": false,
+        "runtime.powerState": "unknown",
+        "host-317.lab.example.com": "91ebc4e8-ee5d-57b8-a932-2bb55e9325fd",
+        "summary.managementServerIp": "192.0.2.7",
+        "configManager.iscsiManager": "iscsiManager-4097",
+        "configManager.networkSystem": "networkSystem-4097",
+        "hardware.memorySize": 274573914112
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-4100"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-2432"
+          }
+        ],
+        "parent": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c4095"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-4207"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-5050",
+      "props": {
+        "config.uuid": "494b9b9a-5fc1-52f7-8bd5-28ff7cba200a",
+        "config.version": "vmx-13",
+        "layout.swapFile": "[DS-08] dir-0024/dir-0024.vswp",
+        "name": "VM-0001"
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5014"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-5016"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v5002"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-5008"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-4084",
+      "props": {
+        "config.uuid": "68526ce1-d59c-5c73-a593-1ca69980aa3f",
+        "config.version": "vmx-21",
+        "name": "VM-0002"
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-3192"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-2432"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v2418"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-3041"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-5072",
+      "props": {
+        "config.uuid": "b92f094b-5210-56d3-b4f8-9b11592910f6",
+        "config.version": "vmx-11",
+        "layout.swapFile": "[DS-04] dir-0028/dir-0028.vswp",
+        "name": "VM-0003"
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5068"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-5070"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v5063"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-5062"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-5071",
+      "props": {
+        "config.uuid": "b6dbd16a-7c02-59fa-bc33-2ab2f54c4cb9",
+        "config.version": "vmx-13",
+        "layout.swapFile": "[DS-04] dir-0033/dir-0033.vswp",
+        "name": "VM-0004"
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5068"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-5070"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v5063"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-5062"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-5201",
+      "props": {
+        "config.uuid": "12319ab7-2ac1-562b-ba2c-1cfb26e8cc0f",
+        "config.version": "vmx-21",
+        "layout.swapFile": "[] /var/run/crx/infra/vCLS-dcae18cb-f1b3-53d6-8a1b-5df13173e031/vCLS-dcae18cb-f1b3-53d6-8a1b-5df13173e031-627332b8.vswp",
+        "name": "VM-0005"
+      },
+      "edges": {
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v5060"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-5062"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-5200",
+      "props": {
+        "config.uuid": "621d7f24-9502-58d4-a316-a6c995a959c8",
+        "config.version": "vmx-21",
+        "layout.swapFile": "[] /var/run/crx/infra/vCLS-a37c542f-91e5-5294-8409-ba298dfd1997/vCLS-a37c542f-91e5-5294-8409-ba298dfd1997-6273328e.vswp",
+        "name": "VM-0006"
+      },
+      "edges": {
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v5060"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-5062"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-5042",
+      "props": {
+        "config.uuid": "a9f4b0e3-f658-5cb0-9f4a-b74c379f54a4",
+        "config.version": "vmx-11",
+        "layout.swapFile": "[DS-04] dir-0036/dir-0036.vswp",
+        "name": "VM-0007"
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5038"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-5040"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v5033"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-5032"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-5041",
+      "props": {
+        "config.uuid": "4fc8b4b7-5f16-5284-b993-db209bd6b741",
+        "config.version": "vmx-13",
+        "layout.swapFile": "[DS-04] dir-0040/dir-0040.vswp",
+        "name": "VM-0004"
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5038"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-5040"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v5033"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-5032"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-5048",
+      "props": {
+        "config.uuid": "3e662550-f588-5051-bbac-f9951678cbcb",
+        "config.version": "vmx-21",
+        "layout.swapFile": "[] /var/run/crx/infra/vCLS-1bf0e5d3-4e7e-5e87-a9ee-3df418eb47a1/vCLS-1bf0e5d3-4e7e-5e87-a9ee-3df418eb47a1-675bada8.vswp",
+        "name": "VM-0008"
+      },
+      "edges": {
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v5030"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-5032"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-5047",
+      "props": {
+        "config.uuid": "6efb9a9a-180a-529d-ae29-36e41e75955f",
+        "config.version": "vmx-21",
+        "layout.swapFile": "[] /var/run/crx/infra/vCLS-8f22b5e3-da7c-502c-8f58-85a290603c59/vCLS-8f22b5e3-da7c-502c-8f58-85a290603c59-675badd0.vswp",
+        "name": "VM-0009"
+      },
+      "edges": {
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v5030"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-5032"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-5018",
+      "props": {
+        "config.uuid": "ddd02f50-ab23-515b-9fd7-a17b7d2b8c48",
+        "config.version": "vmx-11",
+        "layout.swapFile": "[DS-08] dir-0042/dir-0042.vswp",
+        "name": "VM-0010"
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5014"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-5016"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v5009"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-5008"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-5017",
+      "props": {
+        "config.uuid": "4af6694c-ea5f-5075-9b34-b8c6404c181e",
+        "config.version": "vmx-13",
+        "layout.swapFile": "[DS-08] dir-0047/dir-0047.vswp",
+        "name": "VM-0004"
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5014"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-5016"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v5009"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-5008"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-5084",
+      "props": {
+        "config.uuid": "bc430c26-725d-5014-9dbd-76f985c90071",
+        "config.version": "vmx-21",
+        "layout.swapFile": "[] /var/run/crx/infra/vCLS-0996fbcc-f43a-5f80-ba3e-29329e806e53/vCLS-0996fbcc-f43a-5f80-ba3e-29329e806e53-9e621185.vswp",
+        "name": "VM-0011"
+      },
+      "edges": {
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v5006"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-5008"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-5083",
+      "props": {
+        "config.uuid": "b5afaed9-54eb-58d1-be0a-facdb01903f4",
+        "config.version": "vmx-21",
+        "layout.swapFile": "[] /var/run/crx/infra/vCLS-b449ffe9-adf1-5a4c-8f70-19538d7b923a/vCLS-b449ffe9-adf1-5a4c-8f70-19538d7b923a-9e621184.vswp",
+        "name": "VM-0012"
+      },
+      "edges": {
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v5006"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-5008"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-3101",
+      "props": {
+        "config.uuid": "6651262b-3597-53cc-86a5-b64669eb0f96",
+        "config.version": "vmx-13",
+        "layout.swapFile": "[DS-10] dir-0050/dir-0050.vswp",
+        "name": "VM-0004"
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-3098"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-3100"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v3093"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-3092"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-4196",
+      "props": {
+        "config.uuid": "17bfcb07-f97a-5f5e-96a4-c70d4c289848",
+        "config.version": "vmx-21",
+        "layout.swapFile": "[] /var/run/crx/infra/vCLS-f17ee8d0-8187-5b08-9c93-4862a85d9dbf/vCLS-f17ee8d0-8187-5b08-9c93-4862a85d9dbf-a66176ef.vswp",
+        "name": "VM-0013"
+      },
+      "edges": {
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v3090"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-3092"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-4205",
+      "props": {
+        "config.uuid": "7aa71b5e-0087-5025-8868-3e4acb65008a",
+        "config.version": "vmx-21",
+        "layout.swapFile": "[] /var/run/crx/infra/vCLS-e75254f8-f646-569a-bd04-316d5a5137da/vCLS-e75254f8-f646-569a-bd04-316d5a5137da-a66172f3.vswp",
+        "name": "VM-0014"
+      },
+      "edges": {
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v3090"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-3092"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-5105",
+      "props": {
+        "config.uuid": "2b2a0d45-ccf2-5b71-9ccf-678e3568bb83",
+        "config.version": "vmx-13",
+        "layout.swapFile": "[DS-15] dir-0053/dir-0053.vswp",
+        "name": "VM-0004"
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5102"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-5104"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v5097"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-5096"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-5182",
+      "props": {
+        "config.uuid": "f4a8a2d9-575e-5cd5-80b2-91e8bcd2b34a",
+        "config.version": "vmx-21",
+        "layout.swapFile": "[] /var/run/crx/infra/vCLS-f272948a-8d22-5263-877a-044acdab2ad2/vCLS-f272948a-8d22-5263-877a-044acdab2ad2-6273328d.vswp",
+        "name": "VM-0015"
+      },
+      "edges": {
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v5094"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-5096"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-5181",
+      "props": {
+        "config.uuid": "83c86530-b2ec-5aaa-a3e0-1dfce8f7e28d",
+        "config.version": "vmx-21",
+        "layout.swapFile": "[] /var/run/crx/infra/vCLS-e9ef8e71-1102-54ee-a036-ffb0b3071821/vCLS-e9ef8e71-1102-54ee-a036-ffb0b3071821-6273328f.vswp",
+        "name": "VM-0016"
+      },
+      "edges": {
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v5094"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-5096"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-4207",
+      "props": {
+        "config.uuid": "c3f8796d-6f80-505c-b889-4975496507ea",
+        "config.version": "vmx-21",
+        "layout.swapFile": "[] /var/run/crx/infra/vCLS-91ebc4e8-ee5d-57b8-a932-2bb55e9325fd/vCLS-91ebc4e8-ee5d-57b8-a932-2bb55e9325fd-a66172f4.vswp",
+        "name": "VM-0017"
+      },
+      "edges": {
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v2422"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-4096"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-4206",
+      "props": {
+        "config.uuid": "6285e43c-d342-5b79-bf54-f7918246ef02",
+        "config.version": "vmx-21",
+        "layout.swapFile": "[] /var/run/crx/infra/vCLS-fa5232c0-3db6-5b09-b5fd-a4c7c05528a1/vCLS-fa5232c0-3db6-5b09-b5fd-a4c7c05528a1-a66172f5.vswp",
+        "name": "VM-0018"
+      },
+      "edges": {
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v2422"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-4096"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-4208",
+      "props": {
+        "config.uuid": "887f8ee9-2f78-57c9-9a8a-48f4e737b1a8",
+        "config.version": "vmx-21",
+        "layout.swapFile": "[] /var/run/crx/infra/vCLS-59bba972-83d7-54b1-bf55-eea3b8b1b76f/vCLS-59bba972-83d7-54b1-bf55-eea3b8b1b76f-a66176f0.vswp",
+        "name": "VM-0019"
+      },
+      "edges": {
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v2422"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-3041"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-2433",
+      "props": {
+        "config.uuid": "edd79c44-e2b3-50d7-ae2d-5dcfb039d0c0",
+        "config.version": "vmx-13",
+        "layout.swapFile": "[DS-17] dir-0056/dir-0056.vswp",
+        "name": "VM-0004"
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-4106"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-2432"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v2425"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-4096"
+          }
+        ]
+      }
+    },
+    {
+      "type": "VirtualMachine",
+      "moref": "vm-2434",
+      "props": {
+        "config.uuid": "2287a1a5-2f82-5bc2-ac7b-8fc8b6ee85b0",
+        "config.version": "vmx-11",
+        "layout.swapFile": "[DS-17] dir-0057/dir-0057.vswp",
+        "name": "VM-0020"
+      },
+      "edges": {
+        "datastore": [
+          {
+            "type": "Datastore",
+            "value": "datastore-4106"
+          }
+        ],
+        "network": [
+          {
+            "type": "Network",
+            "value": "network-2432"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v2425"
+          }
+        ],
+        "resourcePool": [
+          {
+            "type": "ResourcePool",
+            "value": "resgroup-4096"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-5198",
+      "props": {
+        "name": "DS-01",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5195"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s5058"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-5076",
+      "props": {
+        "name": "DS-02",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5073"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s5058"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-5069",
+      "props": {
+        "name": "DS-03",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5195"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5073"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5064"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s5058"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-5068",
+      "props": {
+        "name": "DS-04",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5195"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5073"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5064"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s5058"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5072"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5071"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-5067",
+      "props": {
+        "name": "DS-05",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5064"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s5058"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-5046",
+      "props": {
+        "name": "DS-02",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5043"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s5028"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-5039",
+      "props": {
+        "name": "DS-03",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5043"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5034"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s5028"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-5038",
+      "props": {
+        "name": "DS-04",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5043"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5034"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s5028"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5042"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5041"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-5037",
+      "props": {
+        "name": "DS-05",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5034"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s5028"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-5088",
+      "props": {
+        "name": "DS-06",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5085"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s5004"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-5054",
+      "props": {
+        "name": "DS-07",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5051"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s5004"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-5014",
+      "props": {
+        "name": "DS-08",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5085"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5051"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5019"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5010"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s5004"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5050"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5018"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5017"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-5015",
+      "props": {
+        "name": "DS-09",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5085"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5051"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5019"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5010"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s5004"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-5023",
+      "props": {
+        "name": "DS-02",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5019"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s5004"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-5013",
+      "props": {
+        "name": "DS-05",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5010"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s5004"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-3097",
+      "props": {
+        "name": "DS-05",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-3094"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s3088"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-3105",
+      "props": {
+        "name": "DS-02",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-3102"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s3088"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-3098",
+      "props": {
+        "name": "DS-10",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-3102"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-3094"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s3088"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-3101"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-3099",
+      "props": {
+        "name": "DS-11",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-3102"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-3094"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s3088"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-5162",
+      "props": {
+        "name": "DS-12",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5159"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s5092"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-5103",
+      "props": {
+        "name": "DS-13",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5170"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5159"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s5092"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-5173",
+      "props": {
+        "name": "DS-14",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5170"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s5092"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-5102",
+      "props": {
+        "name": "DS-15",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5170"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5159"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s5092"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5105"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-4107",
+      "props": {
+        "name": "DS-16",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-4153"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s2420"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-4156",
+      "props": {
+        "name": "DS-02",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-4153"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s2420"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-4100",
+      "props": {
+        "name": "DS-05",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-4097"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s2420"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-4106",
+      "props": {
+        "name": "DS-17",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-4153"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s2420"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-2433"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-2434"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Datastore",
+      "moref": "datastore-3192",
+      "props": {
+        "name": "DS-07",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-3189"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-s2420"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-4084"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ResourcePool",
+      "moref": "resgroup-5062",
+      "props": {
+        "name": "RP-01",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "owner": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c5061"
+          }
+        ],
+        "parent": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c5061"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5201"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5200"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5071"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5072"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ResourcePool",
+      "moref": "resgroup-5032",
+      "props": {
+        "name": "RP-01",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "owner": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c5031"
+          }
+        ],
+        "parent": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c5031"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5048"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5047"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5041"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5042"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ResourcePool",
+      "moref": "resgroup-5008",
+      "props": {
+        "name": "RP-01",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "owner": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c5007"
+          }
+        ],
+        "parent": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c5007"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5084"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5083"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5050"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5017"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5018"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ResourcePool",
+      "moref": "resgroup-3092",
+      "props": {
+        "name": "RP-01",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "owner": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c3091"
+          }
+        ],
+        "parent": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c3091"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-3101"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-4196"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-4205"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ResourcePool",
+      "moref": "resgroup-3019",
+      "props": {
+        "name": "RP-01",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "owner": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c3018"
+          }
+        ],
+        "parent": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c3018"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ResourcePool",
+      "moref": "resgroup-5096",
+      "props": {
+        "name": "RP-01",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "owner": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c5095"
+          }
+        ],
+        "parent": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c5095"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5182"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5181"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5105"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ResourcePool",
+      "moref": "resgroup-3041",
+      "props": {
+        "name": "RP-01",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "owner": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c3040"
+          }
+        ],
+        "parent": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c3040"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-4084"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-4208"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ResourcePool",
+      "moref": "resgroup-4096",
+      "props": {
+        "name": "RP-01",
+        "overallStatus": "green"
+      },
+      "edges": {
+        "owner": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c4095"
+          }
+        ],
+        "parent": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c4095"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-4207"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-4206"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-2433"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-2434"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-d1",
+      "props": {
+        "name": "Folder-01"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-5055"
+          },
+          {
+            "type": "Datacenter",
+            "value": "datacenter-5025"
+          },
+          {
+            "type": "Datacenter",
+            "value": "datacenter-5001"
+          },
+          {
+            "type": "Datacenter",
+            "value": "datacenter-4022"
+          },
+          {
+            "type": "Datacenter",
+            "value": "datacenter-3085"
+          },
+          {
+            "type": "Datacenter",
+            "value": "datacenter-3012"
+          },
+          {
+            "type": "Datacenter",
+            "value": "datacenter-5089"
+          },
+          {
+            "type": "Datacenter",
+            "value": "datacenter-2417"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-v5056",
+      "props": {
+        "name": "vm"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "Folder",
+            "value": "group-v5063"
+          },
+          {
+            "type": "Folder",
+            "value": "group-v5060"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-5055"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-n5059",
+      "props": {
+        "name": "network"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "Network",
+            "value": "network-5070"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-5055"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-h5057",
+      "props": {
+        "name": "host"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c5061"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-5055"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-s5058",
+      "props": {
+        "name": "datastore"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5198"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5076"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5069"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5068"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5067"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-5055"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-v5060",
+      "props": {
+        "name": "Folder-02"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5201"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5200"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v5056"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-v5063",
+      "props": {
+        "name": "Folder-03"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5072"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5071"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v5056"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-v5026",
+      "props": {
+        "name": "vm"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "Folder",
+            "value": "group-v5033"
+          },
+          {
+            "type": "Folder",
+            "value": "group-v5030"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-5025"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-n5029",
+      "props": {
+        "name": "network"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "Network",
+            "value": "network-5040"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-5025"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-h5027",
+      "props": {
+        "name": "host"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c5031"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-5025"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-s5028",
+      "props": {
+        "name": "datastore"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5046"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5039"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5038"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5037"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-5025"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-v5030",
+      "props": {
+        "name": "Folder-02"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5048"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5047"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v5026"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-v5033",
+      "props": {
+        "name": "Folder-03"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5042"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5041"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v5026"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-v5002",
+      "props": {
+        "name": "vm"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5050"
+          },
+          {
+            "type": "Folder",
+            "value": "group-v5009"
+          },
+          {
+            "type": "Folder",
+            "value": "group-v5006"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-5001"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-n5005",
+      "props": {
+        "name": "network"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "Network",
+            "value": "network-5016"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-5001"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-h5003",
+      "props": {
+        "name": "host"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c5007"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-5001"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-s5004",
+      "props": {
+        "name": "datastore"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5088"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5054"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5014"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5015"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5023"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5013"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-5001"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-v5006",
+      "props": {
+        "name": "Folder-02"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5084"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5083"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v5002"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-v5009",
+      "props": {
+        "name": "Folder-03"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5018"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5017"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v5002"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-v4023",
+      "props": {
+        "name": "vm"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "Folder",
+            "value": "group-v4027"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-4022"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-n4026",
+      "props": {
+        "name": "network"
+      },
+      "edges": {
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-4022"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-h4024",
+      "props": {
+        "name": "host"
+      },
+      "edges": {
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-4022"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-s4025",
+      "props": {
+        "name": "datastore"
+      },
+      "edges": {
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-4022"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-v4027",
+      "props": {
+        "name": "Folder-02"
+      },
+      "edges": {
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v4023"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-v3086",
+      "props": {
+        "name": "vm"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "Folder",
+            "value": "group-v3093"
+          },
+          {
+            "type": "Folder",
+            "value": "group-v3090"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-3085"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-n3089",
+      "props": {
+        "name": "network"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "Network",
+            "value": "network-3100"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-3085"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-h3087",
+      "props": {
+        "name": "host"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c3091"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-3085"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-s3088",
+      "props": {
+        "name": "datastore"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "Datastore",
+            "value": "datastore-3097"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-3105"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-3098"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-3099"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-3085"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-v3090",
+      "props": {
+        "name": "Folder-02"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-4196"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-4205"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v3086"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-v3093",
+      "props": {
+        "name": "Folder-03"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-3101"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v3086"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-v3013",
+      "props": {
+        "name": "vm"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "Folder",
+            "value": "group-v3020"
+          },
+          {
+            "type": "Folder",
+            "value": "group-v3017"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-3012"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-n3016",
+      "props": {
+        "name": "network"
+      },
+      "edges": {
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-3012"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-h3014",
+      "props": {
+        "name": "host"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c3018"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-3012"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-s3015",
+      "props": {
+        "name": "datastore"
+      },
+      "edges": {
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-3012"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-v3017",
+      "props": {
+        "name": "Folder-02"
+      },
+      "edges": {
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v3013"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-v3020",
+      "props": {
+        "name": "Folder-03"
+      },
+      "edges": {
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v3013"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-v5090",
+      "props": {
+        "name": "vm"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "Folder",
+            "value": "group-v5097"
+          },
+          {
+            "type": "Folder",
+            "value": "group-v5094"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-5089"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-n5093",
+      "props": {
+        "name": "network"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "Network",
+            "value": "network-5104"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-5089"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-h5091",
+      "props": {
+        "name": "host"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c5095"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-5089"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-s5092",
+      "props": {
+        "name": "datastore"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "Datastore",
+            "value": "datastore-5162"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5103"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5173"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-5102"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-5089"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-v5094",
+      "props": {
+        "name": "Folder-02"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5182"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5181"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v5090"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-v5097",
+      "props": {
+        "name": "Folder-03"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5105"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v5090"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-v2418",
+      "props": {
+        "name": "vm"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-4084"
+          },
+          {
+            "type": "Folder",
+            "value": "group-v2422"
+          },
+          {
+            "type": "Folder",
+            "value": "group-v2425"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-2417"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-n2421",
+      "props": {
+        "name": "network"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "Network",
+            "value": "network-2432"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-2417"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-h2419",
+      "props": {
+        "name": "host"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c3040"
+          },
+          {
+            "type": "ClusterComputeResource",
+            "value": "domain-c4095"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-2417"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-s2420",
+      "props": {
+        "name": "datastore"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "Datastore",
+            "value": "datastore-4107"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-4156"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-4100"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-4106"
+          },
+          {
+            "type": "Datastore",
+            "value": "datastore-3192"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Datacenter",
+            "value": "datacenter-2417"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-v2425",
+      "props": {
+        "name": "Folder-03"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-2433"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-2434"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v2418"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Folder",
+      "moref": "group-v2422",
+      "props": {
+        "name": "Folder-02"
+      },
+      "edges": {
+        "childEntity": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-4207"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-4206"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-4208"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-v2418"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Network",
+      "moref": "network-5070",
+      "props": {
+        "name": "Net-01"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5064"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5073"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5195"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-n5059"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5071"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5072"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Network",
+      "moref": "network-5040",
+      "props": {
+        "name": "Net-01"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5034"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5043"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-n5029"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5041"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5042"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Network",
+      "moref": "network-5016",
+      "props": {
+        "name": "Net-01"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5010"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5019"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5051"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5085"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-n5005"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5017"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5018"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5050"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Network",
+      "moref": "network-3100",
+      "props": {
+        "name": "Net-01"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-3094"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-3102"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-n3089"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-3101"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Network",
+      "moref": "network-5104",
+      "props": {
+        "name": "Net-01"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-5159"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-5170"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-n5093"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-5105"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Network",
+      "moref": "network-2432",
+      "props": {
+        "name": "Net-01"
+      },
+      "edges": {
+        "host": [
+          {
+            "type": "HostSystem",
+            "value": "host-3189"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-4097"
+          },
+          {
+            "type": "HostSystem",
+            "value": "host-4153"
+          }
+        ],
+        "parent": [
+          {
+            "type": "Folder",
+            "value": "group-n2421"
+          }
+        ],
+        "vm": [
+          {
+            "type": "VirtualMachine",
+            "value": "vm-4084"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-2433"
+          },
+          {
+            "type": "VirtualMachine",
+            "value": "vm-2434"
+          }
+        ]
+      }
+    }
+  ]
+}

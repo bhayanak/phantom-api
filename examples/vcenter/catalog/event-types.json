@@ -1,0 +1,139 @@
+{
+  "observed_count": 3000,
+  "distinct_types": 9,
+  "types": [
+    {
+      "type": "UserLogoutSessionEvent",
+      "count": 1289,
+      "fields": [
+        "callCount",
+        "chainId",
+        "createdTime",
+        "fullFormattedMessage",
+        "ipAddress",
+        "key",
+        "loginTime",
+        "sessionId",
+        "userAgent",
+        "userName"
+      ]
+    },
+    {
+      "type": "HostSyncFailedEvent",
+      "count": 1278,
+      "fields": [
+        "chainId",
+        "computeResource",
+        "createdTime",
+        "datacenter",
+        "fullFormattedMessage",
+        "host",
+        "key",
+        "reason",
+        "userName"
+      ]
+    },
+    {
+      "type": "UserLoginSessionEvent",
+      "count": 419,
+      "fields": [
+        "chainId",
+        "createdTime",
+        "fullFormattedMessage",
+        "ipAddress",
+        "key",
+        "locale",
+        "sessionId",
+        "userAgent",
+        "userName"
+      ]
+    },
+    {
+      "type": "AlarmActionTriggeredEvent",
+      "count": 4,
+      "fields": [
+        "alarm",
+        "chainId",
+        "createdTime",
+        "entity",
+        "fullFormattedMessage",
+        "key",
+        "source",
+        "userName"
+      ]
+    },
+    {
+      "type": "AlarmSnmpCompletedEvent",
+      "count": 4,
+      "fields": [
+        "alarm",
+        "chainId",
+        "createdTime",
+        "entity",
+        "fullFormattedMessage",
+        "key",
+        "userName"
+      ]
+    },
+    {
+      "type": "EventEx",
+      "count": 3,
+      "fields": [
+        "arguments",
+        "chainId",
+        "createdTime",
+        "eventTypeId",
+        "fullFormattedMessage",
+        "key",
+        "message",
+        "objectId",
+        "objectName",
+        "objectType",
+        "severity",
+        "userName"
+      ]
+    },
+    {
+      "type": "TaskEvent",
+      "count": 1,
+      "fields": [
+        "chainId",
+        "createdTime",
+        "fullFormattedMessage",
+        "info",
+        "key",
+        "userName"
+      ]
+    },
+    {
+      "type": "AlarmReconfiguredEvent",
+      "count": 1,
+      "fields": [
+        "alarm",
+        "chainId",
+        "configChanges",
+        "createdTime",
+        "entity",
+        "fullFormattedMessage",
+        "key",
+        "userName"
+      ]
+    },
+    {
+      "type": "AlarmStatusChangedEvent",
+      "count": 1,
+      "fields": [
+        "alarm",
+        "chainId",
+        "createdTime",
+        "entity",
+        "from",
+        "fullFormattedMessage",
+        "key",
+        "source",
+        "to",
+        "userName"
+      ]
+    }
+  ]
+}

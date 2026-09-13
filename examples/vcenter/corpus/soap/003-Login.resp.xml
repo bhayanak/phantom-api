@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<soapenv:Body>
+<LoginResponse xmlns="urn:vim25"><returnval><key>68a5ff08-0dfb-53d8-b66e-e70c90478b22</key><userName>VSPHERE.LOCAL\Administrator</userName><fullName>Administrator vsphere.local</fullName><loginTime>2026-09-13T08:55:01.681525Z</loginTime><lastActiveTime>2026-09-13T08:55:01.681525Z</lastActiveTime><locale>en_US</locale><messageLocale>en</messageLocale><extensionSession>false</extensionSession><ipAddress>192.0.2.2</ipAddress><userAgent>Python-urllib/3.10</userAgent><callCount>0</callCount></returnval></LoginResponse>
+</soapenv:Body>
+</soapenv:Envelope>

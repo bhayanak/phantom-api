@@ -1,0 +1,54 @@
+# Endpoints captured for the Morpheus example corpus.
+#
+# Read-only GETs covering the inventory graph (groups -> clouds -> servers ->
+# instances), the catalogue that describes it, and the identity surface. Format
+# is `[METHOD] /path`, one per line; METHOD defaults to GET.
+
+# -- identity and appliance ------------------------------------------------
+/api/whoami
+/api/license
+/api/setup/check
+/api/ping
+
+# -- the inventory graph ---------------------------------------------------
+/api/groups
+/api/zones
+/api/clouds
+/api/servers
+/api/instances
+/api/apps
+/api/networks
+/api/network-subnets
+/api/security-groups
+/api/storage-volumes
+
+# -- catalogue: what the inventory is made of ------------------------------
+/api/instance-types
+/api/provision-types
+/api/library/layouts
+/api/library/container-types
+/api/virtual-images
+/api/options/clouds
+/api/service-plans
+
+# -- multi-tenancy and access ----------------------------------------------
+/api/accounts
+/api/users
+/api/roles
+/api/user-groups
+
+# -- operations ------------------------------------------------------------
+/api/health
+/api/monitoring/apps
+/api/monitoring/checks
+/api/processes
+/api/activity
+/api/alarms
+
+# -- paging, so the corpus shows what a second page looks like -------------
+/api/instance-types?max=5&offset=0
+/api/instance-types?max=5&offset=5
+
+# -- a deliberate failure, so clients can test their error handling --------
+/api/instances/999999
+/api/does-not-exist

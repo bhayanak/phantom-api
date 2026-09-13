@@ -1,0 +1,99 @@
+# Generative scenario for morpheus, derived by `phantom-api mock derive`.
+#
+# Proportions are real -- they were counted from a recording. Every name
+# and identifier is a pseudonym. Edit the counts to change the size of the
+# generated world without changing its shape.
+
+name: morpheus
+seed: 1234
+
+topology:
+  featurePermission: 163
+  instanceTypeLayout: 112
+  optionType: 88
+  customOptionType: 87
+  event: 83
+  interface: 45
+  provisionType: 43
+  storageType: 39
+  rootStorageType: 35
+  containerType: 27
+  instanceType: 25
+  storageVolume: 25
+  servicePlan: 25
+  networkType: 10
+  controllerType: 9
+  volume: 8
+  process: 8
+  location: 7
+  server: 5
+  controller: 4
+  role: 3
+  computeServerType: 3
+  containerPort: 3
+  zone: 2
+  network: 2
+  port: 2
+  priceSet: 2
+  user: 1
+  license: 1
+  installedLicense: 1
+  group: 1
+  owner: 1
+  serverO: 1
+  instance: 1
+  cloud: 1
+  layout: 1
+  createdBy: 1
+  containerDetail: 1
+  virtualImage: 1
+  osType: 1
+  account: 1
+  check: 1
+  checkType: 1
+  containerTypeSet: 1
+  instanceCluster: 1
+
+# Observed relationships, as total edges of each kind.
+relations:
+  instanceTypeLayout.instanceType: 28
+  containerType.provisionType: 26
+  containerType.osType: 12
+  interface.interfaces: 9
+  storageVolume.controller: 6
+  server.account: 5
+  volume.controller: 4
+  volume.account: 4
+  volume.owner: 4
+  volume.zone: 3
+  interface.network: 3
+  storageVolume.zone: 3
+  storageVolume.account: 3
+  storageVolume.owner: 3
+  group.zones: 2
+  zone.owner: 2
+  zone.account: 2
+  network.zone: 2
+  network.owner: 2
+  containerType.containerTemplates: 2
+  user.account: 1
+  group.account: 1
+  instance.group: 1
+  containerDetail.instance: 1
+  containerDetail.cloud: 1
+  virtualImage.accounts: 1
+  check.account: 1
+
+# References that pointed outside the recording. A large count here
+# means a collection was never captured -- record it and re-derive.
+unresolved:
+  type:type: 125
+  osType:osType: 29
+  controller:controller: 13
+  virtualImage:virtualImage: 13
+  plan:plan: 12
+  datastore:datastore: 9
+  parentServer:parentServer: 5
+  preferredParentServer:preferredParentServer: 5
+  zoneType:zoneType: 4
+  serverGroup:serverGroup: 4

@@ -1,0 +1,767 @@
+{
+  "recorded_at": "2026-09-13T13:45:16.642775+00:00",
+  "sanitised": true,
+  "exchanges": [
+    {
+      "stem": "001-GET_api_whoami",
+      "label": "GET api_whoami",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/whoami",
+      "request": "rest/001-GET_api_whoami.req.json",
+      "response": "rest/001-GET_api_whoami.resp.json",
+      "bytes": 12932
+    },
+    {
+      "stem": "002-GET_api_license",
+      "label": "GET api_license",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/license",
+      "request": "rest/002-GET_api_license.req.json",
+      "response": "rest/002-GET_api_license.resp.json",
+      "bytes": 6669
+    },
+    {
+      "stem": "003-GET_api_setup_check",
+      "label": "GET api_setup_check",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/setup/check",
+      "request": "rest/003-GET_api_setup_check.req.json",
+      "response": "rest/003-GET_api_setup_check.resp.json",
+      "bytes": 39
+    },
+    {
+      "stem": "004-GET_api_ping",
+      "label": "GET api_ping",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/ping",
+      "request": "rest/004-GET_api_ping.req.json",
+      "response": "rest/004-GET_api_ping.resp.json",
+      "bytes": 39
+    },
+    {
+      "stem": "005-GET_api_groups",
+      "label": "GET api_groups",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/groups",
+      "request": "rest/005-GET_api_groups.req.json",
+      "response": "rest/005-GET_api_groups.resp.json",
+      "bytes": 569
+    },
+    {
+      "stem": "006-GET_api_zones",
+      "label": "GET api_zones",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/zones",
+      "request": "rest/006-GET_api_zones.req.json",
+      "response": "rest/006-GET_api_zones.resp.json",
+      "bytes": 3335
+    },
+    {
+      "stem": "007-GET_api_clouds",
+      "label": "GET api_clouds",
+      "transport": "rest",
+      "status": 404,
+      "endpoint_path": "/api/clouds",
+      "request": "rest/007-GET_api_clouds.req.json",
+      "response": "rest/007-GET_api_clouds.resp.json",
+      "bytes": 69
+    },
+    {
+      "stem": "008-GET_api_servers",
+      "label": "GET api_servers",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/servers",
+      "request": "rest/008-GET_api_servers.req.json",
+      "response": "rest/008-GET_api_servers.resp.json",
+      "bytes": 67316
+    },
+    {
+      "stem": "009-GET_api_instances",
+      "label": "GET api_instances",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/instances",
+      "request": "rest/009-GET_api_instances.req.json",
+      "response": "rest/009-GET_api_instances.resp.json",
+      "bytes": 4815
+    },
+    {
+      "stem": "010-GET_api_apps",
+      "label": "GET api_apps",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/apps",
+      "request": "rest/010-GET_api_apps.req.json",
+      "response": "rest/010-GET_api_apps.resp.json",
+      "bytes": 217
+    },
+    {
+      "stem": "011-GET_api_networks",
+      "label": "GET api_networks",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/networks",
+      "request": "rest/011-GET_api_networks.req.json",
+      "response": "rest/011-GET_api_networks.resp.json",
+      "bytes": 3853
+    },
+    {
+      "stem": "012-GET_api_network-subnets",
+      "label": "GET api_network-subnets",
+      "transport": "rest",
+      "status": 404,
+      "endpoint_path": "/api/network-subnets",
+      "request": "rest/012-GET_api_network-subnets.req.json",
+      "response": "rest/012-GET_api_network-subnets.resp.json",
+      "bytes": 78
+    },
+    {
+      "stem": "013-GET_api_security-groups",
+      "label": "GET api_security-groups",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/security-groups",
+      "request": "rest/013-GET_api_security-groups.req.json",
+      "response": "rest/013-GET_api_security-groups.resp.json",
+      "bytes": 69
+    },
+    {
+      "stem": "014-GET_api_storage-volumes",
+      "label": "GET api_storage-volumes",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/storage-volumes",
+      "request": "rest/014-GET_api_storage-volumes.req.json",
+      "response": "rest/014-GET_api_storage-volumes.resp.json",
+      "bytes": 31821
+    },
+    {
+      "stem": "015-GET_api_instance-types",
+      "label": "GET api_instance-types",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/instance-types",
+      "request": "rest/015-GET_api_instance-types.req.json",
+      "response": "rest/015-GET_api_instance-types.resp.json",
+      "bytes": 17109
+    },
+    {
+      "stem": "016-GET_api_provision-types",
+      "label": "GET api_provision-types",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/provision-types",
+      "request": "rest/016-GET_api_provision-types.req.json",
+      "response": "rest/016-GET_api_provision-types.resp.json",
+      "bytes": 300177
+    },
+    {
+      "stem": "017-GET_api_library_layouts",
+      "label": "GET api_library_layouts",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/library/layouts",
+      "request": "rest/017-GET_api_library_layouts.req.json",
+      "response": "rest/017-GET_api_library_layouts.resp.json",
+      "bytes": 379921
+    },
+    {
+      "stem": "018-GET_api_library_container-types",
+      "label": "GET api_library_container-types",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/library/container-types",
+      "request": "rest/018-GET_api_library_container-types.req.json",
+      "response": "rest/018-GET_api_library_container-types.resp.json",
+      "bytes": 10944
+    },
+    {
+      "stem": "019-GET_api_virtual-images",
+      "label": "GET api_virtual-images",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/virtual-images",
+      "request": "rest/019-GET_api_virtual-images.req.json",
+      "response": "rest/019-GET_api_virtual-images.resp.json",
+      "bytes": 14636
+    },
+    {
+      "stem": "020-GET_api_options_clouds",
+      "label": "GET api_options_clouds",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/options/clouds",
+      "request": "rest/020-GET_api_options_clouds.req.json",
+      "response": "rest/020-GET_api_options_clouds.resp.json",
+      "bytes": 133
+    },
+    {
+      "stem": "021-GET_api_service-plans",
+      "label": "GET api_service-plans",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/service-plans",
+      "request": "rest/021-GET_api_service-plans.req.json",
+      "response": "rest/021-GET_api_service-plans.resp.json",
+      "bytes": 22888
+    },
+    {
+      "stem": "022-GET_api_accounts",
+      "label": "GET api_accounts",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/accounts",
+      "request": "rest/022-GET_api_accounts.req.json",
+      "response": "rest/022-GET_api_accounts.resp.json",
+      "bytes": 481
+    },
+    {
+      "stem": "023-GET_api_users",
+      "label": "GET api_users",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/users",
+      "request": "rest/023-GET_api_users.req.json",
+      "response": "rest/023-GET_api_users.resp.json",
+      "bytes": 775
+    },
+    {
+      "stem": "024-GET_api_roles",
+      "label": "GET api_roles",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/roles",
+      "request": "rest/024-GET_api_roles.req.json",
+      "response": "rest/024-GET_api_roles.resp.json",
+      "bytes": 1197
+    },
+    {
+      "stem": "025-GET_api_user-groups",
+      "label": "GET api_user-groups",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/user-groups",
+      "request": "rest/025-GET_api_user-groups.req.json",
+      "response": "rest/025-GET_api_user-groups.resp.json",
+      "bytes": 65
+    },
+    {
+      "stem": "026-GET_api_health",
+      "label": "GET api_health",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/health",
+      "request": "rest/026-GET_api_health.req.json",
+      "response": "rest/026-GET_api_health.resp.json",
+      "bytes": 40772
+    },
+    {
+      "stem": "027-GET_api_monitoring_apps",
+      "label": "GET api_monitoring_apps",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/monitoring/apps",
+      "request": "rest/027-GET_api_monitoring_apps.req.json",
+      "response": "rest/027-GET_api_monitoring_apps.resp.json",
+      "bytes": 66
+    },
+    {
+      "stem": "028-GET_api_monitoring_checks",
+      "label": "GET api_monitoring_checks",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/monitoring/checks",
+      "request": "rest/028-GET_api_monitoring_checks.req.json",
+      "response": "rest/028-GET_api_monitoring_checks.resp.json",
+      "bytes": 1070
+    },
+    {
+      "stem": "029-GET_api_processes",
+      "label": "GET api_processes",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/processes",
+      "request": "rest/029-GET_api_processes.req.json",
+      "response": "rest/029-GET_api_processes.resp.json",
+      "bytes": 117570
+    },
+    {
+      "stem": "030-GET_api_activity",
+      "label": "GET api_activity",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/activity",
+      "request": "rest/030-GET_api_activity.req.json",
+      "response": "rest/030-GET_api_activity.resp.json",
+      "bytes": 3115
+    },
+    {
+      "stem": "031-GET_api_alarms",
+      "label": "GET api_alarms",
+      "transport": "rest",
+      "status": 404,
+      "endpoint_path": "/api/alarms",
+      "request": "rest/031-GET_api_alarms.req.json",
+      "response": "rest/031-GET_api_alarms.resp.json",
+      "bytes": 69
+    },
+    {
+      "stem": "032-GET_api_instance-types_max_5_offset_0",
+      "label": "GET api_instance-types_max_5_offset_0",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/instance-types?max=5&offset=0",
+      "request": "rest/032-GET_api_instance-types_max_5_offset_0.req.json",
+      "response": "rest/032-GET_api_instance-types_max_5_offset_0.resp.json",
+      "bytes": 3862
+    },
+    {
+      "stem": "033-GET_api_instance-types_max_5_offset_5",
+      "label": "GET api_instance-types_max_5_offset_5",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/instance-types?max=5&offset=5",
+      "request": "rest/033-GET_api_instance-types_max_5_offset_5.req.json",
+      "response": "rest/033-GET_api_instance-types_max_5_offset_5.resp.json",
+      "bytes": 4089
+    },
+    {
+      "stem": "034-GET_api_instances_999999",
+      "label": "GET api_instances_999999",
+      "transport": "rest",
+      "status": 404,
+      "endpoint_path": "/api/instances/999999",
+      "request": "rest/034-GET_api_instances_999999.req.json",
+      "response": "rest/034-GET_api_instances_999999.resp.json",
+      "bytes": 67
+    },
+    {
+      "stem": "035-GET_api_does-not-exist",
+      "label": "GET api_does-not-exist",
+      "transport": "rest",
+      "status": 404,
+      "endpoint_path": "/api/does-not-exist",
+      "request": "rest/035-GET_api_does-not-exist.req.json",
+      "response": "rest/035-GET_api_does-not-exist.resp.json",
+      "bytes": 77
+    },
+    {
+      "stem": "036-GET_api_license_2",
+      "label": "GET api_license_2",
+      "transport": "rest",
+      "status": 404,
+      "endpoint_path": "/api/license/2",
+      "request": "rest/036-GET_api_license_2.req.json",
+      "response": "rest/036-GET_api_license_2.resp.json",
+      "bytes": 72
+    },
+    {
+      "stem": "037-GET_api_groups_1",
+      "label": "GET api_groups_1",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/groups/1",
+      "request": "rest/037-GET_api_groups_1.req.json",
+      "response": "rest/037-GET_api_groups_1.resp.json",
+      "bytes": 518
+    },
+    {
+      "stem": "038-GET_api_zones_1",
+      "label": "GET api_zones_1",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/zones/1",
+      "request": "rest/038-GET_api_zones_1.req.json",
+      "response": "rest/038-GET_api_zones_1.resp.json",
+      "bytes": 1628
+    },
+    {
+      "stem": "039-GET_api_zones_2",
+      "label": "GET api_zones_2",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/zones/2",
+      "request": "rest/039-GET_api_zones_2.req.json",
+      "response": "rest/039-GET_api_zones_2.resp.json",
+      "bytes": 1664
+    },
+    {
+      "stem": "040-GET_api_servers_4",
+      "label": "GET api_servers_4",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/servers/4",
+      "request": "rest/040-GET_api_servers_4.req.json",
+      "response": "rest/040-GET_api_servers_4.resp.json",
+      "bytes": 6854
+    },
+    {
+      "stem": "041-GET_api_servers_11",
+      "label": "GET api_servers_11",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/servers/11",
+      "request": "rest/041-GET_api_servers_11.req.json",
+      "response": "rest/041-GET_api_servers_11.resp.json",
+      "bytes": 8483
+    },
+    {
+      "stem": "042-GET_api_servers_10",
+      "label": "GET api_servers_10",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/servers/10",
+      "request": "rest/042-GET_api_servers_10.req.json",
+      "response": "rest/042-GET_api_servers_10.resp.json",
+      "bytes": 17161
+    },
+    {
+      "stem": "043-GET_api_instances_1",
+      "label": "GET api_instances_1",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/instances/1",
+      "request": "rest/043-GET_api_instances_1.req.json",
+      "response": "rest/043-GET_api_instances_1.resp.json",
+      "bytes": 14429
+    },
+    {
+      "stem": "044-GET_api_networks_3",
+      "label": "GET api_networks_3",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/networks/3",
+      "request": "rest/044-GET_api_networks_3.req.json",
+      "response": "rest/044-GET_api_networks_3.resp.json",
+      "bytes": 143792
+    },
+    {
+      "stem": "045-GET_api_networks_4",
+      "label": "GET api_networks_4",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/networks/4",
+      "request": "rest/045-GET_api_networks_4.req.json",
+      "response": "rest/045-GET_api_networks_4.resp.json",
+      "bytes": 143850
+    },
+    {
+      "stem": "046-GET_api_storage-volumes_43",
+      "label": "GET api_storage-volumes_43",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/storage-volumes/43",
+      "request": "rest/046-GET_api_storage-volumes_43.req.json",
+      "response": "rest/046-GET_api_storage-volumes_43.resp.json",
+      "bytes": 1457
+    },
+    {
+      "stem": "047-GET_api_storage-volumes_37",
+      "label": "GET api_storage-volumes_37",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/storage-volumes/37",
+      "request": "rest/047-GET_api_storage-volumes_37.req.json",
+      "response": "rest/047-GET_api_storage-volumes_37.resp.json",
+      "bytes": 1282
+    },
+    {
+      "stem": "048-GET_api_storage-volumes_39",
+      "label": "GET api_storage-volumes_39",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/storage-volumes/39",
+      "request": "rest/048-GET_api_storage-volumes_39.req.json",
+      "response": "rest/048-GET_api_storage-volumes_39.resp.json",
+      "bytes": 1216
+    },
+    {
+      "stem": "049-GET_api_instance-types_3",
+      "label": "GET api_instance-types_3",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/instance-types/3",
+      "request": "rest/049-GET_api_instance-types_3.req.json",
+      "response": "rest/049-GET_api_instance-types_3.resp.json",
+      "bytes": 12709
+    },
+    {
+      "stem": "050-GET_api_instance-types_5",
+      "label": "GET api_instance-types_5",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/instance-types/5",
+      "request": "rest/050-GET_api_instance-types_5.req.json",
+      "response": "rest/050-GET_api_instance-types_5.resp.json",
+      "bytes": 343726
+    },
+    {
+      "stem": "051-GET_api_instance-types_13",
+      "label": "GET api_instance-types_13",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/instance-types/13",
+      "request": "rest/051-GET_api_instance-types_13.req.json",
+      "response": "rest/051-GET_api_instance-types_13.resp.json",
+      "bytes": 5772
+    },
+    {
+      "stem": "052-GET_api_provision-types_35",
+      "label": "GET api_provision-types_35",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/provision-types/35",
+      "request": "rest/052-GET_api_provision-types_35.req.json",
+      "response": "rest/052-GET_api_provision-types_35.resp.json",
+      "bytes": 1184
+    },
+    {
+      "stem": "053-GET_api_provision-types_21",
+      "label": "GET api_provision-types_21",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/provision-types/21",
+      "request": "rest/053-GET_api_provision-types_21.req.json",
+      "response": "rest/053-GET_api_provision-types_21.resp.json",
+      "bytes": 6080
+    },
+    {
+      "stem": "054-GET_api_provision-types_29",
+      "label": "GET api_provision-types_29",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/provision-types/29",
+      "request": "rest/054-GET_api_provision-types_29.req.json",
+      "response": "rest/054-GET_api_provision-types_29.resp.json",
+      "bytes": 19577
+    },
+    {
+      "stem": "055-GET_api_library_layouts_5",
+      "label": "GET api_library_layouts_5",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/library/layouts/5",
+      "request": "rest/055-GET_api_library_layouts_5.req.json",
+      "response": "rest/055-GET_api_library_layouts_5.resp.json",
+      "bytes": 7093
+    },
+    {
+      "stem": "056-GET_api_library_layouts_35",
+      "label": "GET api_library_layouts_35",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/library/layouts/35",
+      "request": "rest/056-GET_api_library_layouts_35.req.json",
+      "response": "rest/056-GET_api_library_layouts_35.resp.json",
+      "bytes": 5244
+    },
+    {
+      "stem": "057-GET_api_library_layouts_30",
+      "label": "GET api_library_layouts_30",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/library/layouts/30",
+      "request": "rest/057-GET_api_library_layouts_30.req.json",
+      "response": "rest/057-GET_api_library_layouts_30.resp.json",
+      "bytes": 20942
+    },
+    {
+      "stem": "058-GET_api_library_container-types_7",
+      "label": "GET api_library_container-types_7",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/library/container-types/7",
+      "request": "rest/058-GET_api_library_container-types_7.req.json",
+      "response": "rest/058-GET_api_library_container-types_7.resp.json",
+      "bytes": 361
+    },
+    {
+      "stem": "059-GET_api_library_container-types_10",
+      "label": "GET api_library_container-types_10",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/library/container-types/10",
+      "request": "rest/059-GET_api_library_container-types_10.req.json",
+      "response": "rest/059-GET_api_library_container-types_10.resp.json",
+      "bytes": 403
+    },
+    {
+      "stem": "060-GET_api_library_container-types_529",
+      "label": "GET api_library_container-types_529",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/library/container-types/529",
+      "request": "rest/060-GET_api_library_container-types_529.req.json",
+      "response": "rest/060-GET_api_library_container-types_529.resp.json",
+      "bytes": 451
+    },
+    {
+      "stem": "061-GET_api_virtual-images_194",
+      "label": "GET api_virtual-images_194",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/virtual-images/194",
+      "request": "rest/061-GET_api_virtual-images_194.req.json",
+      "response": "rest/061-GET_api_virtual-images_194.resp.json",
+      "bytes": 14654
+    },
+    {
+      "stem": "062-GET_api_service-plans_5",
+      "label": "GET api_service-plans_5",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/service-plans/5",
+      "request": "rest/062-GET_api_service-plans_5.req.json",
+      "response": "rest/062-GET_api_service-plans_5.resp.json",
+      "bytes": 698
+    },
+    {
+      "stem": "063-GET_api_service-plans_17",
+      "label": "GET api_service-plans_17",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/service-plans/17",
+      "request": "rest/063-GET_api_service-plans_17.req.json",
+      "response": "rest/063-GET_api_service-plans_17.resp.json",
+      "bytes": 901
+    },
+    {
+      "stem": "064-GET_api_service-plans_18",
+      "label": "GET api_service-plans_18",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/service-plans/18",
+      "request": "rest/064-GET_api_service-plans_18.req.json",
+      "response": "rest/064-GET_api_service-plans_18.resp.json",
+      "bytes": 777
+    },
+    {
+      "stem": "065-GET_api_accounts_1",
+      "label": "GET api_accounts_1",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/accounts/1",
+      "request": "rest/065-GET_api_accounts_1.req.json",
+      "response": "rest/065-GET_api_accounts_1.resp.json",
+      "bytes": 430
+    },
+    {
+      "stem": "066-GET_api_users_1",
+      "label": "GET api_users_1",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/users/1",
+      "request": "rest/066-GET_api_users_1.req.json",
+      "response": "rest/066-GET_api_users_1.resp.json",
+      "bytes": 709
+    },
+    {
+      "stem": "067-GET_api_roles_1",
+      "label": "GET api_roles_1",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/roles/1",
+      "request": "rest/067-GET_api_roles_1.req.json",
+      "response": "rest/067-GET_api_roles_1.resp.json",
+      "bytes": 18153
+    },
+    {
+      "stem": "068-GET_api_roles_2",
+      "label": "GET api_roles_2",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/roles/2",
+      "request": "rest/068-GET_api_roles_2.req.json",
+      "response": "rest/068-GET_api_roles_2.resp.json",
+      "bytes": 18172
+    },
+    {
+      "stem": "069-GET_api_roles_3",
+      "label": "GET api_roles_3",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/roles/3",
+      "request": "rest/069-GET_api_roles_3.req.json",
+      "response": "rest/069-GET_api_roles_3.resp.json",
+      "bytes": 18159
+    },
+    {
+      "stem": "070-GET_api_monitoring_checks_1",
+      "label": "GET api_monitoring_checks_1",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/monitoring/checks/1",
+      "request": "rest/070-GET_api_monitoring_checks_1.req.json",
+      "response": "rest/070-GET_api_monitoring_checks_1.resp.json",
+      "bytes": 1098
+    },
+    {
+      "stem": "071-GET_api_processes_88",
+      "label": "GET api_processes_88",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/processes/88",
+      "request": "rest/071-GET_api_processes_88.req.json",
+      "response": "rest/071-GET_api_processes_88.resp.json",
+      "bytes": 2657
+    },
+    {
+      "stem": "072-GET_api_processes_87",
+      "label": "GET api_processes_87",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/processes/87",
+      "request": "rest/072-GET_api_processes_87.req.json",
+      "response": "rest/072-GET_api_processes_87.resp.json",
+      "bytes": 26802
+    },
+    {
+      "stem": "073-GET_api_processes_30",
+      "label": "GET api_processes_30",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/processes/30",
+      "request": "rest/073-GET_api_processes_30.req.json",
+      "response": "rest/073-GET_api_processes_30.resp.json",
+      "bytes": 10398
+    },
+    {
+      "stem": "074-GET_api_instance-types_14",
+      "label": "GET api_instance-types_14",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/instance-types/14",
+      "request": "rest/074-GET_api_instance-types_14.req.json",
+      "response": "rest/074-GET_api_instance-types_14.resp.json",
+      "bytes": 5724
+    },
+    {
+      "stem": "075-GET_api_instance-types_15",
+      "label": "GET api_instance-types_15",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/instance-types/15",
+      "request": "rest/075-GET_api_instance-types_15.req.json",
+      "response": "rest/075-GET_api_instance-types_15.resp.json",
+      "bytes": 5790
+    },
+    {
+      "stem": "076-GET_api_instance-types_16",
+      "label": "GET api_instance-types_16",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/instance-types/16",
+      "request": "rest/076-GET_api_instance-types_16.req.json",
+      "response": "rest/076-GET_api_instance-types_16.resp.json",
+      "bytes": 5876
+    }
+  ],
+  "pseudonym_domain": "lab.example.com"
+}

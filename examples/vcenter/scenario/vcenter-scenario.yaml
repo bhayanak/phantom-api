@@ -1,0 +1,128 @@
+# Generative scenario for the vcenter simulator.
+#
+# Derived from a sanitised capture of a live endpoint by tools/derive_scenario.py.
+# Shapes and proportions are real; every name, address and identifier is a
+# pseudonym. Edit freely -- this file is the contract, not the corpus.
+
+service:
+  # Reported by RetrieveServiceContent. The consumer pins its SOAPAction from
+  # api_version, so changing it changes the wire dialect.
+  name: "Mock vCenter Server"
+  full_name: "Mock vCenter Server 8.0.3 build-24022515"
+  vendor: "Example, Inc."
+  version: "8.0.3"
+  build: "24022515"
+  api_type: VirtualCenter
+  api_version: "8.0.3.0"
+  os_type: linux-x64
+  product_line_id: vpx
+  locale_version: INTL
+  # Stable across restarts: consumers key all their state on this value.
+  instance_uuid: 11111111-2222-4333-8444-555555555555
+  # Returned by OptionManager for config.vpxd.rhttpproxy.httpsport.
+  https_port: 443
+
+auth:
+  # accept-any is a development default and prints a warning on start.
+  # Use `fixed` with credentials from the environment for anything shared.
+  mode: accept-any
+  username: administrator@vsphere.local
+  password: ${MOCK_VC_PASSWORD}
+  # Session cookie name the consumer echoes back on every request.
+  session_cookie: vmware_soap_session
+  session_idle_timeout: 30m
+
+topology:
+  datacenters:
+    - name: DC-01
+      clusters:
+        - { name: Cluster-01, hosts: 3, vms_per_host: 1 }
+    - name: DC-02
+      clusters:
+        - { name: Cluster-02, hosts: 2, vms_per_host: 2 }
+    - name: DC-03
+      clusters:
+        - { name: Cluster-03, hosts: 4, vms_per_host: 1 }
+    - name: DC-04
+      clusters:
+        - { name: Cluster-04, hosts: 2, vms_per_host: 1 }
+    - name: DC-05
+      clusters:
+        - { name: Cluster-05, hosts: 0, vms_per_host: 1 }
+    - name: DC-06
+      clusters:
+        - { name: Cluster-06, hosts: 2, vms_per_host: 1 }
+    - name: DC-07
+      clusters:
+        - { name: Cluster-07, hosts: 1, vms_per_host: 2 }
+    - name: DC-08
+      clusters:
+        - { name: Cluster-08, hosts: 2, vms_per_host: 2 }
+  datastores:
+    - { name: DS-01, type: VMFS, capacity_gb: 2048, free_gb: 1024 }
+    - { name: DS-02, type: VMFS, capacity_gb: 2048, free_gb: 1024 }
+    - { name: DS-03, type: VMFS, capacity_gb: 2048, free_gb: 1024 }
+    - { name: DS-04, type: VMFS, capacity_gb: 2048, free_gb: 1024 }
+    - { name: DS-05, type: VMFS, capacity_gb: 2048, free_gb: 1024 }
+    - { name: DS-02, type: VMFS, capacity_gb: 2048, free_gb: 1024 }
+    - { name: DS-03, type: VMFS, capacity_gb: 2048, free_gb: 1024 }
+    - { name: DS-04, type: VMFS, capacity_gb: 2048, free_gb: 1024 }
+    - { name: DS-05, type: VMFS, capacity_gb: 2048, free_gb: 1024 }
+    - { name: DS-06, type: VMFS, capacity_gb: 2048, free_gb: 1024 }
+    - { name: DS-07, type: VMFS, capacity_gb: 2048, free_gb: 1024 }
+    - { name: DS-08, type: VMFS, capacity_gb: 2048, free_gb: 1024 }
+  networks:
+    - { name: PG-01, type: Network }
+    - { name: PG-02, type: Network }
+  tags:
+    - { category: environment, tags: [prod, dev, dr] }
+  storage_profiles:
+    - { name: "No Requirements Policy" }
+  content_libraries: []
+
+catalogs:
+  # Loaded from catalog/. Keep these as data, not code: they are large,
+  # mechanical, and change with the emulated version.
+  perf_counters: catalog/perf-counters.json
+  roles: catalog/roles.json
+  event_types: catalog/event-types.json
+  type_registry: catalog/vim-types.json
+
+seed: 20260913
+
+change_engine:
+  # off | timeline | churn | replay
+  mode: timeline
+  # Every entry mutates the inventory first, then appends the matching event to
+  # the event log. A mock that reports a power-off while the model still says
+  # poweredOn teaches consumers to distrust their own reconciliation.
+  timeline:
+    - { at: 60s,  event: VmPoweredOffEvent,    target: "vm:VM-0001" }
+    - { at: 65s,  event: VmPoweredOnEvent,     target: "vm:VM-0001" }
+    - { at: 120s, event: VmMigratedEvent,      target: "vm:VM-0002", to: "host:esx-02" }
+    - { at: 180s, event: VmReconfiguredEvent,  target: "vm:VM-0003", memory_mb: 8192 }
+    - { at: 240s, event: HostDisconnectedEvent, target: "host:esx-03" }
+    - { at: 300s, event: HostConnectedEvent,   target: "host:esx-03" }
+    - { at: 360s, event: DatastoreCapacityIncreasedEvent, target: "ds:DS-01", capacity_gb: 4096 }
+    - { at: 420s, event: VmCreatedEvent,       target: "cluster:Cluster-01" }
+    - { at: 480s, event: VmRemovedEvent,       target: "vm:VM-0004" }
+    - { at: 540s, event: ClusterReconfiguredEvent, target: "cluster:Cluster-02" }
+  churn:
+    events_per_minute: 20
+    weights:
+      VmPoweredOnEvent: 3
+      VmPoweredOffEvent: 3
+      VmReconfiguredEvent: 2
+      VmMigratedEvent: 1
+      DrsVmPoweredOnEvent: 1
+
+faults:
+  # All off by default. Each one reproduces a failure the real endpoint has.
+  login_failure_after: null
+  session_expiry_after: null
+  retrieve_properties_latency_ms: 0
+  fault_rate: 0.0
+  # The real server caps event collectors per session and faults past the limit.
+  # Consumers that leak collectors only discover this in production.
+  max_event_collectors: 32
+  strict_collector_limit: false

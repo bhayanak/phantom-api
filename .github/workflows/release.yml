@@ -20,7 +20,13 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install build
-      - run: python -m build
+      - run: python -m build --sdist --wheel --outdir dist/
+      - name: Verify the wheel installs and runs
+        run: |
+          python -m venv /tmp/verify
+          /tmp/verify/bin/pip install "$(ls dist/*.whl)[mock]"
+          /tmp/verify/bin/phantom-api --version
+          /tmp/verify/bin/phantom-api mock list-packs
       - uses: pypa/gh-action-pypi-publish@release/v1
       - uses: softprops/action-gh-release@v2
         with:
@@ -47,6 +53,24 @@ jobs:
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
             type=raw,value=latest
+      - name: Build for scanning (amd64, not pushed)
+        # Scan before publishing. A vulnerable image that reached Docker Hub is
+        # a vulnerable image somebody has already pulled.
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: false
+          load: true
+          tags: phantom-api:release-candidate
+      - name: Scan the release candidate
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: image
+          image-ref: phantom-api:release-candidate
+          scanners: vuln
+          severity: CRITICAL,HIGH
+          exit-code: '1'
+
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
@@ -55,5 +79,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          provenance: true
+          sbom: true
 
 

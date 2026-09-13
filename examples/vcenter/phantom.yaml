@@ -1,0 +1,77 @@
+# Mock configuration for a vSphere endpoint.
+#
+# Three protocols behind one host name, each answered by whichever responder
+# suits it best:
+#
+#   /sdk, /pbm/sdk, /sms/sdk   SOAP   -> model for the operations that must be
+#                                        self-consistent, corpus for the rest
+#   /rest/**, /api/vcenter/**  REST   -> corpus replay
+#   /api                       vAPI   -> corpus replay
+#
+# Start it with:
+#   phantom-api mock serve examples/vcenter/phantom.yaml
+
+mock:
+  name: vcenter
+
+  listen:
+    host: 127.0.0.1
+    # The reference client builds `https://{host}/sdk` with no port, so a real
+    # end-to-end run needs 443. 8443 is the developer default.
+    port: 8443
+    tls: self-signed
+
+  protocols:
+    - pack: soap
+      paths: ["/sdk", "/pbm/sdk", "/sms/sdk"]
+      session:
+        # The same session, carried two different ways. Confirmed on the wire.
+        "/sdk": { transport: cookie, name: vmware_soap_session }
+        "/pbm/sdk": { transport: soap-header, element: vcSessionCookie, name: vcSessionCookie }
+        "/sms/sdk": { transport: soap-header, element: vcSessionCookie, name: vcSessionCookie }
+    - pack: openapi
+      paths: ["/rest/**", "/api/**"]
+
+  model:
+    pack: vcenter
+    scenario: scenario/vcenter-scenario.yaml
+    seed: 20260913
+
+  responders:
+    # Everything the model can answer consistently, it should.
+    - match:
+        operation:
+          - RetrieveServiceContent
+          - Login
+          - Logout
+          - CurrentTime
+          - SessionIsActive
+          - "Retrieve*"
+          - "Continue*"
+          - "Cancel*"
+          - QueryOptions
+          - HasPrivilegeOnEntities
+          - FindByUuid
+          - CreateCollectorForEvents
+          - ReadNextEvents
+          - ReadPreviousEvents
+          - ResetCollector
+          - RewindCollector
+          - DestroyCollector
+          - QueryEvents
+          - "QueryPerf*"
+      responder: model
+
+    # Anything else that was recorded, replay verbatim.
+    - match: "*"
+      responder: corpus
+      corpus: corpus
+      on_miss: fault
+
+  chaos:
+    latency_ms: 0
+    fault_rate: 0.0
+
+  control_plane:
+    enabled: true
+    bind: 127.0.0.1

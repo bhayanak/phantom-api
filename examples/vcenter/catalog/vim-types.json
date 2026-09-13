@@ -1,0 +1,147 @@
+{
+  "AuthorizationRole": {
+    "AuthorizationRole": 48
+  },
+  "DatastoreHostMount": {
+    "DatastoreHostMount": 44
+  },
+  "Event": {
+    "UserLogoutSessionEvent": 4,
+    "UserLoginSessionEvent": 3,
+    "HostSyncFailedEvent": 3
+  },
+  "HostCpuPackage": {
+    "HostCpuPackage": 25
+  },
+  "HostHostBusAdapter": {
+    "HostInternetScsiHba": 11,
+    "HostSerialAttachedHba": 7,
+    "HostHostBusAdapter": 4
+  },
+  "InvalidLoginFault": {
+    "InvalidLogin": 1
+  },
+  "InvalidRequestFault": {
+    "InvalidRequest": 1
+  },
+  "ManagedObjectNotFoundFault": {
+    "ManagedObjectNotFound": 1
+  },
+  "ManagedObjectReference": {
+    "ManagedObjectReference": 339
+  },
+  "NotAuthenticatedFault": {
+    "NotAuthenticated": 1
+  },
+  "OptionValue": {
+    "OptionValue": 1825
+  },
+  "PerfCounterInfo": {
+    "PerfCounterInfo": 732
+  },
+  "RuntimeFaultFault": {
+    "vim25:NotAuthenticated": 1
+  },
+  "VirtualNicManagerNetConfig": {
+    "VirtualNicManagerNetConfig": 132
+  },
+  "admissionControlInfo": {
+    "ClusterFailoverResourcesAdmissionControlInfo": 16
+  },
+  "admissionControlPolicy": {
+    "ClusterFailoverResourcesAdmissionControlPolicy": 8
+  },
+  "bridge": {
+    "HostVirtualSwitchBondBridge": 38
+  },
+  "constraints": {
+    "pbm:PbmCapabilitySubProfileConstraints": 7
+  },
+  "dasData": {
+    "ClusterDasDataSummary": 16
+  },
+  "fault": {
+    "HostCommunication": 1708,
+    "NotAuthenticated": 1
+  },
+  "int": {
+    "xsd:int": 207
+  },
+  "optionType": {
+    "IntOption": 1265,
+    "LongOption": 345,
+    "BoolOption": 345
+  },
+  "reason": {
+    "TaskReasonUser": 2
+  },
+  "returnval": {
+    "UserLogoutSessionEvent": 1722,
+    "HostSyncFailedEvent": 1705,
+    "UserLoginSessionEvent": 553,
+    "pbm:PbmCapabilityProfile": 8,
+    "AlarmActionTriggeredEvent": 5,
+    "AlarmSnmpCompletedEvent": 5,
+    "EventEx": 4,
+    "TaskEvent": 2,
+    "AlarmReconfiguredEvent": 2,
+    "AlarmStatusChangedEvent": 2,
+    "PerfEntityMetric": 1
+  },
+  "runtimeState": {
+    "VirtualMachineDeviceRuntimeInfoVirtualEthernetCardRuntimeState": 28
+  },
+  "string": {
+    "xsd:string": 135
+  },
+  "val": {
+    "xsd:string": 324,
+    "ManagedObjectReference": 285,
+    "ArrayOfManagedObjectReference": 271,
+    "ArrayOfInt": 191,
+    "ArrayOfString": 48,
+    "xsd:boolean": 43,
+    "ManagedEntityStatus": 36,
+    "ArrayOfOptionValue": 29,
+    "GuestInfo": 29,
+    "VirtualMachineRuntimeInfo": 29,
+    "VirtualMachineSummary": 29,
+    "ArrayOfDatastoreHostMount": 28,
+    "VmfsDatastoreInfo": 28,
+    "StorageIORMInfo": 28,
+    "DatastoreSummary": 28,
+    "ClusterComputeResourceSummary": 16,
+    "HostSystemConnectionState": 16,
+    "HostSystemPowerState": 16,
+    "HostListSummaryQuickStats": 16,
+    "HostCpuInfo": 16,
+    "ArrayOfHostCpuPackage": 16,
+    "xsd:long": 16,
+    "HostSystemInfo": 16,
+    "ManagedByInfo": 13,
+    "ArrayOfHostHostBusAdapter": 11,
+    "HostNetworkInfo": 11,
+    "HostServiceInfo": 11,
+    "ArrayOfVirtualNicManagerNetConfig": 11,
+    "ClusterDasConfigInfo": 8,
+    "ClusterDrsConfigInfo": 8,
+    "ResourceConfigSpec": 8,
+    "NetworkSummary": 6,
+    "UserSession": 1,
+    "Capability": 1,
+    "xsd:dateTime": 1,
+    "ArrayOfAuthorizationRole": 1,
+    "PerformanceDescription": 1,
+    "ArrayOfPerfCounterInfo": 1,
+    "UserLoginSessionEvent": 1,
+    "xsd:int": 1,
+    "ArrayOfEvent": 1
+  },
+  "value": {
+    "xsd:string": 1859,
+    "xsd:int": 1280,
+    "xsd:boolean": 346,
+    "xsd:long": 345,
+    "PerfMetricIntSeries": 233
+  }
+}

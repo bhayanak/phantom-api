@@ -1,0 +1,698 @@
+{
+  "source_api_version": "8.0.3.0",
+  "soap_action": "urn:vim25/8.0",
+  "sanitised": true,
+  "pseudonym_domain": "lab.example.com",
+  "exchanges": [
+    {
+      "stem": "001-RetrieveServiceContent",
+      "label": "RetrieveServiceContent",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/001-RetrieveServiceContent.req.xml",
+      "response": "soap/001-RetrieveServiceContent.resp.xml",
+      "bytes": 4437
+    },
+    {
+      "stem": "002-RetrieveServiceContent_versionPinned",
+      "label": "RetrieveServiceContent_versionPinned",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/002-RetrieveServiceContent_versionPinned.req.xml",
+      "response": "soap/002-RetrieveServiceContent_versionPinned.resp.xml",
+      "bytes": 4836
+    },
+    {
+      "stem": "003-Login",
+      "label": "Login",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/003-Login.req.xml",
+      "response": "soap/003-Login.resp.xml",
+      "bytes": 846
+    },
+    {
+      "stem": "004-CurrentTime",
+      "label": "CurrentTime",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/004-CurrentTime.req.xml",
+      "response": "soap/004-CurrentTime.resp.xml",
+      "bytes": 438
+    },
+    {
+      "stem": "005-SessionManager_currentSession",
+      "label": "SessionManager_currentSession",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/005-SessionManager_currentSession.req.xml",
+      "response": "soap/005-SessionManager_currentSession.resp.xml",
+      "bytes": 999
+    },
+    {
+      "stem": "006-ServiceInstance_capability",
+      "label": "ServiceInstance_capability",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/006-ServiceInstance_capability.req.xml",
+      "response": "soap/006-ServiceInstance_capability.resp.xml",
+      "bytes": 430667
+    },
+    {
+      "stem": "007-QueryOptions_httpsport",
+      "label": "QueryOptions_httpsport",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/007-QueryOptions_httpsport.req.xml",
+      "response": "soap/007-QueryOptions_httpsport.resp.xml",
+      "bytes": 488
+    },
+    {
+      "stem": "008-AuthorizationManager_roleList",
+      "label": "AuthorizationManager_roleList",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/008-AuthorizationManager_roleList.req.xml",
+      "response": "soap/008-AuthorizationManager_roleList.resp.xml",
+      "bytes": 102954
+    },
+    {
+      "stem": "009-HasPrivilegeOnEntities",
+      "label": "HasPrivilegeOnEntities",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/009-HasPrivilegeOnEntities.req.xml",
+      "response": "soap/009-HasPrivilegeOnEntities.resp.xml",
+      "bytes": 565
+    },
+    {
+      "stem": "010-PerformanceManager_perfCounter",
+      "label": "PerformanceManager_perfCounter",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/010-PerformanceManager_perfCounter.req.xml",
+      "response": "soap/010-PerformanceManager_perfCounter.resp.xml",
+      "bytes": 387155
+    },
+    {
+      "stem": "011-KeepAlive_rootFolder_name",
+      "label": "KeepAlive_rootFolder_name",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/011-KeepAlive_rootFolder_name.req.xml",
+      "response": "soap/011-KeepAlive_rootFolder_name.resp.xml",
+      "bytes": 536
+    },
+    {
+      "stem": "012-RetrieveProperties_Datacenter",
+      "label": "RetrieveProperties_Datacenter",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/012-RetrieveProperties_Datacenter.req.xml",
+      "response": "soap/012-RetrieveProperties_Datacenter.resp.xml",
+      "bytes": 6882
+    },
+    {
+      "stem": "013-RetrieveProperties_ClusterComputeResource",
+      "label": "RetrieveProperties_ClusterComputeResource",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/013-RetrieveProperties_ClusterComputeResource.req.xml",
+      "response": "soap/013-RetrieveProperties_ClusterComputeResource.resp.xml",
+      "bytes": 39965
+    },
+    {
+      "stem": "014-RetrieveProperties_ComputeResource",
+      "label": "RetrieveProperties_ComputeResource",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/014-RetrieveProperties_ComputeResource.req.xml",
+      "response": "soap/014-RetrieveProperties_ComputeResource.resp.xml",
+      "bytes": 18964
+    },
+    {
+      "stem": "015-RetrieveProperties_HostSystem",
+      "label": "RetrieveProperties_HostSystem",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/015-RetrieveProperties_HostSystem.req.xml",
+      "response": "soap/015-RetrieveProperties_HostSystem.resp.xml",
+      "bytes": 1175700
+    },
+    {
+      "stem": "016-RetrieveProperties_HostSystem_network",
+      "label": "RetrieveProperties_HostSystem_network",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/016-RetrieveProperties_HostSystem_network.req.xml",
+      "response": "soap/016-RetrieveProperties_HostSystem_network.resp.xml",
+      "bytes": 851254
+    },
+    {
+      "stem": "017-RetrieveProperties_VirtualMachine",
+      "label": "RetrieveProperties_VirtualMachine",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/017-RetrieveProperties_VirtualMachine.req.xml",
+      "response": "soap/017-RetrieveProperties_VirtualMachine.resp.xml",
+      "bytes": 668018
+    },
+    {
+      "stem": "018-RetrieveProperties_Datastore",
+      "label": "RetrieveProperties_Datastore",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/018-RetrieveProperties_Datastore.req.xml",
+      "response": "soap/018-RetrieveProperties_Datastore.resp.xml",
+      "bytes": 82671
+    },
+    {
+      "stem": "019-RetrieveProperties_ResourcePool",
+      "label": "RetrieveProperties_ResourcePool",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/019-RetrieveProperties_ResourcePool.req.xml",
+      "response": "soap/019-RetrieveProperties_ResourcePool.resp.xml",
+      "bytes": 13318
+    },
+    {
+      "stem": "020-RetrieveProperties_Folder",
+      "label": "RetrieveProperties_Folder",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/020-RetrieveProperties_Folder.req.xml",
+      "response": "soap/020-RetrieveProperties_Folder.resp.xml",
+      "bytes": 42630
+    },
+    {
+      "stem": "021-RetrieveProperties_Network",
+      "label": "RetrieveProperties_Network",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/021-RetrieveProperties_Network.req.xml",
+      "response": "soap/021-RetrieveProperties_Network.resp.xml",
+      "bytes": 7847
+    },
+    {
+      "stem": "022-RetrieveProperties_DistributedVirtualSwitch",
+      "label": "RetrieveProperties_DistributedVirtualSwitch",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/022-RetrieveProperties_DistributedVirtualSwitch.req.xml",
+      "response": "soap/022-RetrieveProperties_DistributedVirtualSwitch.resp.xml",
+      "bytes": 402
+    },
+    {
+      "stem": "023-RetrieveProperties_DistributedVirtualPortgroup",
+      "label": "RetrieveProperties_DistributedVirtualPortgroup",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/023-RetrieveProperties_DistributedVirtualPortgroup.req.xml",
+      "response": "soap/023-RetrieveProperties_DistributedVirtualPortgroup.resp.xml",
+      "bytes": 402
+    },
+    {
+      "stem": "024-RetrieveProperties_VirtualApp",
+      "label": "RetrieveProperties_VirtualApp",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/024-RetrieveProperties_VirtualApp.req.xml",
+      "response": "soap/024-RetrieveProperties_VirtualApp.resp.xml",
+      "bytes": 402
+    },
+    {
+      "stem": "025-RetrievePropertiesEx_VirtualMachine_page",
+      "label": "RetrievePropertiesEx_VirtualMachine_page",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/025-RetrievePropertiesEx_VirtualMachine_page.req.xml",
+      "response": "soap/025-RetrievePropertiesEx_VirtualMachine_page.resp.xml",
+      "bytes": 42407
+    },
+    {
+      "stem": "026-ContinueRetrievePropertiesEx",
+      "label": "ContinueRetrievePropertiesEx",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/026-ContinueRetrievePropertiesEx.req.xml",
+      "response": "soap/026-ContinueRetrievePropertiesEx.resp.xml",
+      "bytes": 43375
+    },
+    {
+      "stem": "027-QueryPerfProviderSummary",
+      "label": "QueryPerfProviderSummary",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/027-QueryPerfProviderSummary.req.xml",
+      "response": "soap/027-QueryPerfProviderSummary.resp.xml",
+      "bytes": 594
+    },
+    {
+      "stem": "028-QueryAvailablePerfMetric",
+      "label": "QueryAvailablePerfMetric",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/028-QueryAvailablePerfMetric.req.xml",
+      "response": "soap/028-QueryAvailablePerfMetric.resp.xml",
+      "bytes": 17759
+    },
+    {
+      "stem": "029-QueryPerf_vm",
+      "label": "QueryPerf_vm",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/029-QueryPerf_vm.req.xml",
+      "response": "soap/029-QueryPerf_vm.resp.xml",
+      "bytes": 37420
+    },
+    {
+      "stem": "030-EventManager_props",
+      "label": "EventManager_props",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/030-EventManager_props.req.xml",
+      "response": "soap/030-EventManager_props.resp.xml",
+      "bytes": 1075
+    },
+    {
+      "stem": "031-CreateCollectorForEvents",
+      "label": "CreateCollectorForEvents",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/031-CreateCollectorForEvents.req.xml",
+      "response": "soap/031-CreateCollectorForEvents.resp.xml",
+      "bytes": 547
+    },
+    {
+      "stem": "032-ReadNextEvents_page1",
+      "label": "ReadNextEvents_page1",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/032-ReadNextEvents_page1.req.xml",
+      "response": "soap/032-ReadNextEvents_page1.resp.xml",
+      "bytes": 789960
+    },
+    {
+      "stem": "033-ReadNextEvents_page2",
+      "label": "ReadNextEvents_page2",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/033-ReadNextEvents_page2.req.xml",
+      "response": "soap/033-ReadNextEvents_page2.resp.xml",
+      "bytes": 793854
+    },
+    {
+      "stem": "034-ReadNextEvents_page3",
+      "label": "ReadNextEvents_page3",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/034-ReadNextEvents_page3.req.xml",
+      "response": "soap/034-ReadNextEvents_page3.resp.xml",
+      "bytes": 788350
+    },
+    {
+      "stem": "035-EventHistoryCollector_latestPage",
+      "label": "EventHistoryCollector_latestPage",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/035-EventHistoryCollector_latestPage.req.xml",
+      "response": "soap/035-EventHistoryCollector_latestPage.resp.xml",
+      "bytes": 8544
+    },
+    {
+      "stem": "036-ResetCollector",
+      "label": "ResetCollector",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/036-ResetCollector.req.xml",
+      "response": "soap/036-ResetCollector.resp.xml",
+      "bytes": 394
+    },
+    {
+      "stem": "037-DestroyCollector",
+      "label": "DestroyCollector",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/037-DestroyCollector.req.xml",
+      "response": "soap/037-DestroyCollector.resp.xml",
+      "bytes": 398
+    },
+    {
+      "stem": "038-QueryEvents",
+      "label": "QueryEvents",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/038-QueryEvents.req.xml",
+      "response": "soap/038-QueryEvents.resp.xml",
+      "bytes": 789954
+    },
+    {
+      "stem": "039-SearchIndex_seed_vm_uuid",
+      "label": "SearchIndex_seed_vm_uuid",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/039-SearchIndex_seed_vm_uuid.req.xml",
+      "response": "soap/039-SearchIndex_seed_vm_uuid.resp.xml",
+      "bytes": 585
+    },
+    {
+      "stem": "040-FindByUuid_vm",
+      "label": "FindByUuid_vm",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/040-FindByUuid_vm.req.xml",
+      "response": "soap/040-FindByUuid_vm.resp.xml",
+      "bytes": 438
+    },
+    {
+      "stem": "041-PbmRetrieveServiceContent",
+      "label": "PbmRetrieveServiceContent",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/pbm/sdk",
+      "request": "soap/041-PbmRetrieveServiceContent.req.xml",
+      "response": "soap/041-PbmRetrieveServiceContent.resp.xml",
+      "bytes": 1090
+    },
+    {
+      "stem": "042-PbmQueryProfile",
+      "label": "PbmQueryProfile",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/pbm/sdk",
+      "request": "soap/042-PbmQueryProfile.req.xml",
+      "response": "soap/042-PbmQueryProfile.resp.xml",
+      "bytes": 1846
+    },
+    {
+      "stem": "043-PbmRetrieveContent",
+      "label": "PbmRetrieveContent",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/pbm/sdk",
+      "request": "soap/043-PbmRetrieveContent.req.xml",
+      "response": "soap/043-PbmRetrieveContent.resp.xml",
+      "bytes": 10380
+    },
+    {
+      "stem": "044-SmsQueryStorageManager",
+      "label": "SmsQueryStorageManager",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sms/sdk",
+      "request": "soap/044-SmsQueryStorageManager.req.xml",
+      "response": "soap/044-SmsQueryStorageManager.resp.xml",
+      "bytes": 476
+    },
+    {
+      "stem": "045-cis_session",
+      "label": "cis_session",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/rest/com/vmware/cis/session",
+      "request": "rest/045-cis_session.req.json",
+      "response": "rest/045-cis_session.resp.json",
+      "bytes": 25
+    },
+    {
+      "stem": "046-tagging_category_list",
+      "label": "tagging_category_list",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/rest/com/vmware/cis/tagging/category",
+      "request": "rest/046-tagging_category_list.req.json",
+      "response": "rest/046-tagging_category_list.resp.json",
+      "bytes": 12
+    },
+    {
+      "stem": "047-tagging_tag_list",
+      "label": "tagging_tag_list",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/rest/com/vmware/cis/tagging/tag",
+      "request": "rest/047-tagging_tag_list.req.json",
+      "response": "rest/047-tagging_tag_list.resp.json",
+      "bytes": 12
+    },
+    {
+      "stem": "048-tagging_tag_association_list_attached_tags_on_objects",
+      "label": "tagging_tag_association_list_attached_tags_on_objects",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/rest/com/vmware/cis/tagging/tag-association?~action=list-attached-tags-on-objects",
+      "request": "rest/048-tagging_tag_association_list_attached_tags_on_objects.req.json",
+      "response": "rest/048-tagging_tag_association_list_attached_tags_on_objects.resp.json",
+      "bytes": 12
+    },
+    {
+      "stem": "049-vcenter_vm_list",
+      "label": "vcenter_vm_list",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/rest/vcenter/vm",
+      "request": "rest/049-vcenter_vm_list.req.json",
+      "response": "rest/049-vcenter_vm_list.resp.json",
+      "bytes": 2454
+    },
+    {
+      "stem": "050-vcenter_host_list",
+      "label": "vcenter_host_list",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/rest/vcenter/host",
+      "request": "rest/050-vcenter_host_list.req.json",
+      "response": "rest/050-vcenter_host_list.resp.json",
+      "bytes": 1659
+    },
+    {
+      "stem": "051-vcenter_cluster_list",
+      "label": "vcenter_cluster_list",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/rest/vcenter/cluster",
+      "request": "rest/051-vcenter_cluster_list.req.json",
+      "response": "rest/051-vcenter_cluster_list.resp.json",
+      "bytes": 683
+    },
+    {
+      "stem": "052-vcenter_datacenter_list",
+      "label": "vcenter_datacenter_list",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/rest/vcenter/datacenter",
+      "request": "rest/052-vcenter_datacenter_list.req.json",
+      "response": "rest/052-vcenter_datacenter_list.resp.json",
+      "bytes": 395
+    },
+    {
+      "stem": "053-vcenter_datastore_list",
+      "label": "vcenter_datastore_list",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/rest/vcenter/datastore",
+      "request": "rest/053-vcenter_datastore_list.req.json",
+      "response": "rest/053-vcenter_datastore_list.resp.json",
+      "bytes": 3105
+    },
+    {
+      "stem": "054-vcenter_network_list",
+      "label": "vcenter_network_list",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/rest/vcenter/network",
+      "request": "rest/054-vcenter_network_list.req.json",
+      "response": "rest/054-vcenter_network_list.resp.json",
+      "bytes": 437
+    },
+    {
+      "stem": "055-content_library_list",
+      "label": "content_library_list",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/rest/com/vmware/content/library",
+      "request": "rest/055-content_library_list.req.json",
+      "response": "rest/055-content_library_list.resp.json",
+      "bytes": 89
+    },
+    {
+      "stem": "056-content_local_library_list",
+      "label": "content_local_library_list",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/rest/com/vmware/content/local-library",
+      "request": "rest/056-content_local_library_list.req.json",
+      "response": "rest/056-content_local_library_list.resp.json",
+      "bytes": 89
+    },
+    {
+      "stem": "057-guest_networking_interfaces_vm-2433",
+      "label": "guest_networking_interfaces_vm-2433",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/rest/vcenter/vm/vm-2433/guest/networking/interfaces",
+      "request": "rest/057-guest_networking_interfaces_vm-2433.req.json",
+      "response": "rest/057-guest_networking_interfaces_vm-2433.resp.json",
+      "bytes": 282
+    },
+    {
+      "stem": "058-guest_networking_vm-2433",
+      "label": "guest_networking_vm-2433",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/vcenter/vm/vm-2433/guest/networking",
+      "request": "rest/058-guest_networking_vm-2433.req.json",
+      "response": "rest/058-guest_networking_vm-2433.resp.json",
+      "bytes": 165
+    },
+    {
+      "stem": "059-guest_networking_routes_vm-2433",
+      "label": "guest_networking_routes_vm-2433",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/vcenter/vm/vm-2433/guest/networking/routes",
+      "request": "rest/059-guest_networking_routes_vm-2433.req.json",
+      "response": "rest/059-guest_networking_routes_vm-2433.resp.json",
+      "bytes": 711
+    },
+    {
+      "stem": "060-guest_networking_interfaces_vm-2434",
+      "label": "guest_networking_interfaces_vm-2434",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/rest/vcenter/vm/vm-2434/guest/networking/interfaces",
+      "request": "rest/060-guest_networking_interfaces_vm-2434.req.json",
+      "response": "rest/060-guest_networking_interfaces_vm-2434.resp.json",
+      "bytes": 215
+    },
+    {
+      "stem": "061-guest_networking_vm-2434",
+      "label": "guest_networking_vm-2434",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/vcenter/vm/vm-2434/guest/networking",
+      "request": "rest/061-guest_networking_vm-2434.req.json",
+      "response": "rest/061-guest_networking_vm-2434.resp.json",
+      "bytes": 145
+    },
+    {
+      "stem": "062-guest_networking_routes_vm-2434",
+      "label": "guest_networking_routes_vm-2434",
+      "transport": "rest",
+      "status": 200,
+      "endpoint_path": "/api/vcenter/vm/vm-2434/guest/networking/routes",
+      "request": "rest/062-guest_networking_routes_vm-2434.req.json",
+      "response": "rest/062-guest_networking_routes_vm-2434.resp.json",
+      "bytes": 339
+    },
+    {
+      "stem": "063-FAULT_NotAuthenticated",
+      "label": "FAULT_NotAuthenticated",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/063-FAULT_NotAuthenticated.req.xml",
+      "response": "soap/063-FAULT_NotAuthenticated.resp.xml",
+      "bytes": 672
+    },
+    {
+      "stem": "064-FAULT_InvalidLogin",
+      "label": "FAULT_InvalidLogin",
+      "transport": "soap",
+      "status": 500,
+      "endpoint_path": "/sdk",
+      "request": "soap/064-FAULT_InvalidLogin.req.xml",
+      "response": "soap/064-FAULT_InvalidLogin.resp.xml",
+      "bytes": 585
+    },
+    {
+      "stem": "065-FAULT_ManagedObjectNotFound",
+      "label": "FAULT_ManagedObjectNotFound",
+      "transport": "soap",
+      "status": 500,
+      "endpoint_path": "/sdk",
+      "request": "soap/065-FAULT_ManagedObjectNotFound.req.xml",
+      "response": "soap/065-FAULT_ManagedObjectNotFound.resp.xml",
+      "bytes": 701
+    },
+    {
+      "stem": "066-Logout",
+      "label": "Logout",
+      "transport": "soap",
+      "status": 200,
+      "endpoint_path": "/sdk",
+      "request": "soap/066-Logout.req.xml",
+      "response": "soap/066-Logout.resp.xml",
+      "bytes": 378
+    },
+    {
+      "stem": "900-FAULT_InvalidRequest_unknownOp",
+      "label": "FAULT_InvalidRequest_unknownOp",
+      "transport": "soap",
+      "status": 500,
+      "endpoint_path": "",
+      "request": "soap/900-FAULT_InvalidRequest_unknownOp.req.xml",
+      "response": "soap/900-FAULT_InvalidRequest_unknownOp.resp.xml",
+      "bytes": 797
+    },
+    {
+      "stem": "900-FAULT_NotAuthenticated_CurrentTime",
+      "label": "FAULT_NotAuthenticated_CurrentTime",
+      "transport": "soap",
+      "status": 500,
+      "endpoint_path": "",
+      "request": "soap/900-FAULT_NotAuthenticated_CurrentTime.req.xml",
+      "response": "soap/900-FAULT_NotAuthenticated_CurrentTime.resp.xml",
+      "bytes": 648
+    },
+    {
+      "stem": "901-FAULT_pbm_NotAuthenticated",
+      "label": "FAULT_pbm_NotAuthenticated",
+      "transport": "soap",
+      "status": 500,
+      "endpoint_path": "",
+      "request": "soap/901-FAULT_pbm_NotAuthenticated.req.xml",
+      "response": "soap/901-FAULT_pbm_NotAuthenticated.resp.xml",
+      "bytes": 685
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+# Sanitisation rules for the Morpheus corpus.
+#
+# The defaults handle addresses, serials, credentials and free-form text. What
+# they cannot know is which collections hold *objects someone named* and which
+# hold the product's own vocabulary.
+#
+# A `server` name is a host name or a hardware serial. An `instanceType` name is
+# "Ubuntu 22.04" -- renaming it would leave a corpus nobody could recognise. So
+# the object-bearing collections are nominated explicitly here.
+rename_kinds:
+  - server
+  - instance
+  - app
+  - group
+  - zone
+  - cloud
+  - network
+  - virtualImage
+  - storageVolume
+  - containerDetail
+  - parentServer
+  - preferredParentServer
+  - sourceImage
+  - serverOs
+  - check
+
+# Fields specific to this product that hold free-form or identifying text.
+freeform_fields:
+  - sshHost
+  - consoleHost
+  - internalIp
+  - externalFqdn

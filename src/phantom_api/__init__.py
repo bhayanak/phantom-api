@@ -1,7 +1,7 @@
-"""phantom-api — Instant mock API server from a spec, JSON file, or Postman collection."""
+"""phantom-api - mock any API: from a spec, from recordings, or from a model."""
 
 from phantom_api.models import MockRoute, MockSpec
 
 __all__ = ["MockRoute", "MockSpec", "__version__"]
 
-__version__ = "1.1.0"
+__version__ = "2.0.0"

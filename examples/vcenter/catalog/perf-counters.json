@@ -1,0 +1,6590 @@
+[
+  {
+    "key": 1,
+    "group": "cpu",
+    "name": "usage",
+    "rollup": "none",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 2,
+    "group": "cpu",
+    "name": "usage",
+    "rollup": "average",
+    "unit": "percent",
+    "level": 1,
+    "statsType": "rate"
+  },
+  {
+    "key": 3,
+    "group": "cpu",
+    "name": "usage",
+    "rollup": "minimum",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 4,
+    "group": "cpu",
+    "name": "usage",
+    "rollup": "maximum",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 5,
+    "group": "cpu",
+    "name": "usagemhz",
+    "rollup": "none",
+    "unit": "megaHertz",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 6,
+    "group": "cpu",
+    "name": "usagemhz",
+    "rollup": "average",
+    "unit": "megaHertz",
+    "level": 1,
+    "statsType": "rate"
+  },
+  {
+    "key": 7,
+    "group": "cpu",
+    "name": "usagemhz",
+    "rollup": "minimum",
+    "unit": "megaHertz",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 8,
+    "group": "cpu",
+    "name": "usagemhz",
+    "rollup": "maximum",
+    "unit": "megaHertz",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 9,
+    "group": "cpu",
+    "name": "reservedCapacity",
+    "rollup": "average",
+    "unit": "megaHertz",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 10,
+    "group": "cpu",
+    "name": "system",
+    "rollup": "summation",
+    "unit": "millisecond",
+    "level": 3,
+    "statsType": "delta"
+  },
+  {
+    "key": 11,
+    "group": "cpu",
+    "name": "wait",
+    "rollup": "summation",
+    "unit": "millisecond",
+    "level": 3,
+    "statsType": "delta"
+  },
+  {
+    "key": 12,
+    "group": "cpu",
+    "name": "ready",
+    "rollup": "summation",
+    "unit": "millisecond",
+    "level": 1,
+    "statsType": "delta"
+  },
+  {
+    "key": 13,
+    "group": "cpu",
+    "name": "idle",
+    "rollup": "summation",
+    "unit": "millisecond",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 14,
+    "group": "cpu",
+    "name": "used",
+    "rollup": "summation",
+    "unit": "millisecond",
+    "level": 3,
+    "statsType": "delta"
+  },
+  {
+    "key": 15,
+    "group": "cpu",
+    "name": "capacity.provisioned",
+    "rollup": "average",
+    "unit": "megaHertz",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 16,
+    "group": "cpu",
+    "name": "capacity.entitlement",
+    "rollup": "average",
+    "unit": "megaHertz",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 17,
+    "group": "cpu",
+    "name": "capacity.usage",
+    "rollup": "average",
+    "unit": "megaHertz",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 18,
+    "group": "cpu",
+    "name": "capacity.demand",
+    "rollup": "average",
+    "unit": "megaHertz",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 19,
+    "group": "cpu",
+    "name": "capacity.contention",
+    "rollup": "average",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 20,
+    "group": "cpu",
+    "name": "corecount.provisioned",
+    "rollup": "average",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 21,
+    "group": "cpu",
+    "name": "corecount.usage",
+    "rollup": "average",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 22,
+    "group": "cpu",
+    "name": "corecount.contention",
+    "rollup": "average",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 23,
+    "group": "mem",
+    "name": "usage",
+    "rollup": "none",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 24,
+    "group": "mem",
+    "name": "usage",
+    "rollup": "average",
+    "unit": "percent",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 25,
+    "group": "mem",
+    "name": "usage",
+    "rollup": "minimum",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 26,
+    "group": "mem",
+    "name": "usage",
+    "rollup": "maximum",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 27,
+    "group": "mem",
+    "name": "reservedCapacity",
+    "rollup": "average",
+    "unit": "megaBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 28,
+    "group": "mem",
+    "name": "granted",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 29,
+    "group": "mem",
+    "name": "granted",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 30,
+    "group": "mem",
+    "name": "granted",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 31,
+    "group": "mem",
+    "name": "granted",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 32,
+    "group": "mem",
+    "name": "active",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 33,
+    "group": "mem",
+    "name": "active",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 34,
+    "group": "mem",
+    "name": "active",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 35,
+    "group": "mem",
+    "name": "active",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 36,
+    "group": "mem",
+    "name": "shared",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 37,
+    "group": "mem",
+    "name": "shared",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 38,
+    "group": "mem",
+    "name": "shared",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 39,
+    "group": "mem",
+    "name": "shared",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 40,
+    "group": "mem",
+    "name": "zero",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 41,
+    "group": "mem",
+    "name": "zero",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 42,
+    "group": "mem",
+    "name": "zero",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 43,
+    "group": "mem",
+    "name": "zero",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 44,
+    "group": "mem",
+    "name": "unreserved",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 45,
+    "group": "mem",
+    "name": "unreserved",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 46,
+    "group": "mem",
+    "name": "unreserved",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 47,
+    "group": "mem",
+    "name": "unreserved",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 48,
+    "group": "mem",
+    "name": "swapused",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 49,
+    "group": "mem",
+    "name": "swapused",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 50,
+    "group": "mem",
+    "name": "swapused",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 51,
+    "group": "mem",
+    "name": "swapused",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 52,
+    "group": "mem",
+    "name": "swapunreserved",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 53,
+    "group": "mem",
+    "name": "swapunreserved",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 54,
+    "group": "mem",
+    "name": "swapunreserved",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 55,
+    "group": "mem",
+    "name": "swapunreserved",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 56,
+    "group": "mem",
+    "name": "sharedcommon",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 57,
+    "group": "mem",
+    "name": "sharedcommon",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 58,
+    "group": "mem",
+    "name": "sharedcommon",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 59,
+    "group": "mem",
+    "name": "sharedcommon",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 60,
+    "group": "mem",
+    "name": "heap",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 61,
+    "group": "mem",
+    "name": "heap",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 62,
+    "group": "mem",
+    "name": "heap",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 63,
+    "group": "mem",
+    "name": "heap",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 64,
+    "group": "mem",
+    "name": "heapfree",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 65,
+    "group": "mem",
+    "name": "heapfree",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 66,
+    "group": "mem",
+    "name": "heapfree",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 67,
+    "group": "mem",
+    "name": "heapfree",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 68,
+    "group": "mem",
+    "name": "state",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 69,
+    "group": "mem",
+    "name": "swapped",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 70,
+    "group": "mem",
+    "name": "swapped",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 71,
+    "group": "mem",
+    "name": "swapped",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 72,
+    "group": "mem",
+    "name": "swapped",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 73,
+    "group": "mem",
+    "name": "swaptarget",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 74,
+    "group": "mem",
+    "name": "swaptarget",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 75,
+    "group": "mem",
+    "name": "swaptarget",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 76,
+    "group": "mem",
+    "name": "swaptarget",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 77,
+    "group": "mem",
+    "name": "swapIn",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 78,
+    "group": "mem",
+    "name": "swapIn",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 79,
+    "group": "mem",
+    "name": "swapIn",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 80,
+    "group": "mem",
+    "name": "swapIn",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 81,
+    "group": "mem",
+    "name": "swapOut",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 82,
+    "group": "mem",
+    "name": "swapOut",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 83,
+    "group": "mem",
+    "name": "swapOut",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 84,
+    "group": "mem",
+    "name": "swapOut",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 85,
+    "group": "mem",
+    "name": "swapinRate",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 1,
+    "statsType": "rate"
+  },
+  {
+    "key": 86,
+    "group": "mem",
+    "name": "swapoutRate",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 1,
+    "statsType": "rate"
+  },
+  {
+    "key": 87,
+    "group": "managementAgent",
+    "name": "swapOut",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 3,
+    "statsType": "rate"
+  },
+  {
+    "key": 88,
+    "group": "managementAgent",
+    "name": "swapIn",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 3,
+    "statsType": "rate"
+  },
+  {
+    "key": 89,
+    "group": "mem",
+    "name": "vmmemctl",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 90,
+    "group": "mem",
+    "name": "vmmemctl",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 91,
+    "group": "mem",
+    "name": "vmmemctl",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 92,
+    "group": "mem",
+    "name": "vmmemctl",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 93,
+    "group": "mem",
+    "name": "vmmemctltarget",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 94,
+    "group": "mem",
+    "name": "vmmemctltarget",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 95,
+    "group": "mem",
+    "name": "vmmemctltarget",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 96,
+    "group": "mem",
+    "name": "vmmemctltarget",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 97,
+    "group": "mem",
+    "name": "consumed",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 98,
+    "group": "mem",
+    "name": "consumed",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 99,
+    "group": "mem",
+    "name": "consumed",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 100,
+    "group": "mem",
+    "name": "consumed",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 101,
+    "group": "mem",
+    "name": "overhead",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 102,
+    "group": "mem",
+    "name": "overhead",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 103,
+    "group": "mem",
+    "name": "overhead",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 104,
+    "group": "mem",
+    "name": "overhead",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 105,
+    "group": "mem",
+    "name": "compressed",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 106,
+    "group": "mem",
+    "name": "compressionRate",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 2,
+    "statsType": "rate"
+  },
+  {
+    "key": 107,
+    "group": "mem",
+    "name": "decompressionRate",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 2,
+    "statsType": "rate"
+  },
+  {
+    "key": 108,
+    "group": "mem",
+    "name": "capacity.provisioned",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 109,
+    "group": "mem",
+    "name": "capacity.entitlement",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 110,
+    "group": "mem",
+    "name": "capacity.usable",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 111,
+    "group": "mem",
+    "name": "capacity.usage",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 112,
+    "group": "mem",
+    "name": "capacity.contention",
+    "rollup": "average",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 113,
+    "group": "mem",
+    "name": "host-210.lab.example.com",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 114,
+    "group": "mem",
+    "name": "host-211.lab.example.com",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 115,
+    "group": "mem",
+    "name": "host-212.lab.example.com",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 116,
+    "group": "mem",
+    "name": "host-213.lab.example.com",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 117,
+    "group": "mem",
+    "name": "reservedCapacity.vm",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 118,
+    "group": "mem",
+    "name": "reservedCapacity.vmOvhd",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 119,
+    "group": "mem",
+    "name": "reservedCapacity.vmkOvrhd",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 120,
+    "group": "mem",
+    "name": "reservedCapacity.userworld",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 121,
+    "group": "mem",
+    "name": "reservedCapacityPct",
+    "rollup": "average",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 122,
+    "group": "mem",
+    "name": "consumed.vms",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 123,
+    "group": "mem",
+    "name": "consumed.userworlds",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 124,
+    "group": "mem",
+    "name": "bandwidth.read",
+    "rollup": "latest",
+    "unit": "megaBytesPerSecond",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 125,
+    "group": "mem",
+    "name": "bandwidth.write",
+    "rollup": "latest",
+    "unit": "megaBytesPerSecond",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 126,
+    "group": "mem",
+    "name": "bandwidth.total",
+    "rollup": "latest",
+    "unit": "megaBytesPerSecond",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 127,
+    "group": "mem",
+    "name": "host-214.lab.example.com",
+    "rollup": "latest",
+    "unit": "megaBytesPerSecond",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 128,
+    "group": "mem",
+    "name": "missrate",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 129,
+    "group": "mem",
+    "name": "latency.read",
+    "rollup": "latest",
+    "unit": "nanosecond",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 130,
+    "group": "mem",
+    "name": "latency.write",
+    "rollup": "latest",
+    "unit": "nanosecond",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 131,
+    "group": "disk",
+    "name": "usage",
+    "rollup": "none",
+    "unit": "kiloBytesPerSecond",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 132,
+    "group": "disk",
+    "name": "usage",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 1,
+    "statsType": "rate"
+  },
+  {
+    "key": 133,
+    "group": "disk",
+    "name": "usage",
+    "rollup": "minimum",
+    "unit": "kiloBytesPerSecond",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 134,
+    "group": "disk",
+    "name": "usage",
+    "rollup": "maximum",
+    "unit": "kiloBytesPerSecond",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 135,
+    "group": "disk",
+    "name": "numberRead",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 3,
+    "statsType": "delta"
+  },
+  {
+    "key": 136,
+    "group": "disk",
+    "name": "numberWrite",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 3,
+    "statsType": "delta"
+  },
+  {
+    "key": 137,
+    "group": "disk",
+    "name": "read",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 2,
+    "statsType": "rate"
+  },
+  {
+    "key": 138,
+    "group": "disk",
+    "name": "write",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 2,
+    "statsType": "rate"
+  },
+  {
+    "key": 139,
+    "group": "disk",
+    "name": "totalLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 140,
+    "group": "disk",
+    "name": "maxTotalLatency",
+    "rollup": "latest",
+    "unit": "millisecond",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 141,
+    "group": "disk",
+    "name": "commandsAborted",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 142,
+    "group": "disk",
+    "name": "busResets",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 143,
+    "group": "disk",
+    "name": "numberReadAveraged",
+    "rollup": "average",
+    "unit": "number",
+    "level": 1,
+    "statsType": "rate"
+  },
+  {
+    "key": 144,
+    "group": "disk",
+    "name": "numberWriteAveraged",
+    "rollup": "average",
+    "unit": "number",
+    "level": 1,
+    "statsType": "rate"
+  },
+  {
+    "key": 145,
+    "group": "disk",
+    "name": "throughput.usage",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 146,
+    "group": "disk",
+    "name": "throughput.contention",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 147,
+    "group": "disk",
+    "name": "scsiReservationConflicts",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 148,
+    "group": "disk",
+    "name": "scsiReservationCnflctsPct",
+    "rollup": "average",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 149,
+    "group": "net",
+    "name": "usage",
+    "rollup": "none",
+    "unit": "kiloBytesPerSecond",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 150,
+    "group": "net",
+    "name": "usage",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 1,
+    "statsType": "rate"
+  },
+  {
+    "key": 151,
+    "group": "net",
+    "name": "usage",
+    "rollup": "minimum",
+    "unit": "kiloBytesPerSecond",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 152,
+    "group": "net",
+    "name": "usage",
+    "rollup": "maximum",
+    "unit": "kiloBytesPerSecond",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 153,
+    "group": "net",
+    "name": "packetsRx",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 154,
+    "group": "net",
+    "name": "packetsTx",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 155,
+    "group": "net",
+    "name": "received",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 2,
+    "statsType": "rate"
+  },
+  {
+    "key": 156,
+    "group": "net",
+    "name": "transmitted",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 2,
+    "statsType": "rate"
+  },
+  {
+    "key": 157,
+    "group": "net",
+    "name": "throughput.provisioned",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 158,
+    "group": "net",
+    "name": "throughput.usable",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 159,
+    "group": "net",
+    "name": "throughput.usage",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 160,
+    "group": "net",
+    "name": "throughput.contention",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 4,
+    "statsType": "delta"
+  },
+  {
+    "key": 161,
+    "group": "net",
+    "name": "throughput.packetsPerSec",
+    "rollup": "average",
+    "unit": "number",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 162,
+    "group": "sys",
+    "name": "uptime",
+    "rollup": "latest",
+    "unit": "second",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 163,
+    "group": "sys",
+    "name": "heartbeat",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 1,
+    "statsType": "delta"
+  },
+  {
+    "key": 164,
+    "group": "power",
+    "name": "power",
+    "rollup": "average",
+    "unit": "watt",
+    "level": 2,
+    "statsType": "rate"
+  },
+  {
+    "key": 165,
+    "group": "power",
+    "name": "powerCap",
+    "rollup": "average",
+    "unit": "watt",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 166,
+    "group": "power",
+    "name": "energy",
+    "rollup": "summation",
+    "unit": "joule",
+    "level": 3,
+    "statsType": "delta"
+  },
+  {
+    "key": 167,
+    "group": "power",
+    "name": "capacity.usagePct",
+    "rollup": "average",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 168,
+    "group": "storageAdapter",
+    "name": "commandsAveraged",
+    "rollup": "average",
+    "unit": "number",
+    "level": 2,
+    "statsType": "rate"
+  },
+  {
+    "key": 169,
+    "group": "storageAdapter",
+    "name": "numberReadAveraged",
+    "rollup": "average",
+    "unit": "number",
+    "level": 2,
+    "statsType": "rate"
+  },
+  {
+    "key": 170,
+    "group": "storageAdapter",
+    "name": "numberWriteAveraged",
+    "rollup": "average",
+    "unit": "number",
+    "level": 2,
+    "statsType": "rate"
+  },
+  {
+    "key": 171,
+    "group": "storageAdapter",
+    "name": "read",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 2,
+    "statsType": "rate"
+  },
+  {
+    "key": 172,
+    "group": "storageAdapter",
+    "name": "write",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 2,
+    "statsType": "rate"
+  },
+  {
+    "key": 173,
+    "group": "storageAdapter",
+    "name": "totalReadLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 174,
+    "group": "storageAdapter",
+    "name": "totalWriteLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 175,
+    "group": "storageAdapter",
+    "name": "maxTotalLatency",
+    "rollup": "latest",
+    "unit": "millisecond",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 176,
+    "group": "storageAdapter",
+    "name": "throughput.cont",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 177,
+    "group": "storageAdapter",
+    "name": "OIOsPct",
+    "rollup": "average",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 178,
+    "group": "virtualDisk",
+    "name": "numberReadAveraged",
+    "rollup": "average",
+    "unit": "number",
+    "level": 1,
+    "statsType": "rate"
+  },
+  {
+    "key": 179,
+    "group": "virtualDisk",
+    "name": "numberWriteAveraged",
+    "rollup": "average",
+    "unit": "number",
+    "level": 1,
+    "statsType": "rate"
+  },
+  {
+    "key": 180,
+    "group": "virtualDisk",
+    "name": "read",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 2,
+    "statsType": "rate"
+  },
+  {
+    "key": 181,
+    "group": "virtualDisk",
+    "name": "write",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 2,
+    "statsType": "rate"
+  },
+  {
+    "key": 182,
+    "group": "virtualDisk",
+    "name": "totalReadLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 183,
+    "group": "virtualDisk",
+    "name": "totalWriteLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 184,
+    "group": "virtualDisk",
+    "name": "throughput.cont",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 185,
+    "group": "datastore",
+    "name": "numberReadAveraged",
+    "rollup": "average",
+    "unit": "number",
+    "level": 1,
+    "statsType": "rate"
+  },
+  {
+    "key": 186,
+    "group": "datastore",
+    "name": "numberWriteAveraged",
+    "rollup": "average",
+    "unit": "number",
+    "level": 1,
+    "statsType": "rate"
+  },
+  {
+    "key": 187,
+    "group": "datastore",
+    "name": "read",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 2,
+    "statsType": "rate"
+  },
+  {
+    "key": 188,
+    "group": "datastore",
+    "name": "write",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 2,
+    "statsType": "rate"
+  },
+  {
+    "key": 189,
+    "group": "datastore",
+    "name": "totalReadLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 190,
+    "group": "datastore",
+    "name": "totalWriteLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 191,
+    "group": "datastore",
+    "name": "maxTotalLatency",
+    "rollup": "latest",
+    "unit": "millisecond",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 192,
+    "group": "datastore",
+    "name": "datastoreIops",
+    "rollup": "average",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 193,
+    "group": "datastore",
+    "name": "sizeNormalizedDatastoreLatency",
+    "rollup": "average",
+    "unit": "microsecond",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 194,
+    "group": "datastore",
+    "name": "throughput.usage",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 195,
+    "group": "datastore",
+    "name": "throughput.contention",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 196,
+    "group": "datastore",
+    "name": "busResets",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 197,
+    "group": "datastore",
+    "name": "commandsAborted",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 198,
+    "group": "datastore",
+    "name": "siocActiveTimePercentage",
+    "rollup": "average",
+    "unit": "percent",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 199,
+    "group": "storagePath",
+    "name": "throughput.cont",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 200,
+    "group": "storagePath",
+    "name": "maxTotalLatency",
+    "rollup": "latest",
+    "unit": "millisecond",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 201,
+    "group": "virtualDisk",
+    "name": "throughput.usage",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 202,
+    "group": "virtualDisk",
+    "name": "commandsAborted",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 203,
+    "group": "virtualDisk",
+    "name": "busResets",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 204,
+    "group": "storageAdapter",
+    "name": "outstandingIOs",
+    "rollup": "average",
+    "unit": "number",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 205,
+    "group": "storageAdapter",
+    "name": "queued",
+    "rollup": "average",
+    "unit": "number",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 206,
+    "group": "storageAdapter",
+    "name": "queueDepth",
+    "rollup": "average",
+    "unit": "number",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 207,
+    "group": "storageAdapter",
+    "name": "queueLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 208,
+    "group": "storageAdapter",
+    "name": "throughput.usag",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 209,
+    "group": "storagePath",
+    "name": "busResets",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 210,
+    "group": "storagePath",
+    "name": "commandsAborted",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 211,
+    "group": "storagePath",
+    "name": "throughput.usage",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 212,
+    "group": "net",
+    "name": "host-215.lab.example.com",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 3,
+    "statsType": "rate"
+  },
+  {
+    "key": 213,
+    "group": "net",
+    "name": "host-216.lab.example.com",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 3,
+    "statsType": "rate"
+  },
+  {
+    "key": 214,
+    "group": "net",
+    "name": "host-217.lab.example.com",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 3,
+    "statsType": "rate"
+  },
+  {
+    "key": 215,
+    "group": "net",
+    "name": "host-218.lab.example.com",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 3,
+    "statsType": "rate"
+  },
+  {
+    "key": 216,
+    "group": "net",
+    "name": "host-219.lab.example.com",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 3,
+    "statsType": "rate"
+  },
+  {
+    "key": 217,
+    "group": "net",
+    "name": "host-220.lab.example.com",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 3,
+    "statsType": "rate"
+  },
+  {
+    "key": 218,
+    "group": "power",
+    "name": "capacity.usable",
+    "rollup": "average",
+    "unit": "watt",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 219,
+    "group": "power",
+    "name": "capacity.usage",
+    "rollup": "average",
+    "unit": "watt",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 220,
+    "group": "power",
+    "name": "capacity.usageIdle",
+    "rollup": "average",
+    "unit": "watt",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 221,
+    "group": "power",
+    "name": "capacity.usageSystem",
+    "rollup": "average",
+    "unit": "watt",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 222,
+    "group": "power",
+    "name": "capacity.usageVm",
+    "rollup": "average",
+    "unit": "watt",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 223,
+    "group": "power",
+    "name": "capacity.usageStatic",
+    "rollup": "average",
+    "unit": "watt",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 224,
+    "group": "cpu",
+    "name": "cpuentitlement",
+    "rollup": "latest",
+    "unit": "megaHertz",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 225,
+    "group": "mem",
+    "name": "mementitlement",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 226,
+    "group": "clusterServices",
+    "name": "vmDrsScore",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 227,
+    "group": "clusterServices",
+    "name": "cpufairness",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 228,
+    "group": "clusterServices",
+    "name": "memfairness",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 229,
+    "group": "net",
+    "name": "throughput.pktsTx",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 230,
+    "group": "net",
+    "name": "throughput.pktsTxMulticast",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 231,
+    "group": "net",
+    "name": "throughput.pktsTxBroadcast",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 232,
+    "group": "net",
+    "name": "throughput.pktsRx",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 233,
+    "group": "net",
+    "name": "throughput.pktsRxMulticast",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 234,
+    "group": "net",
+    "name": "throughput.pktsRxBroadcast",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 235,
+    "group": "net",
+    "name": "throughput.droppedTx",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 236,
+    "group": "net",
+    "name": "throughput.droppedRx",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 237,
+    "group": "net",
+    "name": "host-221.lab.example.com",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 238,
+    "group": "net",
+    "name": "host-222.lab.example.com",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 239,
+    "group": "net",
+    "name": "host-223.lab.example.com",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 240,
+    "group": "net",
+    "name": "host-224.lab.example.com",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 241,
+    "group": "net",
+    "name": "host-225.lab.example.com",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 242,
+    "group": "net",
+    "name": "host-226.lab.example.com",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 243,
+    "group": "net",
+    "name": "host-227.lab.example.com",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 244,
+    "group": "net",
+    "name": "host-228.lab.example.com",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 245,
+    "group": "net",
+    "name": "host-229.lab.example.com",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 246,
+    "group": "net",
+    "name": "host-230.lab.example.com",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 247,
+    "group": "net",
+    "name": "host-231.lab.example.com",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 248,
+    "group": "net",
+    "name": "host-232.lab.example.com",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 249,
+    "group": "net",
+    "name": "host-233.lab.example.com",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 250,
+    "group": "net",
+    "name": "host-234.lab.example.com",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 251,
+    "group": "net",
+    "name": "host-235.lab.example.com",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 252,
+    "group": "net",
+    "name": "host-236.lab.example.com",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 253,
+    "group": "vmop",
+    "name": "numPoweron",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 254,
+    "group": "vmop",
+    "name": "numPoweroff",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 255,
+    "group": "vmop",
+    "name": "numSuspend",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 256,
+    "group": "vmop",
+    "name": "numReset",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 257,
+    "group": "vmop",
+    "name": "numRebootGuest",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 258,
+    "group": "vmop",
+    "name": "numStandbyGuest",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 259,
+    "group": "vmop",
+    "name": "numShutdownGuest",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 260,
+    "group": "vmop",
+    "name": "numCreate",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 261,
+    "group": "vmop",
+    "name": "numDestroy",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 262,
+    "group": "vmop",
+    "name": "numRegister",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 263,
+    "group": "vmop",
+    "name": "numUnregister",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 264,
+    "group": "vmop",
+    "name": "numReconfigure",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 265,
+    "group": "vmop",
+    "name": "numClone",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 266,
+    "group": "vmop",
+    "name": "numDeploy",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 267,
+    "group": "vmop",
+    "name": "numChangeHost",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 268,
+    "group": "vmop",
+    "name": "numChangeDS",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 269,
+    "group": "vmop",
+    "name": "numChangeHostDS",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 270,
+    "group": "vmop",
+    "name": "numVMotion",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 271,
+    "group": "vmop",
+    "name": "numSVMotion",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 272,
+    "group": "vmop",
+    "name": "numXVMotion",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 273,
+    "group": "clusterServices",
+    "name": "effectivecpu",
+    "rollup": "average",
+    "unit": "megaHertz",
+    "level": 1,
+    "statsType": "rate"
+  },
+  {
+    "key": 274,
+    "group": "clusterServices",
+    "name": "effectivemem",
+    "rollup": "average",
+    "unit": "megaBytes",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 275,
+    "group": "cpu",
+    "name": "totalmhz",
+    "rollup": "average",
+    "unit": "megaHertz",
+    "level": 1,
+    "statsType": "rate"
+  },
+  {
+    "key": 276,
+    "group": "mem",
+    "name": "totalmb",
+    "rollup": "average",
+    "unit": "megaBytes",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 277,
+    "group": "clusterServices",
+    "name": "clusterDrsScore",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 278,
+    "group": "clusterServices",
+    "name": "failover",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 279,
+    "group": "gpu",
+    "name": "utilization",
+    "rollup": "average",
+    "unit": "percent",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 280,
+    "group": "gpu",
+    "name": "mem.used",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 281,
+    "group": "gpu",
+    "name": "mem.reserved",
+    "rollup": "latest",
+    "unit": "kiloBytes",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 282,
+    "group": "gpu",
+    "name": "power.used",
+    "rollup": "latest",
+    "unit": "watt",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 283,
+    "group": "gpu",
+    "name": "temperature",
+    "rollup": "average",
+    "unit": "celsius",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 284,
+    "group": "gpu",
+    "name": "mem.total",
+    "rollup": "latest",
+    "unit": "kiloBytes",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 285,
+    "group": "disk",
+    "name": "used",
+    "rollup": "latest",
+    "unit": "kiloBytes",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 286,
+    "group": "disk",
+    "name": "provisioned",
+    "rollup": "latest",
+    "unit": "kiloBytes",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 287,
+    "group": "disk",
+    "name": "capacity",
+    "rollup": "latest",
+    "unit": "kiloBytes",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 288,
+    "group": "disk",
+    "name": "unshared",
+    "rollup": "latest",
+    "unit": "kiloBytes",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 289,
+    "group": "disk",
+    "name": "actualused",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 290,
+    "group": "disk",
+    "name": "deltaused",
+    "rollup": "latest",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 291,
+    "group": "disk",
+    "name": "capacity.provisioned",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 292,
+    "group": "disk",
+    "name": "capacity.usage",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 293,
+    "group": "disk",
+    "name": "capacity.contention",
+    "rollup": "average",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 294,
+    "group": "vcDebugInfo",
+    "name": "activationlatencystats",
+    "rollup": "maximum",
+    "unit": "millisecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 295,
+    "group": "vcDebugInfo",
+    "name": "activationlatencystats",
+    "rollup": "minimum",
+    "unit": "millisecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 296,
+    "group": "vcDebugInfo",
+    "name": "activationlatencystats",
+    "rollup": "summation",
+    "unit": "millisecond",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 297,
+    "group": "vcDebugInfo",
+    "name": "activationstats",
+    "rollup": "maximum",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 298,
+    "group": "vcDebugInfo",
+    "name": "activationstats",
+    "rollup": "minimum",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 299,
+    "group": "vcDebugInfo",
+    "name": "activationstats",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 300,
+    "group": "vcResources",
+    "name": "buffersz",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 301,
+    "group": "vcResources",
+    "name": "cachesz",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 302,
+    "group": "vcResources",
+    "name": "ctxswitchesrate",
+    "rollup": "average",
+    "unit": "number",
+    "level": 1,
+    "statsType": "rate"
+  },
+  {
+    "key": 303,
+    "group": "vcResources",
+    "name": "diskreadsectorrate",
+    "rollup": "average",
+    "unit": "number",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 304,
+    "group": "vcResources",
+    "name": "diskreadsrate",
+    "rollup": "average",
+    "unit": "number",
+    "level": 1,
+    "statsType": "rate"
+  },
+  {
+    "key": 305,
+    "group": "vcResources",
+    "name": "diskwritesectorrate",
+    "rollup": "average",
+    "unit": "number",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 306,
+    "group": "vcResources",
+    "name": "diskwritesrate",
+    "rollup": "average",
+    "unit": "number",
+    "level": 1,
+    "statsType": "rate"
+  },
+  {
+    "key": 307,
+    "group": "vcDebugInfo",
+    "name": "hostsynclatencystats",
+    "rollup": "maximum",
+    "unit": "millisecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 308,
+    "group": "vcDebugInfo",
+    "name": "hostsynclatencystats",
+    "rollup": "minimum",
+    "unit": "millisecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 309,
+    "group": "vcDebugInfo",
+    "name": "hostsynclatencystats",
+    "rollup": "summation",
+    "unit": "millisecond",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 310,
+    "group": "vcDebugInfo",
+    "name": "hostsyncstats",
+    "rollup": "maximum",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 311,
+    "group": "vcDebugInfo",
+    "name": "hostsyncstats",
+    "rollup": "minimum",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 312,
+    "group": "vcDebugInfo",
+    "name": "hostsyncstats",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 313,
+    "group": "vcDebugInfo",
+    "name": "inventorystats",
+    "rollup": "maximum",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 314,
+    "group": "vcDebugInfo",
+    "name": "inventorystats",
+    "rollup": "minimum",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 315,
+    "group": "vcDebugInfo",
+    "name": "inventorystats",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 316,
+    "group": "vcDebugInfo",
+    "name": "lockstats",
+    "rollup": "maximum",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 317,
+    "group": "vcDebugInfo",
+    "name": "lockstats",
+    "rollup": "minimum",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 318,
+    "group": "vcDebugInfo",
+    "name": "lockstats",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 319,
+    "group": "vcDebugInfo",
+    "name": "lrostats",
+    "rollup": "maximum",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 320,
+    "group": "vcDebugInfo",
+    "name": "lrostats",
+    "rollup": "minimum",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 321,
+    "group": "vcDebugInfo",
+    "name": "lrostats",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 322,
+    "group": "vcDebugInfo",
+    "name": "miscstats",
+    "rollup": "maximum",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 323,
+    "group": "vcDebugInfo",
+    "name": "miscstats",
+    "rollup": "minimum",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 324,
+    "group": "vcDebugInfo",
+    "name": "miscstats",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 325,
+    "group": "vcDebugInfo",
+    "name": "morefregstats",
+    "rollup": "maximum",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 326,
+    "group": "vcDebugInfo",
+    "name": "morefregstats",
+    "rollup": "minimum",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 327,
+    "group": "vcDebugInfo",
+    "name": "morefregstats",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 328,
+    "group": "vcResources",
+    "name": "packetrecvrate",
+    "rollup": "average",
+    "unit": "number",
+    "level": 1,
+    "statsType": "rate"
+  },
+  {
+    "key": 329,
+    "group": "vcResources",
+    "name": "packetsentrate",
+    "rollup": "average",
+    "unit": "number",
+    "level": 1,
+    "statsType": "rate"
+  },
+  {
+    "key": 330,
+    "group": "vcResources",
+    "name": "systemcpuusage",
+    "rollup": "average",
+    "unit": "percent",
+    "level": 1,
+    "statsType": "rate"
+  },
+  {
+    "key": 331,
+    "group": "vcResources",
+    "name": "pagefaultrate",
+    "rollup": "average",
+    "unit": "number",
+    "level": 1,
+    "statsType": "rate"
+  },
+  {
+    "key": 332,
+    "group": "vcResources",
+    "name": "physicalmemusage",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 333,
+    "group": "vcResources",
+    "name": "priviledgedcpuusage",
+    "rollup": "average",
+    "unit": "percent",
+    "level": 1,
+    "statsType": "rate"
+  },
+  {
+    "key": 334,
+    "group": "vcDebugInfo",
+    "name": "scoreboard",
+    "rollup": "maximum",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 335,
+    "group": "vcDebugInfo",
+    "name": "scoreboard",
+    "rollup": "minimum",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 336,
+    "group": "vcDebugInfo",
+    "name": "scoreboard",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 337,
+    "group": "vcDebugInfo",
+    "name": "sessionstats",
+    "rollup": "maximum",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 338,
+    "group": "vcDebugInfo",
+    "name": "sessionstats",
+    "rollup": "minimum",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 339,
+    "group": "vcDebugInfo",
+    "name": "sessionstats",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 340,
+    "group": "vcResources",
+    "name": "syscallsrate",
+    "rollup": "average",
+    "unit": "number",
+    "level": 1,
+    "statsType": "rate"
+  },
+  {
+    "key": 341,
+    "group": "vcDebugInfo",
+    "name": "systemstats",
+    "rollup": "maximum",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 342,
+    "group": "vcDebugInfo",
+    "name": "systemstats",
+    "rollup": "minimum",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 343,
+    "group": "vcDebugInfo",
+    "name": "systemstats",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 344,
+    "group": "vcResources",
+    "name": "usercpuusage",
+    "rollup": "average",
+    "unit": "percent",
+    "level": 1,
+    "statsType": "rate"
+  },
+  {
+    "key": 345,
+    "group": "vcDebugInfo",
+    "name": "vcservicestats",
+    "rollup": "maximum",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 346,
+    "group": "vcDebugInfo",
+    "name": "vcservicestats",
+    "rollup": "minimum",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 347,
+    "group": "vcDebugInfo",
+    "name": "vcservicestats",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 348,
+    "group": "vcResources",
+    "name": "virtualmemusage",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 349,
+    "group": "virtualDisk",
+    "name": "readOIO",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 350,
+    "group": "virtualDisk",
+    "name": "writeOIO",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 351,
+    "group": "virtualDisk",
+    "name": "readLoadMetric",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 352,
+    "group": "virtualDisk",
+    "name": "writeLoadMetric",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 353,
+    "group": "rescpu",
+    "name": "actav1",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 354,
+    "group": "datastore",
+    "name": "datastoreReadBytes",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 355,
+    "group": "datastore",
+    "name": "datastoreWriteBytes",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 356,
+    "group": "datastore",
+    "name": "datastoreReadIops",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 357,
+    "group": "datastore",
+    "name": "datastoreWriteIops",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 358,
+    "group": "datastore",
+    "name": "datastoreReadOIO",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 359,
+    "group": "datastore",
+    "name": "datastoreWriteOIO",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 360,
+    "group": "datastore",
+    "name": "datastoreNormalReadLatency",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 361,
+    "group": "datastore",
+    "name": "datastoreNormalWriteLatency",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 362,
+    "group": "datastore",
+    "name": "datastoreReadLoadMetric",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 363,
+    "group": "datastore",
+    "name": "datastoreWriteLoadMetric",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 364,
+    "group": "datastore",
+    "name": "datastoreVMObservedLatency",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 365,
+    "group": "disk",
+    "name": "scsiReservationCnflctsPct",
+    "rollup": "average",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 366,
+    "group": "storageAdapter",
+    "name": "outstandingIOs",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 367,
+    "group": "storageAdapter",
+    "name": "queued",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 368,
+    "group": "storageAdapter",
+    "name": "queueDepth",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 369,
+    "group": "cpu",
+    "name": "utilization",
+    "rollup": "average",
+    "unit": "percent",
+    "level": 2,
+    "statsType": "rate"
+  },
+  {
+    "key": 370,
+    "group": "cpu",
+    "name": "corecount.provisioned",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 371,
+    "group": "cpu",
+    "name": "host-237.lab.example.com",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 372,
+    "group": "cpu",
+    "name": "corecount.usage",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 373,
+    "group": "cpu",
+    "name": "load.avg1min",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 374,
+    "group": "cpu",
+    "name": "load.avg5min",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 375,
+    "group": "cpu",
+    "name": "load.avg15min",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 376,
+    "group": "mem",
+    "name": "capacity.provisioned",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 377,
+    "group": "mem",
+    "name": "reservedCapacityPct",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 378,
+    "group": "mem",
+    "name": "overcommit.avg1min",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 379,
+    "group": "mem",
+    "name": "overcommit.avg5min",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 380,
+    "group": "mem",
+    "name": "overcommit.avg15min",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 381,
+    "group": "mem",
+    "name": "physical.total",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 382,
+    "group": "mem",
+    "name": "physical.user",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 383,
+    "group": "mem",
+    "name": "physical.free",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 384,
+    "group": "mem",
+    "name": "kernel.managed",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 385,
+    "group": "mem",
+    "name": "kernel.minfree",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 386,
+    "group": "mem",
+    "name": "kernel.unreserved",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 387,
+    "group": "mem",
+    "name": "pshare.shared",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 388,
+    "group": "mem",
+    "name": "pshare.common",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 389,
+    "group": "mem",
+    "name": "pshare.sharedSave",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 390,
+    "group": "mem",
+    "name": "swap.current",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 391,
+    "group": "mem",
+    "name": "swap.target",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 392,
+    "group": "mem",
+    "name": "swap.readrate",
+    "rollup": "average",
+    "unit": "megaBytesPerSecond",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 393,
+    "group": "mem",
+    "name": "swap.writerate",
+    "rollup": "average",
+    "unit": "megaBytesPerSecond",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 394,
+    "group": "mem",
+    "name": "zip.zipped",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 395,
+    "group": "mem",
+    "name": "zip.saved",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 396,
+    "group": "mem",
+    "name": "memctl.current",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 397,
+    "group": "mem",
+    "name": "memctl.target",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 398,
+    "group": "mem",
+    "name": "memctl.max",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 399,
+    "group": "mem",
+    "name": "health.reservationState",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 400,
+    "group": "hbr",
+    "name": "vms",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 401,
+    "group": "net",
+    "name": "host-238.lab.example.com",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 402,
+    "group": "net",
+    "name": "host-239.lab.example.com",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 403,
+    "group": "virtualDisk",
+    "name": "hbr.readLatencyMS",
+    "rollup": "latest",
+    "unit": "millisecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 404,
+    "group": "virtualDisk",
+    "name": "hbr.stallLatencyMS",
+    "rollup": "latest",
+    "unit": "millisecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 405,
+    "group": "net",
+    "name": "host-240.lab.example.com",
+    "rollup": "latest",
+    "unit": "millisecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 426,
+    "group": "cpu",
+    "name": "swapwait",
+    "rollup": "summation",
+    "unit": "millisecond",
+    "level": 3,
+    "statsType": "delta"
+  },
+  {
+    "key": 427,
+    "group": "cpu",
+    "name": "utilization",
+    "rollup": "none",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 428,
+    "group": "cpu",
+    "name": "utilization",
+    "rollup": "maximum",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 429,
+    "group": "cpu",
+    "name": "utilization",
+    "rollup": "minimum",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 430,
+    "group": "cpu",
+    "name": "coreUtilization",
+    "rollup": "none",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 431,
+    "group": "cpu",
+    "name": "coreUtilization",
+    "rollup": "average",
+    "unit": "percent",
+    "level": 2,
+    "statsType": "rate"
+  },
+  {
+    "key": 432,
+    "group": "cpu",
+    "name": "coreUtilization",
+    "rollup": "maximum",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 433,
+    "group": "cpu",
+    "name": "coreUtilization",
+    "rollup": "minimum",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 434,
+    "group": "cpu",
+    "name": "totalCapacity",
+    "rollup": "average",
+    "unit": "megaHertz",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 435,
+    "group": "cpu",
+    "name": "latency",
+    "rollup": "average",
+    "unit": "percent",
+    "level": 2,
+    "statsType": "rate"
+  },
+  {
+    "key": 436,
+    "group": "cpu",
+    "name": "entitlement",
+    "rollup": "latest",
+    "unit": "megaHertz",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 437,
+    "group": "cpu",
+    "name": "demand",
+    "rollup": "average",
+    "unit": "megaHertz",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 438,
+    "group": "cpu",
+    "name": "costop",
+    "rollup": "summation",
+    "unit": "millisecond",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 439,
+    "group": "cpu",
+    "name": "maxlimited",
+    "rollup": "summation",
+    "unit": "millisecond",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 440,
+    "group": "cpu",
+    "name": "overlap",
+    "rollup": "summation",
+    "unit": "millisecond",
+    "level": 3,
+    "statsType": "delta"
+  },
+  {
+    "key": 441,
+    "group": "cpu",
+    "name": "run",
+    "rollup": "summation",
+    "unit": "millisecond",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 442,
+    "group": "cpu",
+    "name": "demandEntitlementRatio",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 443,
+    "group": "cpu",
+    "name": "readiness",
+    "rollup": "average",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 444,
+    "group": "cpu",
+    "name": "usage.vcpus",
+    "rollup": "average",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 445,
+    "group": "mem",
+    "name": "swapin",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 446,
+    "group": "mem",
+    "name": "swapin",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 447,
+    "group": "mem",
+    "name": "swapin",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 448,
+    "group": "mem",
+    "name": "swapin",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 449,
+    "group": "mem",
+    "name": "swapout",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 450,
+    "group": "mem",
+    "name": "swapout",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 451,
+    "group": "mem",
+    "name": "swapout",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 452,
+    "group": "mem",
+    "name": "swapout",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 453,
+    "group": "mem",
+    "name": "sysUsage",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 454,
+    "group": "mem",
+    "name": "sysUsage",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 455,
+    "group": "mem",
+    "name": "sysUsage",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 456,
+    "group": "mem",
+    "name": "sysUsage",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 457,
+    "group": "mem",
+    "name": "activewrite",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 458,
+    "group": "mem",
+    "name": "overheadMax",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 459,
+    "group": "mem",
+    "name": "totalCapacity",
+    "rollup": "average",
+    "unit": "megaBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 460,
+    "group": "mem",
+    "name": "zipped",
+    "rollup": "latest",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 461,
+    "group": "mem",
+    "name": "zipSaved",
+    "rollup": "latest",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 462,
+    "group": "mem",
+    "name": "latency",
+    "rollup": "average",
+    "unit": "percent",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 463,
+    "group": "mem",
+    "name": "entitlement",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 464,
+    "group": "mem",
+    "name": "lowfreethreshold",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 465,
+    "group": "mem",
+    "name": "llSwapUsed",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 466,
+    "group": "mem",
+    "name": "llSwapInRate",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 2,
+    "statsType": "rate"
+  },
+  {
+    "key": 467,
+    "group": "mem",
+    "name": "llSwapOutRate",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 2,
+    "statsType": "rate"
+  },
+  {
+    "key": 468,
+    "group": "mem",
+    "name": "overheadTouched",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 469,
+    "group": "mem",
+    "name": "llSwapUsed",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 470,
+    "group": "mem",
+    "name": "llSwapUsed",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 471,
+    "group": "mem",
+    "name": "llSwapUsed",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 472,
+    "group": "mem",
+    "name": "llSwapIn",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 473,
+    "group": "mem",
+    "name": "llSwapIn",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 474,
+    "group": "mem",
+    "name": "llSwapIn",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 475,
+    "group": "mem",
+    "name": "llSwapIn",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 476,
+    "group": "mem",
+    "name": "llSwapOut",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 477,
+    "group": "mem",
+    "name": "llSwapOut",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 478,
+    "group": "mem",
+    "name": "llSwapOut",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 479,
+    "group": "mem",
+    "name": "llSwapOut",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 480,
+    "group": "mem",
+    "name": "host-241.lab.example.com",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 481,
+    "group": "mem",
+    "name": "host-242.lab.example.com",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 482,
+    "group": "mem",
+    "name": "host-243.lab.example.com",
+    "rollup": "latest",
+    "unit": "teraBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 483,
+    "group": "mem",
+    "name": "host-244.lab.example.com",
+    "rollup": "latest",
+    "unit": "teraBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 484,
+    "group": "mem",
+    "name": "host-245.lab.example.com",
+    "rollup": "latest",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 485,
+    "group": "mem",
+    "name": "host-246.lab.example.com",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 486,
+    "group": "disk",
+    "name": "commands",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 487,
+    "group": "disk",
+    "name": "deviceReadLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 488,
+    "group": "disk",
+    "name": "kernelReadLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 489,
+    "group": "disk",
+    "name": "totalReadLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 490,
+    "group": "disk",
+    "name": "queueReadLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 491,
+    "group": "disk",
+    "name": "deviceWriteLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 492,
+    "group": "disk",
+    "name": "kernelWriteLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 493,
+    "group": "disk",
+    "name": "totalWriteLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 494,
+    "group": "disk",
+    "name": "queueWriteLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 495,
+    "group": "disk",
+    "name": "deviceLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 496,
+    "group": "disk",
+    "name": "kernelLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 497,
+    "group": "disk",
+    "name": "queueLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 2,
+    "statsType": "absolute"
+  },
+  {
+    "key": 498,
+    "group": "disk",
+    "name": "maxQueueDepth",
+    "rollup": "average",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 499,
+    "group": "disk",
+    "name": "commandsAveraged",
+    "rollup": "average",
+    "unit": "number",
+    "level": 2,
+    "statsType": "rate"
+  },
+  {
+    "key": 500,
+    "group": "net",
+    "name": "droppedRx",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 501,
+    "group": "net",
+    "name": "droppedTx",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 502,
+    "group": "net",
+    "name": "bytesRx",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 2,
+    "statsType": "rate"
+  },
+  {
+    "key": 503,
+    "group": "net",
+    "name": "bytesTx",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 2,
+    "statsType": "rate"
+  },
+  {
+    "key": 504,
+    "group": "net",
+    "name": "broadcastRx",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 505,
+    "group": "net",
+    "name": "broadcastTx",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 506,
+    "group": "net",
+    "name": "multicastRx",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 507,
+    "group": "net",
+    "name": "multicastTx",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 508,
+    "group": "net",
+    "name": "errorsRx",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 509,
+    "group": "net",
+    "name": "errorsTx",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 510,
+    "group": "net",
+    "name": "unknownProtos",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 2,
+    "statsType": "delta"
+  },
+  {
+    "key": 511,
+    "group": "net",
+    "name": "pnicBytesRx",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 512,
+    "group": "net",
+    "name": "pnicBytesTx",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 513,
+    "group": "sys",
+    "name": "heartbeat",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 514,
+    "group": "sys",
+    "name": "diskUsage",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 515,
+    "group": "sys",
+    "name": "resourceCpuUsage",
+    "rollup": "none",
+    "unit": "megaHertz",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 516,
+    "group": "sys",
+    "name": "resourceCpuUsage",
+    "rollup": "average",
+    "unit": "megaHertz",
+    "level": 3,
+    "statsType": "rate"
+  },
+  {
+    "key": 517,
+    "group": "sys",
+    "name": "resourceCpuUsage",
+    "rollup": "maximum",
+    "unit": "megaHertz",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 518,
+    "group": "sys",
+    "name": "resourceCpuUsage",
+    "rollup": "minimum",
+    "unit": "megaHertz",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 519,
+    "group": "sys",
+    "name": "resourceMemTouched",
+    "rollup": "latest",
+    "unit": "kiloBytes",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 520,
+    "group": "sys",
+    "name": "resourceMemMapped",
+    "rollup": "latest",
+    "unit": "kiloBytes",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 521,
+    "group": "sys",
+    "name": "resourceMemShared",
+    "rollup": "latest",
+    "unit": "kiloBytes",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 522,
+    "group": "sys",
+    "name": "resourceMemSwapped",
+    "rollup": "latest",
+    "unit": "kiloBytes",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 523,
+    "group": "sys",
+    "name": "resourceMemOverhead",
+    "rollup": "latest",
+    "unit": "kiloBytes",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 524,
+    "group": "sys",
+    "name": "resourceMemCow",
+    "rollup": "latest",
+    "unit": "kiloBytes",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 525,
+    "group": "sys",
+    "name": "resourceMemZero",
+    "rollup": "latest",
+    "unit": "kiloBytes",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 526,
+    "group": "sys",
+    "name": "resourceCpuRun1",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 527,
+    "group": "sys",
+    "name": "resourceCpuAct1",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 528,
+    "group": "sys",
+    "name": "resourceCpuMaxLimited1",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 529,
+    "group": "sys",
+    "name": "resourceCpuRun5",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 530,
+    "group": "sys",
+    "name": "resourceCpuAct5",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 531,
+    "group": "sys",
+    "name": "resourceCpuMaxLimited5",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 532,
+    "group": "sys",
+    "name": "resourceCpuAllocMin",
+    "rollup": "latest",
+    "unit": "megaHertz",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 533,
+    "group": "sys",
+    "name": "resourceCpuAllocMax",
+    "rollup": "latest",
+    "unit": "megaHertz",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 534,
+    "group": "sys",
+    "name": "resourceCpuAllocShares",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 535,
+    "group": "sys",
+    "name": "resourceMemAllocMin",
+    "rollup": "latest",
+    "unit": "kiloBytes",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 536,
+    "group": "sys",
+    "name": "resourceMemAllocMax",
+    "rollup": "latest",
+    "unit": "kiloBytes",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 537,
+    "group": "sys",
+    "name": "resourceMemAllocShares",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 538,
+    "group": "sys",
+    "name": "osUptime",
+    "rollup": "latest",
+    "unit": "second",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 539,
+    "group": "sys",
+    "name": "resourceMemConsumed",
+    "rollup": "latest",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 540,
+    "group": "sys",
+    "name": "resourceFdUsage",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 541,
+    "group": "rescpu",
+    "name": "actpk1",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 542,
+    "group": "rescpu",
+    "name": "runav1",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 543,
+    "group": "rescpu",
+    "name": "actav5",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 544,
+    "group": "rescpu",
+    "name": "actpk5",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 545,
+    "group": "rescpu",
+    "name": "runav5",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 546,
+    "group": "rescpu",
+    "name": "actav15",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 547,
+    "group": "rescpu",
+    "name": "actpk15",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 548,
+    "group": "rescpu",
+    "name": "runav15",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 549,
+    "group": "rescpu",
+    "name": "runpk1",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 550,
+    "group": "rescpu",
+    "name": "maxLimited1",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 551,
+    "group": "rescpu",
+    "name": "runpk5",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 552,
+    "group": "rescpu",
+    "name": "maxLimited5",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 553,
+    "group": "rescpu",
+    "name": "runpk15",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 554,
+    "group": "rescpu",
+    "name": "maxLimited15",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 555,
+    "group": "rescpu",
+    "name": "sampleCount",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 556,
+    "group": "rescpu",
+    "name": "samplePeriod",
+    "rollup": "latest",
+    "unit": "millisecond",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 557,
+    "group": "managementAgent",
+    "name": "memUsed",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 558,
+    "group": "managementAgent",
+    "name": "swapUsed",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 559,
+    "group": "managementAgent",
+    "name": "cpuUsage",
+    "rollup": "average",
+    "unit": "megaHertz",
+    "level": 3,
+    "statsType": "rate"
+  },
+  {
+    "key": 560,
+    "group": "storagePath",
+    "name": "commandsAveraged",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "rate"
+  },
+  {
+    "key": 561,
+    "group": "storagePath",
+    "name": "numberReadAveraged",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "rate"
+  },
+  {
+    "key": 562,
+    "group": "storagePath",
+    "name": "numberWriteAveraged",
+    "rollup": "average",
+    "unit": "number",
+    "level": 3,
+    "statsType": "rate"
+  },
+  {
+    "key": 563,
+    "group": "storagePath",
+    "name": "read",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 3,
+    "statsType": "rate"
+  },
+  {
+    "key": 564,
+    "group": "storagePath",
+    "name": "write",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 3,
+    "statsType": "rate"
+  },
+  {
+    "key": 565,
+    "group": "storagePath",
+    "name": "totalReadLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 566,
+    "group": "storagePath",
+    "name": "totalWriteLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 567,
+    "group": "virtualDisk",
+    "name": "readIOSize",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 568,
+    "group": "virtualDisk",
+    "name": "writeIOSize",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 569,
+    "group": "virtualDisk",
+    "name": "smallSeeks",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 570,
+    "group": "virtualDisk",
+    "name": "mediumSeeks",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 571,
+    "group": "virtualDisk",
+    "name": "largeSeeks",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 572,
+    "group": "virtualDisk",
+    "name": "readLatencyUS",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 573,
+    "group": "virtualDisk",
+    "name": "writeLatencyUS",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 574,
+    "group": "datastore",
+    "name": "datastoreMaxQueueDepth",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 1,
+    "statsType": "absolute"
+  },
+  {
+    "key": 575,
+    "group": "datastore",
+    "name": "unmapSize",
+    "rollup": "summation",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "delta"
+  },
+  {
+    "key": 576,
+    "group": "datastore",
+    "name": "unmapIOs",
+    "rollup": "summation",
+    "unit": "number",
+    "level": 4,
+    "statsType": "delta"
+  },
+  {
+    "key": 577,
+    "group": "hbr",
+    "name": "hbrNumVms",
+    "rollup": "average",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 578,
+    "group": "hbr",
+    "name": "hbrNetRx",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 579,
+    "group": "hbr",
+    "name": "hbrNetTx",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 580,
+    "group": "hbr",
+    "name": "hbrNetLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 581,
+    "group": "hbr",
+    "name": "hbrDiskReadLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 582,
+    "group": "hbr",
+    "name": "hbrDiskStallLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 583,
+    "group": "vflashModule",
+    "name": "numActiveVMDKs",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 584,
+    "group": "vsanDomObj",
+    "name": "readIops",
+    "rollup": "average",
+    "unit": "number",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 585,
+    "group": "vsanDomObj",
+    "name": "readThroughput",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 586,
+    "group": "vsanDomObj",
+    "name": "readAvgLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 587,
+    "group": "vsanDomObj",
+    "name": "readMaxLatency",
+    "rollup": "latest",
+    "unit": "millisecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 588,
+    "group": "vsanDomObj",
+    "name": "readCacheHitRate",
+    "rollup": "latest",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 589,
+    "group": "vsanDomObj",
+    "name": "readCongestion",
+    "rollup": "average",
+    "unit": "number",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 590,
+    "group": "vsanDomObj",
+    "name": "writeIops",
+    "rollup": "average",
+    "unit": "number",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 591,
+    "group": "vsanDomObj",
+    "name": "writeThroughput",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 592,
+    "group": "vsanDomObj",
+    "name": "writeAvgLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 593,
+    "group": "vsanDomObj",
+    "name": "writeMaxLatency",
+    "rollup": "latest",
+    "unit": "millisecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 594,
+    "group": "vsanDomObj",
+    "name": "writeCongestion",
+    "rollup": "average",
+    "unit": "number",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 595,
+    "group": "vsanDomObj",
+    "name": "recoveryWriteIops",
+    "rollup": "average",
+    "unit": "number",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 596,
+    "group": "vsanDomObj",
+    "name": "recoveryWriteThroughput",
+    "rollup": "average",
+    "unit": "kiloBytesPerSecond",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 597,
+    "group": "vsanDomObj",
+    "name": "recoveryWriteAvgLatency",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 598,
+    "group": "vsanDomObj",
+    "name": "recoveryWriteMaxLatency",
+    "rollup": "latest",
+    "unit": "millisecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 599,
+    "group": "vsanDomObj",
+    "name": "recoveryWriteCongestion",
+    "rollup": "average",
+    "unit": "number",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 600,
+    "group": "gpu",
+    "name": "utilization",
+    "rollup": "none",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 601,
+    "group": "gpu",
+    "name": "utilization",
+    "rollup": "maximum",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 602,
+    "group": "gpu",
+    "name": "utilization",
+    "rollup": "minimum",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 603,
+    "group": "gpu",
+    "name": "mem.used",
+    "rollup": "none",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 604,
+    "group": "gpu",
+    "name": "mem.used",
+    "rollup": "maximum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 605,
+    "group": "gpu",
+    "name": "mem.used",
+    "rollup": "minimum",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 606,
+    "group": "gpu",
+    "name": "mem.usage",
+    "rollup": "none",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 607,
+    "group": "gpu",
+    "name": "mem.usage",
+    "rollup": "average",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 608,
+    "group": "gpu",
+    "name": "mem.usage",
+    "rollup": "maximum",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 609,
+    "group": "gpu",
+    "name": "mem.usage",
+    "rollup": "minimum",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 610,
+    "group": "pmem",
+    "name": "available.reservation",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 611,
+    "group": "pmem",
+    "name": "drsmanaged.reservation",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 701,
+    "group": "disk",
+    "name": "read",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 702,
+    "group": "disk",
+    "name": "readFailed",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 703,
+    "group": "disk",
+    "name": "write",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 704,
+    "group": "disk",
+    "name": "writeFailed",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 705,
+    "group": "disk",
+    "name": "commands.success",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 706,
+    "group": "disk",
+    "name": "commands.failed",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 707,
+    "group": "disk",
+    "name": "commands.queued",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 708,
+    "group": "disk",
+    "name": "commands.active",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 709,
+    "group": "disk",
+    "name": "state",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 710,
+    "group": "disk",
+    "name": "TM.abort",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 711,
+    "group": "disk",
+    "name": "TM.abortRetry",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 712,
+    "group": "disk",
+    "name": "TM.abortFailed",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 713,
+    "group": "disk",
+    "name": "TM.virtReset",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 714,
+    "group": "disk",
+    "name": "TM.virtResetRetry",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 715,
+    "group": "disk",
+    "name": "TM.virtResetFailed",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 716,
+    "group": "disk",
+    "name": "TM.lunReset",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 717,
+    "group": "disk",
+    "name": "TM.lunResetRetry",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 718,
+    "group": "disk",
+    "name": "TM.lunResetFailed",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 719,
+    "group": "disk",
+    "name": "TM.deviceReset",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 720,
+    "group": "disk",
+    "name": "TM.deviceResetRetry",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 721,
+    "group": "disk",
+    "name": "TM.deviceResetFailed",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 722,
+    "group": "disk",
+    "name": "TM.busReset",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 723,
+    "group": "disk",
+    "name": "TM.busResetRetry",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 724,
+    "group": "disk",
+    "name": "TM.busResetFailed",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 725,
+    "group": "disk",
+    "name": "latency.qavg",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 726,
+    "group": "disk",
+    "name": "latency.davg",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 727,
+    "group": "disk",
+    "name": "latency.kavg",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 728,
+    "group": "disk",
+    "name": "latency.gavg",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 729,
+    "group": "cpu",
+    "name": "partnerBusyTime",
+    "rollup": "average",
+    "unit": "percent",
+    "level": 4,
+    "statsType": "rate"
+  },
+  {
+    "key": 730,
+    "group": "mem",
+    "name": "capacity.overhead",
+    "rollup": "average",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 731,
+    "group": "mem",
+    "name": "capacity.overheadResv",
+    "rollup": "average",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 732,
+    "group": "mem",
+    "name": "capacity.consumed",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 733,
+    "group": "mem",
+    "name": "capacity.active",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 734,
+    "group": "power",
+    "name": "capacity.usageCpu",
+    "rollup": "average",
+    "unit": "watt",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 735,
+    "group": "power",
+    "name": "capacity.usageMem",
+    "rollup": "average",
+    "unit": "watt",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 736,
+    "group": "power",
+    "name": "capacity.usageOther",
+    "rollup": "average",
+    "unit": "watt",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 737,
+    "group": "vmotion",
+    "name": "vmkernel.downtime",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 738,
+    "group": "vmotion",
+    "name": "downtime",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 739,
+    "group": "vmotion",
+    "name": "precopy.time",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 740,
+    "group": "vmotion",
+    "name": "rtt",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 741,
+    "group": "vmotion",
+    "name": "host-247.lab.example.com",
+    "rollup": "latest",
+    "unit": "second",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 742,
+    "group": "vmotion",
+    "name": "mem.sizemb",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 743,
+    "group": "lwd",
+    "name": "numSnapshots",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 744,
+    "group": "nfs",
+    "name": "apdState",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 745,
+    "group": "nfs",
+    "name": "readIssueTime",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 746,
+    "group": "nfs",
+    "name": "writeIssueTime",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 747,
+    "group": "nfs",
+    "name": "totalReads",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 748,
+    "group": "nfs",
+    "name": "readsFailed",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 749,
+    "group": "nfs",
+    "name": "totalWrites",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 750,
+    "group": "nfs",
+    "name": "writesFailed",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 751,
+    "group": "nfs",
+    "name": "readTime",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 752,
+    "group": "nfs",
+    "name": "writeTime",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 753,
+    "group": "nfs",
+    "name": "ioRequestsQueued",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 754,
+    "group": "nfs",
+    "name": "totalCreate",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 755,
+    "group": "nfs",
+    "name": "createFailed",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 756,
+    "group": "nfs",
+    "name": "socketBufferFull",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 757,
+    "group": "datastore",
+    "name": "vmfs.totalTxn",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 758,
+    "group": "datastore",
+    "name": "vmfs.cancelledTxn",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 759,
+    "group": "datastore",
+    "name": "vmfs.apdState",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 760,
+    "group": "datastore",
+    "name": "vmfs.apdCount",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 761,
+    "group": "vvol",
+    "name": "pe.isaccessible",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 762,
+    "group": "vvol",
+    "name": "host-248.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 763,
+    "group": "vvol",
+    "name": "host-249.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 764,
+    "group": "vvol",
+    "name": "host-250.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 765,
+    "group": "vvol",
+    "name": "host-251.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 766,
+    "group": "vvol",
+    "name": "host-252.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 767,
+    "group": "vvol",
+    "name": "host-253.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 768,
+    "group": "vvol",
+    "name": "host-254.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 769,
+    "group": "vvol",
+    "name": "host-255.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 770,
+    "group": "vvol",
+    "name": "host-256.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 771,
+    "group": "vvol",
+    "name": "host-257.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 772,
+    "group": "vvol",
+    "name": "host-258.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 773,
+    "group": "vvol",
+    "name": "host-259.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 774,
+    "group": "vvol",
+    "name": "host-260.lab.example.com",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 775,
+    "group": "vvol",
+    "name": "host-261.lab.example.com",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 776,
+    "group": "vvol",
+    "name": "host-262.lab.example.com",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 777,
+    "group": "vvol",
+    "name": "host-263.lab.example.com",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 778,
+    "group": "vvol",
+    "name": "host-264.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 779,
+    "group": "vvol",
+    "name": "host-265.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 780,
+    "group": "vvol",
+    "name": "host-266.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 781,
+    "group": "vvol",
+    "name": "host-267.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 782,
+    "group": "vvol",
+    "name": "host-268.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 783,
+    "group": "vvol",
+    "name": "host-269.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 784,
+    "group": "vvol",
+    "name": "host-270.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 785,
+    "group": "vvol",
+    "name": "host-271.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 786,
+    "group": "vvol",
+    "name": "host-272.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 787,
+    "group": "vvol",
+    "name": "host-273.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 788,
+    "group": "vvol",
+    "name": "host-274.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 789,
+    "group": "vvol",
+    "name": "host-275.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 790,
+    "group": "vvol",
+    "name": "host-276.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 791,
+    "group": "vvol",
+    "name": "host-277.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 792,
+    "group": "vvol",
+    "name": "host-278.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 793,
+    "group": "vvol",
+    "name": "host-279.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 794,
+    "group": "vvol",
+    "name": "host-280.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 795,
+    "group": "vvol",
+    "name": "host-281.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 796,
+    "group": "vvol",
+    "name": "host-282.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 797,
+    "group": "vvol",
+    "name": "host-283.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 798,
+    "group": "vvol",
+    "name": "host-284.lab.example.com",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 799,
+    "group": "vvol",
+    "name": "host-285.lab.example.com",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 800,
+    "group": "vvol",
+    "name": "host-286.lab.example.com",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 801,
+    "group": "vvol",
+    "name": "host-287.lab.example.com",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 802,
+    "group": "vvol",
+    "name": "host-288.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 803,
+    "group": "vvol",
+    "name": "host-289.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 804,
+    "group": "vvol",
+    "name": "host-290.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 805,
+    "group": "vvol",
+    "name": "host-291.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 806,
+    "group": "vvol",
+    "name": "host-292.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 807,
+    "group": "vvol",
+    "name": "host-293.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 808,
+    "group": "vvol",
+    "name": "host-294.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 809,
+    "group": "vvol",
+    "name": "host-295.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 810,
+    "group": "vvol",
+    "name": "host-296.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 811,
+    "group": "vvol",
+    "name": "host-297.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 812,
+    "group": "vvol",
+    "name": "host-298.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 813,
+    "group": "vvol",
+    "name": "host-299.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 814,
+    "group": "vvol",
+    "name": "host-300.lab.example.com",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 815,
+    "group": "vvol",
+    "name": "host-301.lab.example.com",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 816,
+    "group": "vvol",
+    "name": "host-302.lab.example.com",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 817,
+    "group": "vvol",
+    "name": "host-303.lab.example.com",
+    "rollup": "latest",
+    "unit": "microsecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 818,
+    "group": "vvol",
+    "name": "host-304.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 819,
+    "group": "vvol",
+    "name": "host-305.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 820,
+    "group": "vvol",
+    "name": "host-306.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 821,
+    "group": "vvol",
+    "name": "host-307.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 822,
+    "group": "vvol",
+    "name": "host-308.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 823,
+    "group": "vvol",
+    "name": "host-309.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 824,
+    "group": "vvol",
+    "name": "host-310.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 825,
+    "group": "vvol",
+    "name": "host-311.lab.example.com",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 826,
+    "group": "hbr",
+    "name": "hbrDiskTransferSuccess",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 827,
+    "group": "hbr",
+    "name": "hbrDiskTransferIdle",
+    "rollup": "average",
+    "unit": "millisecond",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 828,
+    "group": "hbr",
+    "name": "hbrDiskTransferBytes",
+    "rollup": "average",
+    "unit": "kiloBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 829,
+    "group": "gpu",
+    "name": "host-312.lab.example.com",
+    "rollup": "latest",
+    "unit": "gigaBytes",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 830,
+    "group": "gpu",
+    "name": "host-313.lab.example.com",
+    "rollup": "latest",
+    "unit": "gigaBytes",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 831,
+    "group": "gpu",
+    "name": "host-314.lab.example.com",
+    "rollup": "latest",
+    "unit": "gigaBytes",
+    "level": 3,
+    "statsType": "absolute"
+  },
+  {
+    "key": 832,
+    "group": "vmx",
+    "name": "numVCPUs",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 833,
+    "group": "vmx",
+    "name": "vcpusMhzMin",
+    "rollup": "latest",
+    "unit": "megaHertz",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 834,
+    "group": "vmx",
+    "name": "vcpusMhzMax",
+    "rollup": "latest",
+    "unit": "megaHertz",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 835,
+    "group": "vmx",
+    "name": "vcpusMhzMean",
+    "rollup": "latest",
+    "unit": "megaHertz",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 836,
+    "group": "vmx",
+    "name": "cpuSpeed",
+    "rollup": "latest",
+    "unit": "megaHertz",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 837,
+    "group": "vmx",
+    "name": "overheadMemSizeMin",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 838,
+    "group": "vmx",
+    "name": "overheadMemSizeMax",
+    "rollup": "latest",
+    "unit": "megaBytes",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 839,
+    "group": "vmx",
+    "name": "vigor.opsTotal",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 840,
+    "group": "vmx",
+    "name": "poll.itersPerS",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  },
+  {
+    "key": 841,
+    "group": "vmx",
+    "name": "userRpc.opsPerS",
+    "rollup": "latest",
+    "unit": "number",
+    "level": 4,
+    "statsType": "absolute"
+  }
+]

@@ -13,16 +13,19 @@ from rich.table import Table
 
 from phantom_api import __version__
 from phantom_api.constants import DEFAULT_HOST, DEFAULT_PORT
+from phantom_api.mock.cli import mock_app
 from phantom_api.models import MockSpec
 from phantom_api.parsers import detect_and_parse
 from phantom_api.parsers.base import ParserError
 
 app = typer.Typer(
     name="phantom-api",
-    help="Instant mock API server from an OpenAPI spec, JSON file, or Postman collection.",
+    help="Instant mock server from an OpenAPI spec, JSON file, Postman collection, "
+    "or any protocol via `phantom-api mock`.",
     add_completion=False,
     no_args_is_help=True,
 )
+app.add_typer(mock_app)
 console = Console()
 
 _DELAY_RE = re.compile(r"^\s*(\d+)\s*(ms|s)?\s*$", re.IGNORECASE)

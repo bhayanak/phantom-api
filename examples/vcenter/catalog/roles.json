@@ -1,0 +1,290 @@
+[
+  {
+    "roleId": -8,
+    "name": "NoTrustedAdmin",
+    "system": true,
+    "privilege_count": 459
+  },
+  {
+    "roleId": -7,
+    "name": "TrustedAdmin",
+    "system": true,
+    "privilege_count": 17
+  },
+  {
+    "roleId": -6,
+    "name": "NoCryptoAdmin",
+    "system": true,
+    "privilege_count": 440
+  },
+  {
+    "roleId": -5,
+    "name": "NoAccess",
+    "system": true,
+    "privilege_count": 0
+  },
+  {
+    "roleId": -4,
+    "name": "Anonymous",
+    "system": true,
+    "privilege_count": 1
+  },
+  {
+    "roleId": -3,
+    "name": "View",
+    "system": true,
+    "privilege_count": 2
+  },
+  {
+    "roleId": -2,
+    "name": "ReadOnly",
+    "system": true,
+    "privilege_count": 3
+  },
+  {
+    "roleId": -1,
+    "name": "Admin",
+    "system": true,
+    "privilege_count": 473
+  },
+  {
+    "roleId": 4,
+    "name": "VirtualMachinePowerUser",
+    "system": false,
+    "privilege_count": 38
+  },
+  {
+    "roleId": 5,
+    "name": "VirtualMachineUser",
+    "system": false,
+    "privilege_count": 18
+  },
+  {
+    "roleId": 6,
+    "name": "ResourcePoolAdministrator",
+    "system": false,
+    "privilege_count": 76
+  },
+  {
+    "roleId": 7,
+    "name": "VMwareConsolidatedBackupUser",
+    "system": false,
+    "privilege_count": 8
+  },
+  {
+    "roleId": 8,
+    "name": "DatastoreConsumer",
+    "system": false,
+    "privilege_count": 4
+  },
+  {
+    "roleId": 9,
+    "name": "NetworkConsumer",
+    "system": false,
+    "privilege_count": 4
+  },
+  {
+    "roleId": 10,
+    "name": "VirtualMachineConsoleUser",
+    "system": false,
+    "privilege_count": 13
+  },
+  {
+    "roleId": 11,
+    "name": "AutoUpdateUser",
+    "system": false,
+    "privilege_count": 4
+  },
+  {
+    "roleId": 1001,
+    "name": "host-207.lab.example.com",
+    "system": false,
+    "privilege_count": 13
+  },
+  {
+    "roleId": 1002,
+    "name": "SyncUsers",
+    "system": false,
+    "privilege_count": 20
+  },
+  {
+    "roleId": 1003,
+    "name": "vSphere Client Solution User",
+    "system": false,
+    "privilege_count": 13
+  },
+  {
+    "roleId": 1004,
+    "name": "WorkloadStorageManagement",
+    "system": false,
+    "privilege_count": 19
+  },
+  {
+    "roleId": 1005,
+    "name": "vSphereKubernetesManager",
+    "system": false,
+    "privilege_count": 20
+  },
+  {
+    "roleId": 1006,
+    "name": "host-208.lab.example.com",
+    "system": false,
+    "privilege_count": 5
+  },
+  {
+    "roleId": 1007,
+    "name": "SupervisorServiceCluster",
+    "system": false,
+    "privilege_count": 5
+  },
+  {
+    "roleId": 1008,
+    "name": "SupervisorServiceRootFolder",
+    "system": false,
+    "privilege_count": 5
+  },
+  {
+    "roleId": 1009,
+    "name": "SupervisorServiceGlobal",
+    "system": false,
+    "privilege_count": 4
+  },
+  {
+    "roleId": 1021,
+    "name": "VMOperatorController",
+    "system": false,
+    "privilege_count": 129
+  },
+  {
+    "roleId": 1022,
+    "name": "VMOperatorControllerGlobal",
+    "system": false,
+    "privilege_count": 11
+  },
+  {
+    "roleId": 1023,
+    "name": "NSOperatorController",
+    "system": false,
+    "privilege_count": 4
+  },
+  {
+    "roleId": 1024,
+    "name": "TopologysvcUser",
+    "system": false,
+    "privilege_count": 4
+  },
+  {
+    "roleId": 1025,
+    "name": "NetOperatorController",
+    "system": false,
+    "privilege_count": 4
+  },
+  {
+    "roleId": 1026,
+    "name": "PodVmLifeCycleManager",
+    "system": false,
+    "privilege_count": 19
+  },
+  {
+    "roleId": 1027,
+    "name": "NamespacesQueryRole",
+    "system": false,
+    "privilege_count": 4
+  },
+  {
+    "roleId": 1031,
+    "name": "CNS-SEARCH-AND-SPBM",
+    "system": false,
+    "privilege_count": 5
+  },
+  {
+    "roleId": 1032,
+    "name": "CNS-HOST-CONFIG-STORAGE-AND-CNS-VM",
+    "system": false,
+    "privilege_count": 9
+  },
+  {
+    "roleId": 1033,
+    "name": "VMImageServiceGlobal",
+    "system": false,
+    "privilege_count": 6
+  },
+  {
+    "roleId": 1034,
+    "name": "VsmSvcRole",
+    "system": false,
+    "privilege_count": 6
+  },
+  {
+    "roleId": 1041,
+    "name": "vStatsUser",
+    "system": false,
+    "privilege_count": 5
+  },
+  {
+    "roleId": 1042,
+    "name": "vStatsAdmin",
+    "system": false,
+    "privilege_count": 6
+  },
+  {
+    "roleId": 1090,
+    "name": "CNS-Datastore",
+    "system": false,
+    "privilege_count": 5
+  },
+  {
+    "roleId": 2000,
+    "name": "applmgmtSvcRole",
+    "system": false,
+    "privilege_count": 4
+  },
+  {
+    "roleId": 2020,
+    "name": "PerfchartsSvcRole",
+    "system": false,
+    "privilege_count": 3
+  },
+  {
+    "roleId": 2021,
+    "name": "ObservabilityVapiSvcRole",
+    "system": false,
+    "privilege_count": 3
+  },
+  {
+    "roleId": 312474685,
+    "name": "host-209.lab.example.com",
+    "system": false,
+    "privilege_count": 35
+  },
+  {
+    "roleId": 1332534873,
+    "name": "NsxViAdministrator",
+    "system": false,
+    "privilege_count": 4
+  },
+  {
+    "roleId": 1564588059,
+    "name": "NsxAdministrator",
+    "system": false,
+    "privilege_count": 4
+  },
+  {
+    "roleId": 1703047086,
+    "name": "vCLSAdmin",
+    "system": false,
+    "privilege_count": 26
+  },
+  {
+    "roleId": 1727662592,
+    "name": "VMServicesAdministrator",
+    "system": false,
+    "privilege_count": 6
+  },
+  {
+    "roleId": 2118392541,
+    "name": "NsxAuditor",
+    "system": false,
+    "privilege_count": 4
+  }
+]

@@ -78,7 +78,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Derive image metadata
         id: meta
-        uses: docker/metadata-action@v5
+        uses: docker/metadata-action@v6
         with:
           images: docker.io/${{ secrets.DOCKERHUB_USERNAME }}/phantom-api
           # latest must never point at a release candidate.

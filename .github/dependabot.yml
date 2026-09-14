@@ -48,3 +48,4 @@ updates:
       interval: weekly
       day: monday
     labels: [dependencies, ci]
+

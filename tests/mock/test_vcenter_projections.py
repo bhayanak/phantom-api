@@ -6,6 +6,7 @@ a client could actually make the call.
 
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 import pytest
@@ -347,3 +348,101 @@ def test_a_provider_summary_describes_the_available_intervals(client, session):
     )
     assert response.status_code == 200
     assert "currentSupported" in response.text
+
+
+# -- container views ---------------------------------------------------------
+#
+# The entry point most inventory collectors use: make a view over a container,
+# then collect properties by traversing the view's `view` edge.
+
+
+def _make_view(client, session, kind="VirtualMachine", recursive="true"):
+    response = call(
+        client,
+        '<CreateContainerView xmlns="urn:vim25">'
+        '<_this type="ViewManager">ViewManager</_this>'
+        '<container type="Folder">group-d1</container>'
+        f"<type>{kind}</type><recursive>{recursive}</recursive></CreateContainerView>",
+        session,
+    )
+    assert response.status_code == 200, response.text
+    match = re.search(r'<returnval type="ContainerView">([^<]+)</returnval>', response.text)
+    assert match, response.text
+    return match.group(1)
+
+
+def _collect_via_view(client, session, view, kind="VirtualMachine"):
+    return call(
+        client,
+        '<RetrievePropertiesEx xmlns="urn:vim25">'
+        '<_this type="PropertyCollector">propertyCollector</_this>'
+        f"<specSet><propSet><type>{kind}</type><pathSet>name</pathSet></propSet>"
+        f'<objectSet><obj type="ContainerView">{view}</obj><skip>true</skip>'
+        "<selectSet><name>view</name><type>ContainerView</type>"
+        "<path>view</path><skip>false</skip></selectSet>"
+        "</objectSet></specSet><options/></RetrievePropertiesEx>",
+        session,
+    )
+
+
+def _expected(scenario):
+    """Host and VM counts the scenario asks for, so the numbers cannot drift."""
+    clusters = [c for dc in scenario["topology"]["datacenters"] for c in dc["clusters"]]
+    hosts = sum(c["hosts"] for c in clusters)
+    vms = sum(c["hosts"] * c["vms_per_host"] for c in clusters)
+    return hosts, vms
+
+
+def test_a_container_view_can_be_created(client, session):
+    assert _make_view(client, session).startswith("session[")
+
+
+def test_collecting_through_a_view_returns_the_contained_machines(
+    client, session, vcenter_scenario
+):
+    _, vms = _expected(vcenter_scenario)
+    view = _make_view(client, session)
+    response = _collect_via_view(client, session, view)
+    assert response.status_code == 200, response.text
+    assert "soapenv:Fault" not in response.text
+    assert response.text.count("<propSet>") == vms
+
+
+def test_a_shallow_view_does_not_descend(client, session, vcenter_scenario):
+    """recursive=false sees only what sits directly in the root folder."""
+    _, vms = _expected(vcenter_scenario)
+    deep = _make_view(client, session, recursive="true")
+    shallow = _make_view(client, session, recursive="false")
+    assert _collect_via_view(client, session, deep).text.count("<propSet>") == vms
+    assert _collect_via_view(client, session, shallow).text.count("<propSet>") == 0
+
+
+def test_a_view_of_hosts_holds_only_hosts(client, session, vcenter_scenario):
+    hosts, _ = _expected(vcenter_scenario)
+    view = _make_view(client, session, kind="HostSystem")
+    response = _collect_via_view(client, session, view, kind="HostSystem")
+    assert response.text.count("<propSet>") == hosts
+
+
+def test_a_destroyed_view_is_gone(client, session):
+    view = _make_view(client, session)
+    destroyed = call(
+        client,
+        f'<DestroyView xmlns="urn:vim25"><_this type="ContainerView">{view}</_this></DestroyView>',
+        session,
+    )
+    assert destroyed.status_code == 200
+    assert _collect_via_view(client, session, view).text.count("<propSet>") == 0
+
+
+def test_a_view_over_a_missing_container_is_refused(client, session):
+    response = call(
+        client,
+        '<CreateContainerView xmlns="urn:vim25">'
+        '<_this type="ViewManager">ViewManager</_this>'
+        '<container type="Folder">group-does-not-exist</container>'
+        "<type>VirtualMachine</type><recursive>true</recursive></CreateContainerView>",
+        session,
+    )
+    assert response.status_code == 500
+    assert "ManagedObjectNotFound" in response.text

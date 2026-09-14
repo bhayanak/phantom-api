@@ -56,3 +56,4 @@ sbom.spdx.json
 # Derived from morpheus-mock.json by `npx @redocly/cli bundle`. 18 MB, and
 # nothing reads it -- regenerate it rather than carrying it in history.
 examples/morpheus/bundled.json
+branching-strategy.md

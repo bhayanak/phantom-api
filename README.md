@@ -11,8 +11,8 @@
   <a href="https://github.com/bhayanak/phantom-api/actions/workflows/release.yml">
     <img src="https://img.shields.io/github/actions/workflow/status/bhayanak/phantom-api/release.yml?label=Release" alt="Release workflow status">
   </a>
-  <a href="coverage.xml">
-    <img src="https://img.shields.io/badge/Coverage-87%25-brightgreen" alt="Test coverage">
+  <a href="https://github.com/bhayanak/phantom-api/actions/workflows/ci.yml">
+    <img src="https://img.shields.io/badge/Coverage-%E2%89%A595%25-brightgreen" alt="Test coverage gate">
   </a>
   <a href="https://pypi.org/project/phantomapi-server/">
     <img src="https://img.shields.io/pypi/v/phantomapi-server" alt="PyPI version">

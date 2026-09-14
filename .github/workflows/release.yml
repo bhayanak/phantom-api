@@ -19,6 +19,37 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Stamp the version from the tag
+        # The tag is the source of truth. A final tag must match what the source
+        # declares, or we would publish an artefact whose version disagrees with
+        # the thing it was cut from. A prerelease tag stamps itself in, so a
+        # rehearsal can never consume the real version number on PyPI.
+        run: |
+          python - "${GITHUB_REF_NAME#v}" <<'PY'
+          import pathlib, re, sys
+
+          tag = sys.argv[1]
+          targets = {
+              "pyproject.toml": "version",
+              "src/phantom_api/__init__.py": "__version__",
+          }
+          declared = re.search(
+              r'(?m)^version = "(.*)"$', pathlib.Path("pyproject.toml").read_text()
+          ).group(1)
+
+          if "-" not in tag and tag != declared:
+              sys.exit(f"::error::tag v{tag} does not match declared version {declared}")
+
+          for path, key in targets.items():
+              p = pathlib.Path(path)
+              body, n = re.subn(
+                  rf'(?m)^{key} = ".*"$', f'{key} = "{tag}"', p.read_text(), count=1
+              )
+              if n != 1:
+                  sys.exit(f"::error::could not stamp {key} in {path}")
+              p.write_text(body)
+          print(f"building {tag}")
+          PY
       - run: pip install build
       - run: python -m build --sdist --wheel --outdir dist/
       - name: Verify the wheel installs and runs
@@ -31,6 +62,7 @@ jobs:
       - uses: softprops/action-gh-release@v2
         with:
           generate_release_notes: true
+          prerelease: ${{ contains(github.ref_name, '-') }}
           files: dist/*
 
   docker-publish:
@@ -49,10 +81,11 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: docker.io/${{ secrets.DOCKERHUB_USERNAME }}/phantom-api
+          # latest must never point at a release candidate.
           tags: |
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
-            type=raw,value=latest
+            type=raw,value=latest,enable=${{ !contains(github.ref_name, '-') }}
       - name: Build for scanning (amd64, not pushed)
         # Scan before publishing. A vulnerable image that reached Docker Hub is
         # a vulnerable image somebody has already pulled.

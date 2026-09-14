@@ -9,6 +9,26 @@ updates:
       day: monday
     open-pull-requests-limit: 5
     labels: [dependencies]
+    ignore:
+      # These floors say "the oldest version we work with", not "the version we
+      # use". Raising them locks out anyone whose app pins an older release, and
+      # phantom-api is often installed next to the app it mocks. Only the
+      # version-update types are ignored, so security advisories still open a PR.
+      - dependency-name: fastapi
+        update-types:
+          - version-update:semver-major
+          - version-update:semver-minor
+          - version-update:semver-patch
+      - dependency-name: typer
+        update-types:
+          - version-update:semver-major
+          - version-update:semver-minor
+          - version-update:semver-patch
+      - dependency-name: openapi-spec-validator
+        update-types:
+          - version-update:semver-major
+          - version-update:semver-minor
+          - version-update:semver-patch
     groups:
       # One pull request for routine bumps; anything with a security advisory
       # still comes through on its own so it is not lost in a batch.

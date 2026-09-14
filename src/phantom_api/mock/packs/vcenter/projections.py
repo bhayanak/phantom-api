@@ -8,6 +8,7 @@ sessions and faults they use are all framework.
 from __future__ import annotations
 
 from datetime import datetime, timezone
+from itertools import count
 from typing import Any
 
 from phantom_api.mock.model.entity import Entity
@@ -19,6 +20,9 @@ from phantom_api.mock.session import CursorLimitReached
 from phantom_api.mock.types import MockError, Operation
 
 ROOT_FOLDER = "group-d1"
+
+#: View handles only need to be unique for the life of the process.
+_VIEW_IDS = count(1)
 
 #: Fixed identifiers for the service singletons, matching the real product so
 #: clients that hard-code them keep working.
@@ -648,6 +652,85 @@ def query_perf_provider_summary(ctx: PackContext, op: Operation) -> dict[str, An
     }
 
 
+# -- views -------------------------------------------------------------------
+
+#: Which edges actually nest one object inside another. Only these are walked
+#: when a view is populated. ``datastore`` and ``network`` on a host or VM point
+#: sideways at shared objects rather than down the hierarchy, so following them
+#: would pull in entities the container does not contain.
+CONTAINER_EDGES: dict[str, tuple[str, ...]] = {
+    "Folder": ("childEntity",),
+    "Datacenter": ("hostFolder", "vmFolder", "datastoreFolder", "networkFolder"),
+    "ClusterComputeResource": ("host", "resourcePool"),
+    "ComputeResource": ("host", "resourcePool"),
+    "ResourcePool": ("vm", "resourcePool"),
+    "HostSystem": ("vm",),
+}
+
+
+def _contained(ctx: PackContext, start: Entity, recursive: bool) -> list[Entity]:
+    """Objects inside ``start``, descending only when the client asked to."""
+    found: list[Entity] = []
+    seen = {start.id}
+    frontier = [start]
+    while frontier:
+        current = frontier.pop(0)
+        for edge in CONTAINER_EDGES.get(current.kind, ()):
+            for ref in current.refs(edge):
+                child = ctx.inventory.get(ref)
+                if child is None or child.id in seen:
+                    continue
+                seen.add(child.id)
+                found.append(child)
+                if recursive:
+                    frontier.append(child)
+    return found
+
+
+def create_container_view(ctx: PackContext, op: Operation) -> Any:
+    _require_session(ctx, op)
+    container = op.params.get("container")
+    container_id = container.get("#text") if isinstance(container, dict) else container
+    start = ctx.inventory.get(str(container_id or ""))
+    if start is None:
+        raise MockError(
+            f"The object {container_id} has already been deleted or has not been "
+            "completely created.",
+            kind="not-found",
+            detail_type="ManagedObjectNotFound",
+        )
+
+    declared = op.params.get("type")
+    declared_list = declared if isinstance(declared, list) else ([declared] if declared else [])
+    wanted: set[str] = set()
+    for name in declared_list:
+        wanted |= _kinds_for(str(name))
+
+    recursive = str(op.params.get("recursive", "false")).lower() == "true"
+    members = [
+        entity.id
+        for entity in _contained(ctx, start, recursive)
+        if not wanted or entity.kind in wanted
+    ]
+
+    view = ctx.inventory.add(
+        Entity(
+            id=f"session[{op.session_id or 'anon'}]{next(_VIEW_IDS)}",
+            kind="ContainerView",
+            # The view is a real entity so the ordinary property collector can
+            # traverse its `view` edge; no special case in the traversal code.
+            props={"recursive": recursive, "type": [str(n) for n in declared_list]},
+            edges={"view": members, "container": [start.id]},
+        )
+    )
+    return Typed(view.id, ref_type="ContainerView")
+
+
+def destroy_view(ctx: PackContext, op: Operation) -> None:
+    ctx.inventory.remove(str(op.context.get("target_value") or ""))
+    return None
+
+
 PROJECTIONS = {
     "RetrieveServiceContent": retrieve_service_content,
     "Login": login,
@@ -661,6 +744,9 @@ PROJECTIONS = {
     "QueryOptions": query_options,
     "HasPrivilegeOnEntities": has_privilege_on_entities,
     "FindByUuid": find_by_uuid,
+    "CreateContainerView": create_container_view,
+    "CreateListView": create_container_view,
+    "DestroyView": destroy_view,
     "CreateCollectorForEvents": create_collector_for_events,
     "ReadNextEvents": read_next_events,
     "ResetCollector": reset_collector,

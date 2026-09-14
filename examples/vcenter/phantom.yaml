@@ -52,6 +52,9 @@ mock:
           - QueryOptions
           - HasPrivilegeOnEntities
           - FindByUuid
+          - CreateContainerView
+          - CreateListView
+          - DestroyView
           - CreateCollectorForEvents
           - ReadNextEvents
           - ReadPreviousEvents

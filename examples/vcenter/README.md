@@ -43,14 +43,21 @@ curl -sk -X POST https://localhost:8443/__phantom/events \
 phantom-api mock log --url https://localhost:8443
 ```
 
+The control plane answers loopback only, so in a container those calls return
+403 from the host. Set `control_plane.bind: 0.0.0.0` in `phantom.yaml` to reach
+it from outside. The mocked protocols themselves are unaffected.
+
 A client that builds `https://{host}/sdk` with no port needs the mock on 443:
 
 ```bash
 sudo phantom-api mock serve examples/vcenter/phantom.yaml --port 443
 # or
-docker run -p 443:8443 -v "$PWD/vcenter-mock:/spec:ro" \
-  phantom-api mock serve /spec/phantom.yaml --host 0.0.0.0
+docker run -p 443:8443 -v "$PWD/examples/vcenter:/spec:ro" \
+  phantom-api:local mock serve /spec/phantom.yaml
 ```
+
+In a container, `PHANTOM_API_HOST=0.0.0.0` is already set by the image, so the
+published port works without passing `--host`.
 
 Full walkthrough: [docs/building-mocks.md](../../docs/building-mocks.md).
 

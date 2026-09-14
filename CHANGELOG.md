@@ -4,6 +4,31 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.0] - 2026-09-14
+
+### Added
+
+- Container views in the vCenter pack: `CreateContainerView`, `CreateListView`
+  and `DestroyView`. A view is materialised as an ordinary entity carrying a
+  `view` edge, so the existing property collector traverses it unchanged. Only
+  containment edges are walked, so a view over a cluster does not pull in the
+  datastores its hosts merely reference.
+- `examples/vcenter/tools/smoke.sh` exercises a collector-shaped handshake
+  against a running mock: service content, login, views, property collection,
+  logout.
+
+### Fixed
+
+- The vCenter example routed only a fixed list of operations to the model, so
+  anything new fell through to the corpus and returned "no recorded exchange".
+  The view operations are now routed to the model.
+- The example's Docker instructions referenced a directory that no longer
+  exists, and did not mention that the control plane answers loopback only —
+  which makes `/__phantom/*` return 403 from the host when run in a container.
+- The README coverage badge was a hardcoded number that had drifted to 87%
+  against real coverage above 95%. It now states the gate CI enforces, so it
+  cannot go stale, and links somewhere that exists.
+
 ## [2.0.0] - 2026-09-13
 
 Mock any protocol, not just what a spec can describe.

@@ -28,7 +28,7 @@ jobs:
           /tmp/verify/bin/phantom-api --version
           /tmp/verify/bin/phantom-api mock list-packs
       - uses: pypa/gh-action-pypi-publish@release/v1
-      - uses: softprops/action-gh-release@v2
+      - uses: softprops/action-gh-release@v3
         with:
           generate_release_notes: true
           files: dist/*
